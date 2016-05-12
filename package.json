@@ -9,6 +9,7 @@
   "license": "MIT",
   "homepage": "https://github.com/kevin-roark/max-plays-mozart#readme",
   "dependencies": {
-    "three": "0.76.1"
+    "three": "0.76.1",
+    "tonal": "^0.50.2"
   }
 }

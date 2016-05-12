@@ -1,9 +1,13 @@
 
+var tonal = require('tonal');
 var THREE = require('../../frampton/node_modules/three');
 var frampton = require('../../frampton/dist/web-frampton');
 var WebRenderer3D = require('../../frampton/dist/renderer/web-renderer-3d');
 var OrbitControls = require('../../frampton/dist/threejs/orbit-controls');
 var mediaConfig = require('../piano_long.json');
+var song = require('../ode_to_joy.json');
+
+var finder = new frampton.MediaFinder(mediaConfig);
 
 var renderer = new WebRenderer3D({
   mediaConfig: mediaConfig,
@@ -12,52 +16,88 @@ var renderer = new WebRenderer3D({
   }
 });
 
-renderer.renderer.shadowMap.enabled = true;
-renderer.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-renderer.renderer.gammaInput = true;
-renderer.renderer.gammaOutput = true;
-renderer.renderer.antialias = true;
+setupEnvironment();
 
-renderer.camera.position.z = 500;
+var noteNumberRange = makeNoteRange();
 
-var controls = new OrbitControls(renderer.camera, renderer.renderer.domElement);
-controls.enableDamping = true;
-controls.dampingFactor = 0.25;
-controls.enableZoom = false;
-
-renderer.addUpdateFunction(function() {
-  controls.update();
+var initialDelay = 2000;
+iterateTracks(function(trackIndex, el) {
+  scheduleSegment(el);
 });
 
-var ground = createGround();
-ground.position.set(0, -50, 0);
-renderer.scene.add(ground);
-
-var spt = createSpotLight();
-spt.position.set(0, 250, -50);
-renderer.scene.add(spt);
-//renderer.scene.add(spt.shadowCameraHelper); // add this to see shadow helper
-
-scheduleSegment(-200);
-scheduleSegment(0);
-scheduleSegment(200);
-
-function scheduleSegment(x) {
-  var video = frampton.util.choice(mediaConfig.videos);
+function scheduleSegment(el) {
+  var note = tonal.fromMidi(el.noteNumber);
+  var video = finder.findVideoWithPatern(note);
 
   var segment = new frampton.VideoSegment(video);
-  segment.loop = true;
+  segment.setDuration(el.duration / 1000);
+
   segment.threeOptions = {
+    videoMeshWidth: 250, videoMeshHeight: 140,
     geometryProvider: (videoMeshWidth, videoMeshHeight) => {
-      return new THREE.BoxGeometry(videoMeshWidth, videoMeshHeight, 50);
+      return new THREE.BoxGeometry(videoMeshWidth, videoMeshHeight, 40);
     },
     meshConfigurer: function(mesh) {
-      mesh.position.set(x, 10, 0);
+      var z = 200 + noteNumberRange.getPercent(el.noteNumber) * -500;
+
+      mesh.position.set(0, 45, z);
       mesh.castShadow = true;
     }
   };
 
-  renderer.scheduleSegmentRender(segment, 3000);
+  renderer.scheduleSegmentRender(segment, initialDelay + el.time);
+}
+
+function iterateTracks(fn) {
+  song.tracks.forEach(function(track, idx) {
+    track.forEach(function(el) {
+      fn(idx, el);
+    });
+  });
+}
+
+function makeNoteRange() {
+  var range = {min: 1000, max: 0};
+  iterateTracks(function(trackIndex, el) {
+    range.min = Math.min(range.min, el.noteNumber);
+    range.max = Math.max(range.max, el.noteNumber);
+  });
+
+  range.range = range.max - range.min;
+
+  range.getPercent = function(x) {
+    return (range.max - x) / range.range;
+  };
+
+  return range;
+}
+
+function setupEnvironment() {
+  renderer.renderer.shadowMap.enabled = true;
+  renderer.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  renderer.renderer.gammaInput = true;
+  renderer.renderer.gammaOutput = true;
+  renderer.renderer.antialias = true;
+
+  renderer.camera.position.z = 500;
+
+  var controls = new OrbitControls(renderer.camera, renderer.renderer.domElement);
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.25;
+  controls.enableZoom = false;
+
+  renderer.addUpdateFunction(function() {
+    controls.update();
+  });
+
+  var ground = createGround();
+  ground.position.set(0, -50, 0);
+  renderer.scene.add(ground);
+
+  var spt = createSpotLight();
+  spt.position.set(0, 250, -50);
+  renderer.scene.add(spt);
+  //renderer.scene.add(spt.shadowCameraHelper); // add this to see shadow helper
 }
 
 function createGround() {

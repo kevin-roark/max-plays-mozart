@@ -48981,10 +48981,10 @@ module.exports={
         "tags": []
     }, {
         "filename": "D4.mp4",
-        "duration": 7.723,
+        "duration": 7.958,
         "volumeInfo": {
-            "mean": -27.9,
-            "max": -7.6
+            "mean": -28.2,
+            "max": -7.5
         },
         "tags": []
     }, {
@@ -49149,10 +49149,10 @@ module.exports={
         "tags": []
     }, {
         "filename": "Eb4.mp4",
-        "duration": 7.958,
+        "duration": 7.723,
         "volumeInfo": {
-            "mean": -28.2,
-            "max": -7.5
+            "mean": -27.9,
+            "max": -7.6
         },
         "tags": []
     }, {

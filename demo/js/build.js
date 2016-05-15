@@ -46151,7 +46151,9 @@ function scheduleSegment(el) {
   var video = finder.findVideoWithPatern(note);
 
   var segment = new frampton.VideoSegment(video);
-  segment.setDuration(el.duration / 1000);
+  segment
+    .setDuration(el.duration / 1000)
+    .setAudioFadeDuration(250);
 
   segment.threeOptions = {
     videoMeshWidth: 250, videoMeshHeight: 140,

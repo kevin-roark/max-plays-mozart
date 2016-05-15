@@ -3427,11 +3427,13 @@ TWEEN.Interpolation = {
 })(this);
 
 },{}],25:[function(require,module,exports){
+module.exports={"tracks":[[{"time":571.428,"duration":136.904625,"noteNumber":57,"velocity":127,"programNumber":40},{"time":714.285,"duration":1714.284,"noteNumber":57,"velocity":127,"programNumber":40},{"time":2428.569,"duration":71.42849999999999,"noteNumber":60,"velocity":127,"programNumber":40},{"time":2499.9975,"duration":71.42849999999999,"noteNumber":64,"velocity":127,"programNumber":40},{"time":2571.426,"duration":71.42849999999999,"noteNumber":69,"velocity":127,"programNumber":40},{"time":2642.8545,"duration":71.42849999999999,"noteNumber":72,"velocity":127,"programNumber":40},{"time":2714.283,"duration":71.42849999999999,"noteNumber":76,"velocity":127,"programNumber":40},{"time":2785.7115,"duration":71.42849999999999,"noteNumber":81,"velocity":127,"programNumber":40},{"time":2857.14,"duration":71.42849999999999,"noteNumber":84,"velocity":127,"programNumber":40},{"time":2928.5685,"duration":71.42849999999999,"noteNumber":88,"velocity":127,"programNumber":40},{"time":2999.997,"duration":761.904,"noteNumber":93,"velocity":127,"programNumber":40},{"time":3857.1389999999997,"duration":71.42849999999999,"noteNumber":91,"velocity":60,"programNumber":40},{"time":3928.5674999999997,"duration":71.42849999999999,"noteNumber":89,"velocity":60,"programNumber":40},{"time":3999.9959999999996,"duration":71.42849999999999,"noteNumber":88,"velocity":60,"programNumber":40},{"time":4071.4244999999996,"duration":71.42850000000044,"noteNumber":86,"velocity":60,"programNumber":40},{"time":4142.853,"duration":71.42849999999999,"noteNumber":84,"velocity":60,"programNumber":40},{"time":4214.2815,"duration":71.42849999999999,"noteNumber":83,"velocity":60,"programNumber":40},{"time":4285.71,"duration":71.42849999999999,"noteNumber":81,"velocity":60,"programNumber":40},{"time":4357.1385,"duration":71.42849999999999,"noteNumber":80,"velocity":60,"programNumber":40},{"time":4428.567,"duration":71.42849999999999,"noteNumber":77,"velocity":60,"programNumber":40},{"time":4499.9955,"duration":71.42849999999999,"noteNumber":76,"velocity":60,"programNumber":40},{"time":4571.424,"duration":71.42849999999999,"noteNumber":74,"velocity":60,"programNumber":40},{"time":4642.8525,"duration":71.42849999999999,"noteNumber":72,"velocity":60,"programNumber":40},{"time":4714.281,"duration":71.42849999999999,"noteNumber":71,"velocity":60,"programNumber":40},{"time":4785.7095,"duration":71.42849999999999,"noteNumber":69,"velocity":60,"programNumber":40},{"time":4857.138,"duration":71.42849999999999,"noteNumber":68,"velocity":60,"programNumber":40},{"time":4928.5665,"duration":71.42849999999999,"noteNumber":65,"velocity":60,"programNumber":40},{"time":4999.995,"duration":71.42849999999999,"noteNumber":64,"velocity":60,"programNumber":40},{"time":5071.4235,"duration":71.42849999999999,"noteNumber":62,"velocity":60,"programNumber":40},{"time":5142.852,"duration":71.42849999999999,"noteNumber":60,"velocity":60,"programNumber":40},{"time":5214.2805,"duration":71.42849999999999,"noteNumber":59,"velocity":60,"programNumber":40},{"time":5285.709,"duration":761.9039999999995,"noteNumber":57,"velocity":60,"programNumber":40},{"time":6142.851,"duration":71.42849999999999,"noteNumber":60,"velocity":127,"programNumber":40},{"time":6214.2795,"duration":71.42849999999999,"noteNumber":64,"velocity":127,"programNumber":40},{"time":6285.708,"duration":71.42849999999999,"noteNumber":69,"velocity":127,"programNumber":40},{"time":6357.1365,"duration":71.42849999999999,"noteNumber":72,"velocity":127,"programNumber":40},{"time":6428.565,"duration":71.42849999999999,"noteNumber":76,"velocity":127,"programNumber":40},{"time":6499.9935,"duration":71.42849999999999,"noteNumber":81,"velocity":127,"programNumber":40},{"time":6571.422,"duration":71.42849999999999,"noteNumber":84,"velocity":127,"programNumber":40},{"time":6642.8505,"duration":71.42849999999999,"noteNumber":88,"velocity":127,"programNumber":40},{"time":6714.2789999999995,"duration":71.42849999999999,"noteNumber":93,"velocity":127,"programNumber":40},{"time":6785.7074999999995,"duration":761.9039999999995,"noteNumber":96,"velocity":127,"programNumber":40},{"time":7642.849499999999,"duration":71.42849999999999,"noteNumber":95,"velocity":60,"programNumber":40},{"time":7714.277999999999,"duration":71.42849999999999,"noteNumber":93,"velocity":60,"programNumber":40},{"time":7785.706499999999,"duration":71.42849999999999,"noteNumber":92,"velocity":60,"programNumber":40},{"time":7857.134999999999,"duration":71.42849999999999,"noteNumber":89,"velocity":60,"programNumber":40},{"time":7928.563499999999,"duration":71.42849999999999,"noteNumber":88,"velocity":60,"programNumber":40},{"time":7999.991999999999,"duration":71.42849999999999,"noteNumber":86,"velocity":60,"programNumber":40},{"time":8071.420499999999,"duration":71.42849999999999,"noteNumber":84,"velocity":60,"programNumber":40},{"time":8142.848999999999,"duration":71.4285000000009,"noteNumber":83,"velocity":60,"programNumber":40},{"time":8214.2775,"duration":71.42849999999999,"noteNumber":81,"velocity":60,"programNumber":40},{"time":8285.706,"duration":71.42849999999999,"noteNumber":80,"velocity":60,"programNumber":40},{"time":8357.1345,"duration":71.42849999999999,"noteNumber":77,"velocity":60,"programNumber":40},{"time":8428.563,"duration":71.42849999999999,"noteNumber":76,"velocity":60,"programNumber":40},{"time":8499.9915,"duration":71.42849999999999,"noteNumber":74,"velocity":60,"programNumber":40},{"time":8571.42,"duration":71.42849999999999,"noteNumber":72,"velocity":60,"programNumber":40},{"time":8642.8485,"duration":71.42849999999999,"noteNumber":71,"velocity":60,"programNumber":40},{"time":8714.277,"duration":71.42849999999999,"noteNumber":69,"velocity":60,"programNumber":40},{"time":8785.7055,"duration":71.42849999999999,"noteNumber":68,"velocity":60,"programNumber":40},{"time":8857.134,"duration":71.42849999999999,"noteNumber":65,"velocity":60,"programNumber":40},{"time":8928.5625,"duration":71.42849999999999,"noteNumber":64,"velocity":60,"programNumber":40},{"time":8999.991,"duration":71.42849999999999,"noteNumber":62,"velocity":60,"programNumber":40},{"time":9071.4195,"duration":71.42849999999999,"noteNumber":60,"velocity":60,"programNumber":40},{"time":9142.848,"duration":71.42849999999999,"noteNumber":59,"velocity":60,"programNumber":40},{"time":9214.2765,"duration":761.9040000000005,"noteNumber":57,"velocity":60,"programNumber":40},{"time":10071.4185,"duration":71.42849999999999,"noteNumber":60,"velocity":127,"programNumber":40},{"time":10142.847,"duration":71.42849999999999,"noteNumber":64,"velocity":127,"programNumber":40},{"time":10214.2755,"duration":71.42849999999999,"noteNumber":69,"velocity":127,"programNumber":40},{"time":10285.704,"duration":71.42849999999999,"noteNumber":72,"velocity":127,"programNumber":40},{"time":10357.1325,"duration":71.42849999999999,"noteNumber":76,"velocity":127,"programNumber":40},{"time":10428.561,"duration":71.42849999999999,"noteNumber":81,"velocity":127,"programNumber":40},{"time":10499.9895,"duration":71.42849999999999,"noteNumber":84,"velocity":127,"programNumber":40},{"time":10571.418,"duration":71.42849999999999,"noteNumber":88,"velocity":127,"programNumber":40},{"time":10642.8465,"duration":71.42849999999999,"noteNumber":93,"velocity":127,"programNumber":40},{"time":10714.275,"duration":71.42849999999999,"noteNumber":96,"velocity":127,"programNumber":40},{"time":10785.7035,"duration":761.9040000000005,"noteNumber":100,"velocity":127,"programNumber":40},{"time":11642.8455,"duration":71.42849999999999,"noteNumber":98,"velocity":60,"programNumber":40},{"time":11714.274,"duration":71.42849999999999,"noteNumber":96,"velocity":60,"programNumber":40},{"time":11785.7025,"duration":71.42849999999999,"noteNumber":95,"velocity":60,"programNumber":40},{"time":11857.131,"duration":71.42849999999999,"noteNumber":93,"velocity":60,"programNumber":40},{"time":11928.5595,"duration":71.42849999999999,"noteNumber":92,"velocity":60,"programNumber":40},{"time":11999.988,"duration":71.42849999999999,"noteNumber":89,"velocity":60,"programNumber":40},{"time":12071.4165,"duration":71.42849999999999,"noteNumber":88,"velocity":60,"programNumber":40},{"time":12142.845,"duration":71.42849999999999,"noteNumber":86,"velocity":60,"programNumber":40},{"time":12214.2735,"duration":71.42849999999999,"noteNumber":84,"velocity":60,"programNumber":40},{"time":12285.702,"duration":71.42849999999999,"noteNumber":83,"velocity":60,"programNumber":40},{"time":12357.1305,"duration":71.42849999999999,"noteNumber":81,"velocity":60,"programNumber":40},{"time":12428.559,"duration":71.42849999999999,"noteNumber":80,"velocity":60,"programNumber":40},{"time":12499.9875,"duration":71.42849999999999,"noteNumber":77,"velocity":60,"programNumber":40},{"time":12571.416,"duration":71.42849999999999,"noteNumber":76,"velocity":60,"programNumber":40},{"time":12642.8445,"duration":71.42849999999999,"noteNumber":74,"velocity":60,"programNumber":40},{"time":12714.273,"duration":71.42849999999999,"noteNumber":72,"velocity":60,"programNumber":40},{"time":12785.7015,"duration":71.42849999999999,"noteNumber":71,"velocity":60,"programNumber":40},{"time":12857.13,"duration":71.42849999999999,"noteNumber":69,"velocity":60,"programNumber":40},{"time":12928.5585,"duration":71.42849999999999,"noteNumber":68,"velocity":60,"programNumber":40},{"time":12999.987,"duration":71.42849999999999,"noteNumber":65,"velocity":60,"programNumber":40},{"time":13071.4155,"duration":71.42849999999999,"noteNumber":64,"velocity":60,"programNumber":40},{"time":13142.844,"duration":71.42849999999999,"noteNumber":62,"velocity":60,"programNumber":40},{"time":13214.2725,"duration":71.42849999999999,"noteNumber":60,"velocity":60,"programNumber":40},{"time":13285.701,"duration":71.42849999999999,"noteNumber":59,"velocity":60,"programNumber":40},{"time":13357.1295,"duration":761.9040000000005,"noteNumber":57,"velocity":60,"programNumber":40},{"time":14214.271499999999,"duration":71.42849999999999,"noteNumber":60,"velocity":127,"programNumber":40},{"time":14285.699999999999,"duration":71.42849999999999,"noteNumber":64,"velocity":127,"programNumber":40},{"time":14357.128499999999,"duration":71.42849999999999,"noteNumber":69,"velocity":127,"programNumber":40},{"time":14428.556999999999,"duration":71.42849999999999,"noteNumber":72,"velocity":127,"programNumber":40},{"time":14499.985499999999,"duration":71.42849999999999,"noteNumber":76,"velocity":127,"programNumber":40},{"time":14571.413999999999,"duration":71.42849999999999,"noteNumber":81,"velocity":127,"programNumber":40},{"time":14642.842499999999,"duration":71.42849999999999,"noteNumber":84,"velocity":127,"programNumber":40},{"time":14714.270999999999,"duration":71.42849999999999,"noteNumber":88,"velocity":127,"programNumber":40},{"time":14785.699499999999,"duration":71.42849999999999,"noteNumber":93,"velocity":127,"programNumber":40},{"time":14857.127999999999,"duration":71.42849999999999,"noteNumber":96,"velocity":127,"programNumber":40},{"time":14928.556499999999,"duration":71.42849999999999,"noteNumber":100,"velocity":127,"programNumber":40},{"time":14999.984999999999,"duration":761.9040000000005,"noteNumber":105,"velocity":127,"programNumber":40},{"time":15857.126999999999,"duration":71.42849999999999,"noteNumber":103,"velocity":60,"programNumber":40},{"time":15928.555499999999,"duration":71.42849999999999,"noteNumber":101,"velocity":60,"programNumber":40},{"time":15999.983999999999,"duration":71.42849999999999,"noteNumber":100,"velocity":60,"programNumber":40},{"time":16071.412499999999,"duration":71.42849999999999,"noteNumber":98,"velocity":60,"programNumber":40},{"time":16142.840999999999,"duration":71.42849999999999,"noteNumber":96,"velocity":60,"programNumber":40},{"time":16214.269499999999,"duration":71.42849999999999,"noteNumber":95,"velocity":60,"programNumber":40},{"time":16285.697999999999,"duration":71.42849999999999,"noteNumber":93,"velocity":60,"programNumber":40},{"time":16357.126499999998,"duration":71.4285000000018,"noteNumber":92,"velocity":60,"programNumber":40},{"time":16428.555,"duration":71.4285000000018,"noteNumber":89,"velocity":60,"programNumber":40},{"time":16499.983500000002,"duration":71.4285000000018,"noteNumber":88,"velocity":60,"programNumber":40},{"time":16571.412000000004,"duration":71.4285000000018,"noteNumber":86,"velocity":60,"programNumber":40},{"time":16642.840500000006,"duration":71.4285000000018,"noteNumber":84,"velocity":60,"programNumber":40},{"time":16714.269000000008,"duration":71.4285000000018,"noteNumber":83,"velocity":60,"programNumber":40},{"time":16785.69750000001,"duration":71.4285000000018,"noteNumber":81,"velocity":60,"programNumber":40},{"time":16857.12600000001,"duration":71.4285000000018,"noteNumber":80,"velocity":60,"programNumber":40},{"time":16928.554500000013,"duration":71.4285000000018,"noteNumber":77,"velocity":60,"programNumber":40},{"time":16999.983000000015,"duration":71.4285000000018,"noteNumber":76,"velocity":60,"programNumber":40},{"time":17071.411500000017,"duration":71.4285000000018,"noteNumber":74,"velocity":60,"programNumber":40},{"time":17142.84000000002,"duration":71.4285000000018,"noteNumber":72,"velocity":60,"programNumber":40},{"time":17214.26850000002,"duration":71.4285000000018,"noteNumber":71,"velocity":60,"programNumber":40},{"time":17285.697000000022,"duration":71.4285000000018,"noteNumber":69,"velocity":60,"programNumber":40},{"time":17357.125500000024,"duration":71.4285000000018,"noteNumber":68,"velocity":60,"programNumber":40},{"time":17428.554000000026,"duration":71.4285000000018,"noteNumber":65,"velocity":60,"programNumber":40},{"time":17499.982500000027,"duration":71.4285000000018,"noteNumber":64,"velocity":60,"programNumber":40},{"time":17571.41100000003,"duration":71.4285000000018,"noteNumber":62,"velocity":60,"programNumber":40},{"time":17642.83950000003,"duration":71.4285000000018,"noteNumber":60,"velocity":60,"programNumber":40},{"time":17714.268000000033,"duration":65.47612500000105,"noteNumber":59,"velocity":60,"programNumber":40},{"time":17785.696500000035,"duration":450,"noteNumber":57,"velocity":63,"programNumber":40},{"time":18235.696500000035,"duration":62.5,"noteNumber":58,"velocity":63,"programNumber":40},{"time":18298.196500000035,"duration":71.4285000000018,"noteNumber":59,"velocity":66,"programNumber":40},{"time":18369.625000000036,"duration":83.33324999999968,"noteNumber":60,"velocity":69,"programNumber":40},{"time":18452.958250000036,"duration":44.910124999998516,"noteNumber":61,"velocity":72,"programNumber":40},{"time":18497.868375000035,"duration":44.910124999998516,"noteNumber":62,"velocity":75,"programNumber":40},{"time":18542.778500000033,"duration":44.910124999998516,"noteNumber":63,"velocity":78,"programNumber":40},{"time":18587.68862500003,"duration":44.910124999998516,"noteNumber":64,"velocity":81,"programNumber":40},{"time":18632.59875000003,"duration":44.910124999998516,"noteNumber":65,"velocity":84,"programNumber":40},{"time":18677.50887500003,"duration":44.910124999998516,"noteNumber":66,"velocity":87,"programNumber":40},{"time":18722.419000000027,"duration":44.910124999998516,"noteNumber":67,"velocity":90,"programNumber":40},{"time":18767.329125000026,"duration":44.910124999998516,"noteNumber":68,"velocity":93,"programNumber":40},{"time":18812.239250000024,"duration":44.910124999998516,"noteNumber":69,"velocity":96,"programNumber":40},{"time":18857.149375000023,"duration":44.910124999998516,"noteNumber":70,"velocity":99,"programNumber":40},{"time":18902.05950000002,"duration":44.910124999998516,"noteNumber":71,"velocity":102,"programNumber":40},{"time":18946.96962500002,"duration":44.910124999998516,"noteNumber":72,"velocity":105,"programNumber":40},{"time":18991.87975000002,"duration":44.910124999998516,"noteNumber":73,"velocity":108,"programNumber":40},{"time":19036.789875000017,"duration":44.910124999998516,"noteNumber":74,"velocity":111,"programNumber":40},{"time":19081.700000000015,"duration":44.910124999998516,"noteNumber":75,"velocity":115,"programNumber":40},{"time":19126.610125000014,"duration":44.910124999998516,"noteNumber":76,"velocity":119,"programNumber":40},{"time":19171.520250000012,"duration":44.910124999998516,"noteNumber":77,"velocity":123,"programNumber":40},{"time":19216.43037500001,"duration":44.910124999998516,"noteNumber":78,"velocity":127,"programNumber":40},{"time":19261.34050000001,"duration":44.910124999998516,"noteNumber":79,"velocity":127,"programNumber":40},{"time":19306.250625000008,"duration":44.910124999998516,"noteNumber":80,"velocity":127,"programNumber":40},{"time":19351.160750000006,"duration":44.910124999998516,"noteNumber":81,"velocity":127,"programNumber":40},{"time":19396.070875000005,"duration":44.910124999998516,"noteNumber":80,"velocity":127,"programNumber":40},{"time":19440.981000000003,"duration":44.910124999998516,"noteNumber":79,"velocity":124,"programNumber":40},{"time":19485.891125000002,"duration":44.910124999998516,"noteNumber":78,"velocity":121,"programNumber":40},{"time":19530.80125,"duration":44.910124999998516,"noteNumber":77,"velocity":118,"programNumber":40},{"time":19575.711375,"duration":44.910124999998516,"noteNumber":76,"velocity":115,"programNumber":40},{"time":19620.621499999997,"duration":44.910124999998516,"noteNumber":75,"velocity":112,"programNumber":40},{"time":19665.531624999996,"duration":44.910124999998516,"noteNumber":74,"velocity":109,"programNumber":40},{"time":19710.441749999994,"duration":44.910124999998516,"noteNumber":73,"velocity":106,"programNumber":40},{"time":19755.351874999993,"duration":44.910124999998516,"noteNumber":72,"velocity":103,"programNumber":40},{"time":19800.26199999999,"duration":44.910124999998516,"noteNumber":71,"velocity":100,"programNumber":40},{"time":19845.17212499999,"duration":44.910124999998516,"noteNumber":70,"velocity":97,"programNumber":40},{"time":19890.08224999999,"duration":44.910124999998516,"noteNumber":69,"velocity":93,"programNumber":40},{"time":19934.992374999987,"duration":44.910124999998516,"noteNumber":68,"velocity":89,"programNumber":40},{"time":19979.902499999986,"duration":44.910124999998516,"noteNumber":67,"velocity":85,"programNumber":40},{"time":20024.812624999984,"duration":44.910124999998516,"noteNumber":66,"velocity":81,"programNumber":40},{"time":20069.722749999983,"duration":44.910124999998516,"noteNumber":65,"velocity":77,"programNumber":40},{"time":20114.63287499998,"duration":44.910124999998516,"noteNumber":64,"velocity":73,"programNumber":40},{"time":20159.54299999998,"duration":44.910124999998516,"noteNumber":63,"velocity":69,"programNumber":40},{"time":20204.453124999978,"duration":44.910124999998516,"noteNumber":62,"velocity":65,"programNumber":40},{"time":20249.363249999977,"duration":44.910124999998516,"noteNumber":61,"velocity":61,"programNumber":40},{"time":20294.273374999975,"duration":44.910124999998516,"noteNumber":60,"velocity":57,"programNumber":40},{"time":20339.183499999974,"duration":44.910124999998516,"noteNumber":59,"velocity":53,"programNumber":40},{"time":20384.093624999972,"duration":41.16761458333349,"noteNumber":58,"velocity":49,"programNumber":40},{"time":20429.00374999997,"duration":538.9215000000004,"noteNumber":57,"velocity":45,"programNumber":40},{"time":20967.92524999997,"duration":86.077739583332,"noteNumber":60,"velocity":108,"programNumber":40},{"time":20967.92524999997,"duration":86.077739583332,"noteNumber":64,"velocity":108,"programNumber":40},{"time":21057.745499999968,"duration":299.40083333333314,"noteNumber":72,"velocity":108,"programNumber":40},{"time":21057.745499999968,"duration":299.40083333333314,"noteNumber":81,"velocity":108,"programNumber":40},{"time":21776.307499999966,"duration":63.622677083334565,"noteNumber":57,"velocity":92,"programNumber":40},{"time":21866.127749999967,"duration":63.622677083334565,"noteNumber":60,"velocity":92,"programNumber":40},{"time":21955.947999999968,"duration":59.8801666666659,"noteNumber":64,"velocity":92,"programNumber":40},{"time":22045.76824999997,"duration":59.8801666666659,"noteNumber":60,"velocity":92,"programNumber":40},{"time":22135.58849999997,"duration":63.622677083334565,"noteNumber":59,"velocity":92,"programNumber":40},{"time":22225.40874999997,"duration":63.622677083334565,"noteNumber":62,"velocity":92,"programNumber":40},{"time":22315.22899999997,"duration":59.8801666666659,"noteNumber":64,"velocity":92,"programNumber":40},{"time":22405.04924999997,"duration":59.8801666666659,"noteNumber":62,"velocity":92,"programNumber":40},{"time":22494.86949999997,"duration":63.622677083334565,"noteNumber":60,"velocity":92,"programNumber":40},{"time":22584.689749999972,"duration":63.622677083334565,"noteNumber":69,"velocity":92,"programNumber":40},{"time":22674.509999999973,"duration":63.622677083334565,"noteNumber":67,"velocity":92,"programNumber":40},{"time":22764.330249999974,"duration":59.8801666666659,"noteNumber":65,"velocity":92,"programNumber":40},{"time":22854.150499999974,"duration":63.622677083334565,"noteNumber":64,"velocity":92,"programNumber":40},{"time":22943.970749999975,"duration":63.622677083334565,"noteNumber":62,"velocity":92,"programNumber":40},{"time":23033.790999999976,"duration":63.622677083334565,"noteNumber":60,"velocity":92,"programNumber":40},{"time":23123.611249999976,"duration":59.8801666666659,"noteNumber":59,"velocity":92,"programNumber":40},{"time":23213.431499999977,"duration":63.622677083334565,"noteNumber":57,"velocity":92,"programNumber":40},{"time":23303.251749999978,"duration":63.622677083334565,"noteNumber":60,"velocity":92,"programNumber":40},{"time":23393.07199999998,"duration":59.8801666666659,"noteNumber":64,"velocity":92,"programNumber":40},{"time":23482.89224999998,"duration":59.8801666666659,"noteNumber":60,"velocity":92,"programNumber":40},{"time":23572.71249999998,"duration":63.622677083334565,"noteNumber":59,"velocity":92,"programNumber":40},{"time":23662.53274999998,"duration":63.622677083334565,"noteNumber":62,"velocity":92,"programNumber":40},{"time":23752.35299999998,"duration":59.8801666666659,"noteNumber":64,"velocity":92,"programNumber":40},{"time":23842.17324999998,"duration":59.8801666666659,"noteNumber":62,"velocity":92,"programNumber":40},{"time":23931.993499999982,"duration":63.622677083334565,"noteNumber":60,"velocity":92,"programNumber":40},{"time":24021.813749999983,"duration":63.622677083334565,"noteNumber":69,"velocity":92,"programNumber":40},{"time":24111.633999999984,"duration":63.622677083334565,"noteNumber":67,"velocity":92,"programNumber":40},{"time":24201.454249999984,"duration":59.8801666666659,"noteNumber":65,"velocity":92,"programNumber":40},{"time":24291.274499999985,"duration":63.622677083334565,"noteNumber":64,"velocity":92,"programNumber":40},{"time":24381.094749999986,"duration":63.622677083334565,"noteNumber":62,"velocity":92,"programNumber":40},{"time":24470.914999999986,"duration":63.622677083334565,"noteNumber":60,"velocity":92,"programNumber":40},{"time":24560.735249999987,"duration":59.8801666666659,"noteNumber":59,"velocity":92,"programNumber":40},{"time":24650.555499999988,"duration":63.622677083334565,"noteNumber":57,"velocity":92,"programNumber":40},{"time":24740.37574999999,"duration":63.622677083334565,"noteNumber":61,"velocity":92,"programNumber":40},{"time":24830.19599999999,"duration":59.8801666666659,"noteNumber":64,"velocity":92,"programNumber":40},{"time":24920.01624999999,"duration":59.8801666666659,"noteNumber":61,"velocity":92,"programNumber":40},{"time":25009.83649999999,"duration":63.622677083334565,"noteNumber":57,"velocity":92,"programNumber":40},{"time":25099.65674999999,"duration":63.622677083334565,"noteNumber":62,"velocity":92,"programNumber":40},{"time":25189.47699999999,"duration":59.8801666666659,"noteNumber":65,"velocity":92,"programNumber":40},{"time":25279.297249999992,"duration":59.8801666666659,"noteNumber":62,"velocity":92,"programNumber":40},{"time":25369.117499999993,"duration":63.622677083334565,"noteNumber":55,"velocity":92,"programNumber":40},{"time":25458.937749999994,"duration":63.622677083334565,"noteNumber":59,"velocity":92,"programNumber":40},{"time":25548.757999999994,"duration":63.622677083334565,"noteNumber":65,"velocity":92,"programNumber":40},{"time":25638.578249999995,"duration":59.8801666666659,"noteNumber":59,"velocity":92,"programNumber":40},{"time":25728.398499999996,"duration":63.622677083334565,"noteNumber":55,"velocity":92,"programNumber":40},{"time":25818.218749999996,"duration":63.622677083334565,"noteNumber":60,"velocity":92,"programNumber":40},{"time":25908.038999999997,"duration":63.622677083334565,"noteNumber":64,"velocity":92,"programNumber":40},{"time":25997.859249999998,"duration":59.8801666666659,"noteNumber":60,"velocity":92,"programNumber":40},{"time":26087.6795,"duration":63.622677083334565,"noteNumber":56,"velocity":92,"programNumber":40},{"time":26177.49975,"duration":63.622677083334565,"noteNumber":59,"velocity":92,"programNumber":40},{"time":26267.32,"duration":59.8801666666659,"noteNumber":65,"velocity":92,"programNumber":40},{"time":26357.14025,"duration":59.8801666666659,"noteNumber":62,"velocity":92,"programNumber":40},{"time":26446.9605,"duration":63.622677083334565,"noteNumber":60,"velocity":92,"programNumber":40},{"time":26536.78075,"duration":63.622677083334565,"noteNumber":57,"velocity":92,"programNumber":40},{"time":26626.601000000002,"duration":59.8801666666659,"noteNumber":69,"velocity":92,"programNumber":40},{"time":26716.421250000003,"duration":59.8801666666659,"noteNumber":63,"velocity":92,"programNumber":40},{"time":26806.241500000004,"duration":63.622677083334565,"noteNumber":64,"velocity":92,"programNumber":40},{"time":26896.061750000004,"duration":63.622677083334565,"noteNumber":68,"velocity":92,"programNumber":40},{"time":26985.882000000005,"duration":63.622677083334565,"noteNumber":71,"velocity":92,"programNumber":40},{"time":27075.702250000006,"duration":59.8801666666659,"noteNumber":76,"velocity":92,"programNumber":40},{"time":27165.522500000006,"duration":63.622677083334565,"noteNumber":80,"velocity":92,"programNumber":40},{"time":27255.342750000007,"duration":63.622677083334565,"noteNumber":83,"velocity":92,"programNumber":40},{"time":27345.163000000008,"duration":63.622677083334565,"noteNumber":86,"velocity":92,"programNumber":40},{"time":27434.98325000001,"duration":59.8801666666659,"noteNumber":88,"velocity":92,"programNumber":40},{"time":27524.80350000001,"duration":63.622677083334565,"noteNumber":69,"velocity":92,"programNumber":40},{"time":27614.62375000001,"duration":63.622677083334565,"noteNumber":72,"velocity":92,"programNumber":40},{"time":27704.44400000001,"duration":59.8801666666659,"noteNumber":76,"velocity":92,"programNumber":40},{"time":27794.26425000001,"duration":59.8801666666659,"noteNumber":72,"velocity":92,"programNumber":40},{"time":27884.08450000001,"duration":63.622677083334565,"noteNumber":71,"velocity":92,"programNumber":40},{"time":27973.904750000012,"duration":63.622677083334565,"noteNumber":74,"velocity":92,"programNumber":40},{"time":28063.725000000013,"duration":59.8801666666659,"noteNumber":76,"velocity":92,"programNumber":40},{"time":28153.545250000014,"duration":59.8801666666659,"noteNumber":74,"velocity":92,"programNumber":40},{"time":28243.365500000014,"duration":63.622677083334565,"noteNumber":72,"velocity":92,"programNumber":40},{"time":28333.185750000015,"duration":63.622677083334565,"noteNumber":81,"velocity":92,"programNumber":40},{"time":28423.006000000016,"duration":63.622677083334565,"noteNumber":79,"velocity":92,"programNumber":40},{"time":28512.826250000016,"duration":59.8801666666659,"noteNumber":77,"velocity":92,"programNumber":40},{"time":28602.646500000017,"duration":63.622677083334565,"noteNumber":76,"velocity":92,"programNumber":40},{"time":28692.466750000018,"duration":63.622677083334565,"noteNumber":74,"velocity":92,"programNumber":40},{"time":28782.28700000002,"duration":63.622677083334565,"noteNumber":72,"velocity":92,"programNumber":40},{"time":28872.10725000002,"duration":59.8801666666659,"noteNumber":71,"velocity":92,"programNumber":40},{"time":28961.92750000002,"duration":63.622677083334565,"noteNumber":69,"velocity":92,"programNumber":40},{"time":29051.74775000002,"duration":63.622677083334565,"noteNumber":72,"velocity":92,"programNumber":40},{"time":29141.56800000002,"duration":59.8801666666659,"noteNumber":76,"velocity":92,"programNumber":40},{"time":29231.38825000002,"duration":59.8801666666659,"noteNumber":72,"velocity":92,"programNumber":40},{"time":29321.208500000022,"duration":63.622677083334565,"noteNumber":71,"velocity":92,"programNumber":40},{"time":29411.028750000023,"duration":63.622677083334565,"noteNumber":74,"velocity":92,"programNumber":40},{"time":29500.849000000024,"duration":59.8801666666659,"noteNumber":76,"velocity":92,"programNumber":40},{"time":29590.669250000024,"duration":59.8801666666659,"noteNumber":74,"velocity":92,"programNumber":40},{"time":29680.489500000025,"duration":63.622677083334565,"noteNumber":72,"velocity":92,"programNumber":40},{"time":29770.309750000026,"duration":63.622677083334565,"noteNumber":81,"velocity":92,"programNumber":40},{"time":29860.130000000026,"duration":63.622677083334565,"noteNumber":79,"velocity":92,"programNumber":40},{"time":29949.950250000027,"duration":59.8801666666659,"noteNumber":77,"velocity":92,"programNumber":40},{"time":30039.770500000028,"duration":63.622677083334565,"noteNumber":76,"velocity":92,"programNumber":40},{"time":30129.59075000003,"duration":63.622677083334565,"noteNumber":74,"velocity":92,"programNumber":40},{"time":30219.41100000003,"duration":63.622677083334565,"noteNumber":72,"velocity":92,"programNumber":40},{"time":30309.23125000003,"duration":59.8801666666659,"noteNumber":71,"velocity":92,"programNumber":40},{"time":30399.05150000003,"duration":63.622677083334565,"noteNumber":69,"velocity":92,"programNumber":40},{"time":30488.87175000003,"duration":63.622677083334565,"noteNumber":73,"velocity":92,"programNumber":40},{"time":30578.692000000032,"duration":59.8801666666659,"noteNumber":76,"velocity":92,"programNumber":40},{"time":30668.512250000033,"duration":59.8801666666659,"noteNumber":73,"velocity":92,"programNumber":40},{"time":30758.332500000033,"duration":63.622677083334565,"noteNumber":81,"velocity":92,"programNumber":40},{"time":30848.152750000034,"duration":63.622677083334565,"noteNumber":79,"velocity":92,"programNumber":40},{"time":30937.973000000035,"duration":59.8801666666659,"noteNumber":77,"velocity":92,"programNumber":40},{"time":31027.793250000035,"duration":59.8801666666659,"noteNumber":76,"velocity":92,"programNumber":40},{"time":31117.613500000036,"duration":63.622677083334565,"noteNumber":73,"velocity":92,"programNumber":40},{"time":31207.433750000037,"duration":63.622677083334565,"noteNumber":74,"velocity":92,"programNumber":40},{"time":31297.254000000037,"duration":63.622677083334565,"noteNumber":83,"velocity":92,"programNumber":40},{"time":31387.074250000038,"duration":59.8801666666659,"noteNumber":81,"velocity":92,"programNumber":40},{"time":31476.89450000004,"duration":63.622677083334565,"noteNumber":79,"velocity":92,"programNumber":40},{"time":31566.71475000004,"duration":63.622677083334565,"noteNumber":77,"velocity":92,"programNumber":40},{"time":31656.53500000004,"duration":63.622677083334565,"noteNumber":76,"velocity":92,"programNumber":40},{"time":31746.35525000004,"duration":59.8801666666659,"noteNumber":74,"velocity":92,"programNumber":40},{"time":31836.17550000004,"duration":63.622677083334565,"noteNumber":72,"velocity":92,"programNumber":40},{"time":31925.995750000042,"duration":63.622677083334565,"noteNumber":71,"velocity":92,"programNumber":40},{"time":32015.816000000043,"duration":59.8801666666659,"noteNumber":69,"velocity":92,"programNumber":40},{"time":32105.636250000043,"duration":59.8801666666659,"noteNumber":67,"velocity":92,"programNumber":40},{"time":32195.456500000044,"duration":63.622677083334565,"noteNumber":66,"velocity":92,"programNumber":40},{"time":32285.276750000045,"duration":63.622677083334565,"noteNumber":67,"velocity":92,"programNumber":40},{"time":32375.097000000045,"duration":59.8801666666659,"noteNumber":69,"velocity":92,"programNumber":40},{"time":32464.917250000046,"duration":59.8801666666659,"noteNumber":65,"velocity":92,"programNumber":40},{"time":32554.737500000047,"duration":63.622677083334565,"noteNumber":64,"velocity":92,"programNumber":40},{"time":32644.557750000047,"duration":63.622677083334565,"noteNumber":67,"velocity":92,"programNumber":40},{"time":32734.378000000048,"duration":63.62267708333093,"noteNumber":72,"velocity":92,"programNumber":40},{"time":32824.198250000045,"duration":59.88016666666954,"noteNumber":64,"velocity":92,"programNumber":40},{"time":32914.01850000005,"duration":63.62267708333093,"noteNumber":62,"velocity":92,"programNumber":40},{"time":33003.838750000046,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":33093.65900000004,"duration":63.62267708333093,"noteNumber":71,"velocity":92,"programNumber":40},{"time":33183.47925000004,"duration":59.88016666666954,"noteNumber":62,"velocity":92,"programNumber":40},{"time":33273.299500000045,"duration":63.62267708333093,"noteNumber":60,"velocity":92,"programNumber":40},{"time":33363.11975000004,"duration":63.62267708333093,"noteNumber":64,"velocity":92,"programNumber":40},{"time":33452.94000000004,"duration":59.88016666666954,"noteNumber":69,"velocity":92,"programNumber":40},{"time":33542.76025000004,"duration":59.88016666666954,"noteNumber":60,"velocity":92,"programNumber":40},{"time":33632.58050000005,"duration":63.62267708333093,"noteNumber":59,"velocity":92,"programNumber":40},{"time":33722.400750000044,"duration":63.62267708333093,"noteNumber":62,"velocity":92,"programNumber":40},{"time":33812.22100000004,"duration":59.88016666666954,"noteNumber":67,"velocity":92,"programNumber":40},{"time":33902.041250000046,"duration":59.88016666666954,"noteNumber":59,"velocity":92,"programNumber":40},{"time":33991.86150000005,"duration":63.62267708333093,"noteNumber":57,"velocity":92,"programNumber":40},{"time":34081.68175000005,"duration":63.62267708333093,"noteNumber":60,"velocity":92,"programNumber":40},{"time":34171.502000000044,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":34261.32225000004,"duration":59.88016666666954,"noteNumber":57,"velocity":92,"programNumber":40},{"time":34351.142500000045,"duration":63.62267708333093,"noteNumber":56,"velocity":92,"programNumber":40},{"time":34440.96275000004,"duration":63.62267708333093,"noteNumber":60,"velocity":92,"programNumber":40},{"time":34530.78300000004,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":34620.60325000004,"duration":59.88016666666954,"noteNumber":56,"velocity":92,"programNumber":40},{"time":34710.42350000004,"duration":63.62267708333093,"noteNumber":55,"velocity":92,"programNumber":40},{"time":34800.24375000004,"duration":63.62267708333093,"noteNumber":59,"velocity":92,"programNumber":40},{"time":34890.064000000035,"duration":59.88016666666954,"noteNumber":65,"velocity":92,"programNumber":40},{"time":34979.88425000004,"duration":59.88016666666954,"noteNumber":59,"velocity":92,"programNumber":40},{"time":35069.70450000004,"duration":63.62267708333093,"noteNumber":60,"velocity":92,"programNumber":40},{"time":35159.52475000004,"duration":63.62267708333093,"noteNumber":64,"velocity":92,"programNumber":40},{"time":35249.34500000004,"duration":59.88016666666954,"noteNumber":67,"velocity":92,"programNumber":40},{"time":35339.16525000004,"duration":59.88016666666954,"noteNumber":72,"velocity":92,"programNumber":40},{"time":35428.985500000046,"duration":63.62267708333093,"noteNumber":62,"velocity":92,"programNumber":40},{"time":35518.80575000004,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":35608.62600000004,"duration":63.62267708333093,"noteNumber":71,"velocity":92,"programNumber":40},{"time":35698.44625000004,"duration":59.88016666666954,"noteNumber":74,"velocity":92,"programNumber":40},{"time":35788.26650000004,"duration":63.62267708333093,"noteNumber":64,"velocity":92,"programNumber":40},{"time":35878.08675000004,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":35967.907000000036,"duration":63.62267708333093,"noteNumber":72,"velocity":92,"programNumber":40},{"time":36057.72725000003,"duration":59.88016666666954,"noteNumber":76,"velocity":92,"programNumber":40},{"time":36147.54750000004,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":36237.367750000034,"duration":63.62267708333093,"noteNumber":69,"velocity":92,"programNumber":40},{"time":36327.18800000003,"duration":59.88016666666954,"noteNumber":72,"velocity":92,"programNumber":40},{"time":36417.008250000035,"duration":59.88016666666954,"noteNumber":77,"velocity":92,"programNumber":40},{"time":36506.82850000004,"duration":63.62267708333093,"noteNumber":66,"velocity":92,"programNumber":40},{"time":36596.64875000004,"duration":63.62267708333093,"noteNumber":75,"velocity":92,"programNumber":40},{"time":36686.469000000034,"duration":59.88016666666954,"noteNumber":72,"velocity":92,"programNumber":40},{"time":36776.28925000004,"duration":59.88016666666954,"noteNumber":69,"velocity":92,"programNumber":40},{"time":36866.10950000004,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":36955.92975000004,"duration":63.62267708333093,"noteNumber":79,"velocity":92,"programNumber":40},{"time":37045.75000000004,"duration":63.62267708333093,"noteNumber":76,"velocity":92,"programNumber":40},{"time":37135.57025000003,"duration":59.88016666666954,"noteNumber":72,"velocity":92,"programNumber":40},{"time":37225.39050000004,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":37315.210750000035,"duration":63.62267708333093,"noteNumber":77,"velocity":92,"programNumber":40},{"time":37405.03100000003,"duration":63.62267708333093,"noteNumber":74,"velocity":92,"programNumber":40},{"time":37494.85125000003,"duration":59.88016666666954,"noteNumber":71,"velocity":92,"programNumber":40},{"time":37584.67150000003,"duration":63.62267708333093,"noteNumber":69,"velocity":92,"programNumber":40},{"time":37674.49175000003,"duration":63.62267708333093,"noteNumber":84,"velocity":92,"programNumber":40},{"time":37764.31200000003,"duration":59.88016666666954,"noteNumber":83,"velocity":92,"programNumber":40},{"time":37854.13225000003,"duration":59.88016666666954,"noteNumber":81,"velocity":92,"programNumber":40},{"time":37943.952500000036,"duration":63.62267708333093,"noteNumber":79,"velocity":92,"programNumber":40},{"time":38033.77275000003,"duration":63.62267708333093,"noteNumber":77,"velocity":92,"programNumber":40},{"time":38123.59300000003,"duration":59.88016666666954,"noteNumber":76,"velocity":92,"programNumber":40},{"time":38213.413250000034,"duration":59.88016666666954,"noteNumber":69,"velocity":92,"programNumber":40},{"time":38303.23350000004,"duration":63.62267708333093,"noteNumber":77,"velocity":92,"programNumber":40},{"time":38393.053750000036,"duration":63.62267708333093,"noteNumber":83,"velocity":92,"programNumber":40},{"time":38482.87400000003,"duration":63.62267708333093,"noteNumber":81,"velocity":92,"programNumber":40},{"time":38572.69425000003,"duration":59.88016666666954,"noteNumber":79,"velocity":92,"programNumber":40},{"time":38662.514500000034,"duration":63.62267708333093,"noteNumber":78,"velocity":92,"programNumber":40},{"time":38752.33475000003,"duration":63.62267708333093,"noteNumber":76,"velocity":92,"programNumber":40},{"time":38842.15500000003,"duration":63.62267708333093,"noteNumber":75,"velocity":92,"programNumber":40},{"time":38931.975250000025,"duration":59.88016666666954,"noteNumber":71,"velocity":92,"programNumber":40},{"time":39021.79550000003,"duration":63.62267708333093,"noteNumber":76,"velocity":92,"programNumber":40},{"time":39111.615750000026,"duration":63.62267708333093,"noteNumber":81,"velocity":92,"programNumber":40},{"time":39201.43600000002,"duration":59.88016666666954,"noteNumber":79,"velocity":92,"programNumber":40},{"time":39291.25625000003,"duration":59.88016666666954,"noteNumber":77,"velocity":92,"programNumber":40},{"time":39381.07650000003,"duration":63.62267708333093,"noteNumber":76,"velocity":92,"programNumber":40},{"time":39470.89675000003,"duration":63.62267708333093,"noteNumber":74,"velocity":92,"programNumber":40},{"time":39560.717000000026,"duration":59.88016666666954,"noteNumber":73,"velocity":92,"programNumber":40},{"time":39650.53725000003,"duration":59.88016666666954,"noteNumber":69,"velocity":92,"programNumber":40},{"time":39740.357500000035,"duration":63.62267708333093,"noteNumber":74,"velocity":92,"programNumber":40},{"time":39830.17775000003,"duration":63.62267708333093,"noteNumber":79,"velocity":92,"programNumber":40},{"time":39919.99800000003,"duration":63.62267708333093,"noteNumber":77,"velocity":92,"programNumber":40},{"time":40009.818250000026,"duration":59.88016666666954,"noteNumber":76,"velocity":92,"programNumber":40},{"time":40099.63850000003,"duration":63.62267708333093,"noteNumber":74,"velocity":92,"programNumber":40},{"time":40189.45875000003,"duration":63.62267708333093,"noteNumber":72,"velocity":92,"programNumber":40},{"time":40279.279000000024,"duration":63.62267708333093,"noteNumber":71,"velocity":92,"programNumber":40},{"time":40369.09925000002,"duration":59.88016666666954,"noteNumber":67,"velocity":92,"programNumber":40},{"time":40458.919500000025,"duration":63.62267708333093,"noteNumber":72,"velocity":92,"programNumber":40},{"time":40548.73975000002,"duration":63.62267708333093,"noteNumber":77,"velocity":92,"programNumber":40},{"time":40638.56000000002,"duration":59.88016666666954,"noteNumber":76,"velocity":92,"programNumber":40},{"time":40728.380250000024,"duration":59.88016666666954,"noteNumber":74,"velocity":92,"programNumber":40},{"time":40818.20050000003,"duration":63.62267708333093,"noteNumber":72,"velocity":92,"programNumber":40},{"time":40908.020750000025,"duration":63.62267708333093,"noteNumber":71,"velocity":92,"programNumber":40},{"time":40997.84100000002,"duration":59.88016666666954,"noteNumber":69,"velocity":92,"programNumber":40},{"time":41087.66125000003,"duration":59.88016666666954,"noteNumber":67,"velocity":92,"programNumber":40},{"time":41177.48150000003,"duration":63.62267708333093,"noteNumber":66,"velocity":92,"programNumber":40},{"time":41267.30175000003,"duration":63.62267708333093,"noteNumber":69,"velocity":92,"programNumber":40},{"time":41357.122000000025,"duration":63.62267708333093,"noteNumber":72,"velocity":92,"programNumber":40},{"time":41446.94225000002,"duration":59.88016666666954,"noteNumber":75,"velocity":92,"programNumber":40},{"time":41536.762500000026,"duration":63.62267708333093,"noteNumber":78,"velocity":92,"programNumber":40},{"time":41626.58275000002,"duration":63.62267708333093,"noteNumber":81,"velocity":92,"programNumber":40},{"time":41716.40300000002,"duration":63.62267708333093,"noteNumber":84,"velocity":92,"programNumber":40},{"time":41806.22325000002,"duration":59.88016666666954,"noteNumber":78,"velocity":92,"programNumber":40},{"time":41896.04350000002,"duration":63.62267708333093,"noteNumber":84,"velocity":92,"programNumber":40},{"time":41985.86375000002,"duration":63.62267708333093,"noteNumber":79,"velocity":92,"programNumber":40},{"time":42075.684000000016,"duration":59.88016666666954,"noteNumber":76,"velocity":92,"programNumber":40},{"time":42165.50425000002,"duration":59.88016666666954,"noteNumber":72,"velocity":92,"programNumber":40},{"time":42255.324500000024,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":42345.14475000002,"duration":63.62267708333093,"noteNumber":64,"velocity":92,"programNumber":40},{"time":42434.96500000002,"duration":59.88016666666954,"noteNumber":60,"velocity":92,"programNumber":40},{"time":42524.78525000002,"duration":59.88016666666954,"noteNumber":55,"velocity":92,"programNumber":40},{"time":42614.60550000003,"duration":63.62267708333093,"noteNumber":83,"velocity":92,"programNumber":40},{"time":42704.425750000024,"duration":63.62267708333093,"noteNumber":79,"velocity":92,"programNumber":40},{"time":42794.24600000002,"duration":63.62267708333093,"noteNumber":74,"velocity":92,"programNumber":40},{"time":42884.06625000002,"duration":59.88016666666954,"noteNumber":71,"velocity":92,"programNumber":40},{"time":42973.88650000002,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":43063.70675000002,"duration":63.62267708333093,"noteNumber":62,"velocity":92,"programNumber":40},{"time":43153.52700000002,"duration":63.62267708333093,"noteNumber":59,"velocity":92,"programNumber":40},{"time":43243.34725000001,"duration":59.88016666666954,"noteNumber":55,"velocity":92,"programNumber":40},{"time":43333.16750000002,"duration":63.62267708333093,"noteNumber":57,"velocity":92,"programNumber":40},{"time":43422.987750000015,"duration":63.62267708333093,"noteNumber":84,"velocity":92,"programNumber":40},{"time":43512.80800000001,"duration":63.62267708333093,"noteNumber":83,"velocity":92,"programNumber":40},{"time":43602.62825000001,"duration":59.88016666666954,"noteNumber":82,"velocity":92,"programNumber":40},{"time":43692.44850000001,"duration":63.62267708333093,"noteNumber":81,"velocity":92,"programNumber":40},{"time":43782.26875000001,"duration":63.62267708333093,"noteNumber":80,"velocity":92,"programNumber":40},{"time":43872.08900000001,"duration":59.88016666666954,"noteNumber":79,"velocity":92,"programNumber":40},{"time":43961.90925000001,"duration":59.88016666666954,"noteNumber":78,"velocity":92,"programNumber":40},{"time":44051.729500000016,"duration":63.62267708333093,"noteNumber":77,"velocity":92,"programNumber":40},{"time":44141.54975000001,"duration":63.62267708333093,"noteNumber":76,"velocity":92,"programNumber":40},{"time":44231.37000000001,"duration":63.62267708333093,"noteNumber":75,"velocity":92,"programNumber":40},{"time":44321.19025000001,"duration":59.88016666666954,"noteNumber":74,"velocity":92,"programNumber":40},{"time":44411.01050000001,"duration":63.62267708333093,"noteNumber":73,"velocity":92,"programNumber":40},{"time":44500.83075000001,"duration":63.62267708333093,"noteNumber":72,"velocity":92,"programNumber":40},{"time":44590.651000000005,"duration":63.62267708333093,"noteNumber":71,"velocity":92,"programNumber":40},{"time":44680.47125,"duration":59.88016666666954,"noteNumber":70,"velocity":92,"programNumber":40},{"time":44770.29150000001,"duration":63.62267708333093,"noteNumber":69,"velocity":92,"programNumber":40},{"time":44860.111750000004,"duration":63.62267708333093,"noteNumber":68,"velocity":92,"programNumber":40},{"time":44949.932,"duration":59.88016666666954,"noteNumber":67,"velocity":92,"programNumber":40},{"time":45039.752250000005,"duration":59.88016666666954,"noteNumber":66,"velocity":92,"programNumber":40},{"time":45129.57250000001,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":45219.392750000006,"duration":63.62267708333093,"noteNumber":64,"velocity":92,"programNumber":40},{"time":45309.213,"duration":59.88016666666954,"noteNumber":63,"velocity":92,"programNumber":40},{"time":45399.03325000001,"duration":59.88016666666954,"noteNumber":62,"velocity":92,"programNumber":40},{"time":45488.85350000001,"duration":63.62267708333093,"noteNumber":60,"velocity":92,"programNumber":40},{"time":45578.67375000001,"duration":63.62267708333093,"noteNumber":64,"velocity":92,"programNumber":40},{"time":45668.494000000006,"duration":63.62267708333093,"noteNumber":69,"velocity":92,"programNumber":40},{"time":45758.31425,"duration":59.88016666666954,"noteNumber":67,"velocity":92,"programNumber":40},{"time":45848.13450000001,"duration":63.62267708333093,"noteNumber":59,"velocity":92,"programNumber":40},{"time":45937.954750000004,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":46027.775,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":46117.59525,"duration":59.88016666666954,"noteNumber":62,"velocity":92,"programNumber":40},{"time":46207.4155,"duration":63.62267708333093,"noteNumber":60,"velocity":92,"programNumber":40},{"time":46297.23575,"duration":63.62267708333093,"noteNumber":64,"velocity":92,"programNumber":40},{"time":46387.056,"duration":59.88016666666954,"noteNumber":55,"velocity":92,"programNumber":40},{"time":46476.87625,"duration":59.88016666666954,"noteNumber":60,"velocity":92,"programNumber":40},{"time":46566.696500000005,"duration":63.62267708333093,"noteNumber":59,"velocity":92,"programNumber":40},{"time":46656.51675,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":46746.337,"duration":59.88016666666954,"noteNumber":65,"velocity":92,"programNumber":40},{"time":46836.157250000004,"duration":59.88016666666954,"noteNumber":62,"velocity":92,"programNumber":40},{"time":46925.97750000001,"duration":63.62267708333093,"noteNumber":60,"velocity":92,"programNumber":40},{"time":47015.797750000005,"duration":63.62267708333093,"noteNumber":64,"velocity":92,"programNumber":40},{"time":47105.618,"duration":63.62267708333093,"noteNumber":55,"velocity":92,"programNumber":40},{"time":47195.43825,"duration":59.88016666666954,"noteNumber":60,"velocity":92,"programNumber":40},{"time":47285.2585,"duration":63.62267708333093,"noteNumber":59,"velocity":92,"programNumber":40},{"time":47375.07875,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":47464.899,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":47554.719249999995,"duration":59.88016666666954,"noteNumber":62,"velocity":92,"programNumber":40},{"time":47644.5395,"duration":63.62267708333093,"noteNumber":60,"velocity":92,"programNumber":40},{"time":47734.359749999996,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":47824.17999999999,"duration":59.88016666666954,"noteNumber":64,"velocity":92,"programNumber":40},{"time":47914.00025,"duration":59.88016666666954,"noteNumber":60,"velocity":92,"programNumber":40},{"time":48003.8205,"duration":63.62267708333093,"noteNumber":58,"velocity":92,"programNumber":40},{"time":48093.64075,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":48183.460999999996,"duration":59.88016666666954,"noteNumber":64,"velocity":92,"programNumber":40},{"time":48273.28125,"duration":59.88016666666954,"noteNumber":58,"velocity":92,"programNumber":40},{"time":48363.101500000004,"duration":63.62267708333093,"noteNumber":57,"velocity":92,"programNumber":40},{"time":48452.92175,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":48542.742,"duration":63.62267708333093,"noteNumber":60,"velocity":92,"programNumber":40},{"time":48632.562249999995,"duration":59.88016666666954,"noteNumber":57,"velocity":92,"programNumber":40},{"time":48722.3825,"duration":63.62267708333093,"noteNumber":55,"velocity":92,"programNumber":40},{"time":48812.20275,"duration":63.62267708333093,"noteNumber":64,"velocity":92,"programNumber":40},{"time":48902.022999999994,"duration":63.62267708333093,"noteNumber":58,"velocity":92,"programNumber":40},{"time":48991.84324999999,"duration":59.88016666666954,"noteNumber":55,"velocity":92,"programNumber":40},{"time":49081.663499999995,"duration":63.62267708333093,"noteNumber":57,"velocity":92,"programNumber":40},{"time":49171.48374999999,"duration":63.62267708333093,"noteNumber":77,"velocity":92,"programNumber":40},{"time":49261.30399999999,"duration":59.88016666666954,"noteNumber":72,"velocity":92,"programNumber":40},{"time":49351.12424999999,"duration":59.88016666666954,"noteNumber":69,"velocity":92,"programNumber":40},{"time":49440.9445,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":49530.764749999995,"duration":63.62267708333093,"noteNumber":76,"velocity":92,"programNumber":40},{"time":49620.58499999999,"duration":59.88016666666954,"noteNumber":73,"velocity":92,"programNumber":40},{"time":49710.405249999996,"duration":59.88016666666954,"noteNumber":67,"velocity":92,"programNumber":40},{"time":49800.2255,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":49890.04575,"duration":63.62267708333093,"noteNumber":74,"velocity":92,"programNumber":40},{"time":49979.865999999995,"duration":63.62267708333093,"noteNumber":69,"velocity":92,"programNumber":40},{"time":50069.68624999999,"duration":59.88016666666954,"noteNumber":65,"velocity":92,"programNumber":40},{"time":50159.506499999996,"duration":63.62267708333093,"noteNumber":64,"velocity":92,"programNumber":40},{"time":50249.32674999999,"duration":63.62267708333093,"noteNumber":73,"velocity":92,"programNumber":40},{"time":50339.14699999999,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":50428.96724999999,"duration":59.88016666666954,"noteNumber":64,"velocity":92,"programNumber":40},{"time":50518.78749999999,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":50608.60774999999,"duration":63.62267708333093,"noteNumber":74,"velocity":92,"programNumber":40},{"time":50698.427999999985,"duration":59.88016666666954,"noteNumber":69,"velocity":92,"programNumber":40},{"time":50788.24824999999,"duration":59.88016666666954,"noteNumber":65,"velocity":92,"programNumber":40},{"time":50878.068499999994,"duration":63.62267708333093,"noteNumber":63,"velocity":92,"programNumber":40},{"time":50967.88874999999,"duration":63.62267708333093,"noteNumber":72,"velocity":92,"programNumber":40},{"time":51057.70899999999,"duration":59.88016666666954,"noteNumber":69,"velocity":92,"programNumber":40},{"time":51147.52924999999,"duration":59.88016666666954,"noteNumber":63,"velocity":92,"programNumber":40},{"time":51237.3495,"duration":63.62267708333093,"noteNumber":62,"velocity":92,"programNumber":40},{"time":51327.169749999994,"duration":63.62267708333093,"noteNumber":70,"velocity":92,"programNumber":40},{"time":51416.98999999999,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":51506.81024999999,"duration":59.88016666666954,"noteNumber":62,"velocity":92,"programNumber":40},{"time":51596.63049999999,"duration":63.62267708333093,"noteNumber":60,"velocity":92,"programNumber":40},{"time":51686.45074999999,"duration":63.62267708333093,"noteNumber":69,"velocity":92,"programNumber":40},{"time":51776.270999999986,"duration":63.62267708333093,"noteNumber":63,"velocity":92,"programNumber":40},{"time":51866.09124999998,"duration":59.88016666666954,"noteNumber":60,"velocity":92,"programNumber":40},{"time":51955.91149999999,"duration":63.62267708333093,"noteNumber":62,"velocity":92,"programNumber":40},{"time":52045.731749999984,"duration":63.62267708333093,"noteNumber":82,"velocity":92,"programNumber":40},{"time":52135.55199999998,"duration":59.88016666666954,"noteNumber":77,"velocity":92,"programNumber":40},{"time":52225.372249999986,"duration":59.88016666666954,"noteNumber":74,"velocity":92,"programNumber":40},{"time":52315.19249999999,"duration":63.62267708333093,"noteNumber":72,"velocity":92,"programNumber":40},{"time":52405.01274999999,"duration":63.62267708333093,"noteNumber":81,"velocity":92,"programNumber":40},{"time":52494.832999999984,"duration":59.88016666666954,"noteNumber":78,"velocity":92,"programNumber":40},{"time":52584.65324999999,"duration":59.88016666666954,"noteNumber":72,"velocity":92,"programNumber":40},{"time":52674.47349999999,"duration":63.62267708333093,"noteNumber":70,"velocity":92,"programNumber":40},{"time":52764.29374999999,"duration":63.62267708333093,"noteNumber":79,"velocity":92,"programNumber":40},{"time":52854.11399999999,"duration":63.62267708333093,"noteNumber":74,"velocity":92,"programNumber":40},{"time":52943.934249999984,"duration":59.88016666666954,"noteNumber":70,"velocity":92,"programNumber":40},{"time":53033.75449999999,"duration":63.62267708333093,"noteNumber":69,"velocity":92,"programNumber":40},{"time":53123.574749999985,"duration":63.62267708333093,"noteNumber":78,"velocity":92,"programNumber":40},{"time":53213.39499999998,"duration":63.62267708333093,"noteNumber":72,"velocity":92,"programNumber":40},{"time":53303.21524999998,"duration":59.88016666666954,"noteNumber":69,"velocity":92,"programNumber":40},{"time":53393.03549999998,"duration":63.62267708333093,"noteNumber":70,"velocity":92,"programNumber":40},{"time":53482.85574999998,"duration":63.62267708333093,"noteNumber":79,"velocity":92,"programNumber":40},{"time":53572.67599999998,"duration":59.88016666666954,"noteNumber":74,"velocity":92,"programNumber":40},{"time":53662.49624999998,"duration":59.88016666666954,"noteNumber":70,"velocity":92,"programNumber":40},{"time":53752.316499999986,"duration":63.62267708333093,"noteNumber":68,"velocity":92,"programNumber":40},{"time":53842.13674999998,"duration":63.62267708333093,"noteNumber":77,"velocity":92,"programNumber":40},{"time":53931.95699999998,"duration":59.88016666666954,"noteNumber":74,"velocity":92,"programNumber":40},{"time":54021.777249999985,"duration":59.88016666666954,"noteNumber":68,"velocity":92,"programNumber":40},{"time":54111.59749999999,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":54201.417749999986,"duration":63.62267708333093,"noteNumber":75,"velocity":92,"programNumber":40},{"time":54291.23799999998,"duration":63.62267708333093,"noteNumber":70,"velocity":92,"programNumber":40},{"time":54381.05824999998,"duration":59.88016666666954,"noteNumber":67,"velocity":92,"programNumber":40},{"time":54470.878499999984,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":54560.69874999998,"duration":63.62267708333093,"noteNumber":74,"velocity":92,"programNumber":40},{"time":54650.51899999998,"duration":63.62267708333093,"noteNumber":68,"velocity":92,"programNumber":40},{"time":54740.339249999975,"duration":59.88016666666954,"noteNumber":65,"velocity":92,"programNumber":40},{"time":54830.15949999998,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":54919.97974999998,"duration":63.62267708333093,"noteNumber":87,"velocity":92,"programNumber":40},{"time":55009.799999999974,"duration":59.88016666666954,"noteNumber":82,"velocity":92,"programNumber":40},{"time":55099.62024999998,"duration":59.88016666666954,"noteNumber":79,"velocity":92,"programNumber":40},{"time":55189.44049999998,"duration":63.62267708333093,"noteNumber":77,"velocity":92,"programNumber":40},{"time":55279.26074999998,"duration":63.62267708333093,"noteNumber":86,"velocity":92,"programNumber":40},{"time":55369.08099999998,"duration":59.88016666666954,"noteNumber":83,"velocity":92,"programNumber":40},{"time":55458.90124999998,"duration":59.88016666666954,"noteNumber":77,"velocity":92,"programNumber":40},{"time":55548.721499999985,"duration":63.62267708333093,"noteNumber":75,"velocity":92,"programNumber":40},{"time":55638.54174999998,"duration":63.62267708333093,"noteNumber":84,"velocity":92,"programNumber":40},{"time":55728.36199999998,"duration":63.62267708333093,"noteNumber":79,"velocity":92,"programNumber":40},{"time":55818.182249999976,"duration":59.88016666666954,"noteNumber":75,"velocity":92,"programNumber":40},{"time":55908.00249999998,"duration":63.62267708333093,"noteNumber":74,"velocity":92,"programNumber":40},{"time":55997.82274999998,"duration":63.62267708333093,"noteNumber":83,"velocity":92,"programNumber":40},{"time":56087.642999999975,"duration":63.62267708333093,"noteNumber":77,"velocity":92,"programNumber":40},{"time":56177.46324999997,"duration":59.88016666666954,"noteNumber":74,"velocity":92,"programNumber":40},{"time":56267.283499999976,"duration":63.62267708333093,"noteNumber":72,"velocity":92,"programNumber":40},{"time":56357.10374999997,"duration":63.62267708333093,"noteNumber":84,"velocity":92,"programNumber":40},{"time":56446.92399999997,"duration":59.88016666666954,"noteNumber":83,"velocity":92,"programNumber":40},{"time":56536.744249999974,"duration":59.88016666666954,"noteNumber":82,"velocity":92,"programNumber":40},{"time":56626.56449999998,"duration":63.62267708333093,"noteNumber":81,"velocity":92,"programNumber":40},{"time":56716.384749999976,"duration":63.62267708333093,"noteNumber":80,"velocity":92,"programNumber":40},{"time":56806.20499999997,"duration":59.88016666666954,"noteNumber":79,"velocity":92,"programNumber":40},{"time":56896.02524999998,"duration":59.88016666666954,"noteNumber":78,"velocity":92,"programNumber":40},{"time":56985.84549999998,"duration":63.62267708333093,"noteNumber":77,"velocity":92,"programNumber":40},{"time":57075.66574999998,"duration":63.62267708333093,"noteNumber":76,"velocity":92,"programNumber":40},{"time":57165.485999999975,"duration":63.62267708333093,"noteNumber":75,"velocity":92,"programNumber":40},{"time":57255.30624999997,"duration":59.88016666666954,"noteNumber":74,"velocity":92,"programNumber":40},{"time":57345.12649999998,"duration":63.62267708333093,"noteNumber":73,"velocity":92,"programNumber":40},{"time":57434.946749999974,"duration":63.62267708333093,"noteNumber":72,"velocity":92,"programNumber":40},{"time":57524.76699999997,"duration":63.62267708333093,"noteNumber":71,"velocity":92,"programNumber":40},{"time":57614.58724999997,"duration":59.88016666666954,"noteNumber":70,"velocity":92,"programNumber":40},{"time":57704.40749999997,"duration":63.62267708333093,"noteNumber":69,"velocity":92,"programNumber":40},{"time":57794.22774999997,"duration":63.62267708333093,"noteNumber":68,"velocity":92,"programNumber":40},{"time":57884.047999999966,"duration":59.88016666666954,"noteNumber":67,"velocity":92,"programNumber":40},{"time":57973.86824999997,"duration":59.88016666666954,"noteNumber":66,"velocity":92,"programNumber":40},{"time":58063.688499999975,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":58153.50874999997,"duration":63.62267708333093,"noteNumber":64,"velocity":92,"programNumber":40},{"time":58243.32899999997,"duration":59.88016666666954,"noteNumber":63,"velocity":92,"programNumber":40},{"time":58333.14924999997,"duration":59.88016666666954,"noteNumber":62,"velocity":92,"programNumber":40},{"time":58422.96949999998,"duration":63.62267708333093,"noteNumber":60,"velocity":92,"programNumber":40},{"time":58512.789749999974,"duration":63.62267708333093,"noteNumber":63,"velocity":92,"programNumber":40},{"time":58602.60999999997,"duration":63.62267708333093,"noteNumber":68,"velocity":92,"programNumber":40},{"time":58692.43024999997,"duration":59.88016666666954,"noteNumber":67,"velocity":92,"programNumber":40},{"time":58782.25049999997,"duration":63.62267708333093,"noteNumber":59,"velocity":92,"programNumber":40},{"time":58872.07074999997,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":58961.89099999997,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":59051.711249999964,"duration":59.88016666666954,"noteNumber":62,"velocity":92,"programNumber":40},{"time":59141.53149999997,"duration":63.62267708333093,"noteNumber":60,"velocity":92,"programNumber":40},{"time":59231.351749999965,"duration":63.62267708333093,"noteNumber":80,"velocity":92,"programNumber":40},{"time":59321.17199999996,"duration":59.88016666666954,"noteNumber":79,"velocity":92,"programNumber":40},{"time":59410.99224999997,"duration":59.88016666666954,"noteNumber":78,"velocity":92,"programNumber":40},{"time":59500.81249999997,"duration":63.62267708333093,"noteNumber":77,"velocity":92,"programNumber":40},{"time":59590.63274999997,"duration":63.62267708333093,"noteNumber":76,"velocity":92,"programNumber":40},{"time":59680.452999999965,"duration":59.88016666666954,"noteNumber":75,"velocity":92,"programNumber":40},{"time":59770.27324999997,"duration":59.88016666666954,"noteNumber":74,"velocity":92,"programNumber":40},{"time":59860.09349999997,"duration":63.62267708333093,"noteNumber":73,"velocity":92,"programNumber":40},{"time":59949.91374999997,"duration":63.62267708333093,"noteNumber":72,"velocity":92,"programNumber":40},{"time":60039.73399999997,"duration":63.62267708333093,"noteNumber":71,"velocity":92,"programNumber":40},{"time":60129.554249999965,"duration":59.88016666666954,"noteNumber":70,"velocity":92,"programNumber":40},{"time":60219.37449999997,"duration":63.62267708333093,"noteNumber":69,"velocity":92,"programNumber":40},{"time":60309.194749999966,"duration":63.62267708333093,"noteNumber":68,"velocity":92,"programNumber":40},{"time":60399.01499999996,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":60488.83524999996,"duration":59.88016666666954,"noteNumber":66,"velocity":92,"programNumber":40},{"time":60578.655499999964,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":60668.47574999996,"duration":63.62267708333093,"noteNumber":64,"velocity":92,"programNumber":40},{"time":60758.29599999996,"duration":59.88016666666954,"noteNumber":63,"velocity":92,"programNumber":40},{"time":60848.11624999996,"duration":59.88016666666954,"noteNumber":62,"velocity":92,"programNumber":40},{"time":60937.93649999997,"duration":63.62267708333093,"noteNumber":61,"velocity":92,"programNumber":40},{"time":61027.756749999964,"duration":63.62267708333093,"noteNumber":60,"velocity":92,"programNumber":40},{"time":61117.57699999996,"duration":59.88016666666954,"noteNumber":59,"velocity":92,"programNumber":40},{"time":61207.397249999965,"duration":59.88016666666954,"noteNumber":58,"velocity":92,"programNumber":40},{"time":61297.21749999997,"duration":63.62267708333093,"noteNumber":56,"velocity":92,"programNumber":40},{"time":61387.03774999997,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":61476.857999999964,"duration":63.62267708333093,"noteNumber":63,"velocity":92,"programNumber":40},{"time":61566.67824999996,"duration":59.88016666666954,"noteNumber":60,"velocity":92,"programNumber":40},{"time":61656.498499999965,"duration":63.62267708333093,"noteNumber":55,"velocity":92,"programNumber":40},{"time":61746.31874999996,"duration":63.62267708333093,"noteNumber":63,"velocity":92,"programNumber":40},{"time":61836.13899999996,"duration":63.62267708333093,"noteNumber":61,"velocity":92,"programNumber":40},{"time":61925.959249999956,"duration":59.88016666666954,"noteNumber":58,"velocity":92,"programNumber":40},{"time":62015.77949999996,"duration":63.62267708333093,"noteNumber":56,"velocity":92,"programNumber":40},{"time":62105.59974999996,"duration":63.62267708333093,"noteNumber":68,"velocity":92,"programNumber":40},{"time":62195.419999999955,"duration":59.88016666666954,"noteNumber":63,"velocity":92,"programNumber":40},{"time":62285.24024999996,"duration":59.88016666666954,"noteNumber":60,"velocity":92,"programNumber":40},{"time":62375.06049999996,"duration":63.62267708333093,"noteNumber":59,"velocity":92,"programNumber":40},{"time":62464.88074999996,"duration":63.62267708333093,"noteNumber":66,"velocity":92,"programNumber":40},{"time":62554.70099999996,"duration":59.88016666666954,"noteNumber":63,"velocity":92,"programNumber":40},{"time":62644.52124999996,"duration":59.88016666666954,"noteNumber":60,"velocity":92,"programNumber":40},{"time":62734.341499999966,"duration":63.62267708333093,"noteNumber":58,"velocity":92,"programNumber":40},{"time":62824.16174999996,"duration":63.62267708333093,"noteNumber":70,"velocity":92,"programNumber":40},{"time":62913.98199999996,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":63003.80224999996,"duration":59.88016666666954,"noteNumber":61,"velocity":92,"programNumber":40},{"time":63093.62249999996,"duration":63.62267708333093,"noteNumber":59,"velocity":92,"programNumber":40},{"time":63183.44274999996,"duration":63.62267708333093,"noteNumber":68,"velocity":92,"programNumber":40},{"time":63273.262999999955,"duration":63.62267708333093,"noteNumber":65,"velocity":92,"programNumber":40},{"time":63363.08324999995,"duration":59.88016666666954,"noteNumber":62,"velocity":92,"programNumber":40},{"time":63452.90349999996,"duration":63.62267708333093,"noteNumber":60,"velocity":92,"programNumber":40},{"time":63542.723749999954,"duration":63.62267708333093,"noteNumber":72,"velocity":92,"programNumber":40},{"time":63632.54399999995,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":63722.36424999995,"duration":59.88016666666954,"noteNumber":63,"velocity":92,"programNumber":40},{"time":63812.18449999995,"duration":63.62267708333093,"noteNumber":61,"velocity":92,"programNumber":40},{"time":63902.00474999995,"duration":63.62267708333093,"noteNumber":70,"velocity":92,"programNumber":40},{"time":63991.824999999946,"duration":59.88016666666954,"noteNumber":67,"velocity":92,"programNumber":40},{"time":64081.64524999995,"duration":59.88016666666954,"noteNumber":61,"velocity":92,"programNumber":40},{"time":64171.465499999955,"duration":63.62267708333093,"noteNumber":58,"velocity":92,"programNumber":40},{"time":64261.28574999995,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":64351.10599999995,"duration":63.62267708333093,"noteNumber":64,"velocity":92,"programNumber":40},{"time":64440.926249999946,"duration":59.88016666666954,"noteNumber":72,"velocity":92,"programNumber":40},{"time":64530.74649999995,"duration":63.62267708333093,"noteNumber":67,"velocity":92,"programNumber":40},{"time":64620.56674999995,"duration":63.62267708333093,"noteNumber":76,"velocity":92,"programNumber":40},{"time":64712.415177083276,"duration":66.40625,"noteNumber":72,"velocity":92,"programNumber":40},{"time":64807.047177083274,"duration":66.66666666666424,"noteNumber":82,"velocity":92,"programNumber":40},{"time":64903.65392708327,"duration":66.40625,"noteNumber":80,"velocity":92,"programNumber":40},{"time":64999.22684374994,"duration":81.73068749999948,"noteNumber":77,"velocity":92,"programNumber":40},{"time":65120.73021874994,"duration":95.23799999999756,"noteNumber":72,"velocity":92,"programNumber":40},{"time":65265.968218749935,"duration":90.90899999999965,"noteNumber":68,"velocity":92,"programNumber":40},{"time":65398.5438854166,"duration":96.59081249999872,"noteNumber":64,"velocity":92,"programNumber":40},{"time":65536.8013229166,"duration":106.25,"noteNumber":65,"velocity":92,"programNumber":40},{"time":65691.6623854166,"duration":90.90899999999965,"noteNumber":68,"velocity":92,"programNumber":40},{"time":65828.0258854166,"duration":90.90899999999965,"noteNumber":65,"velocity":92,"programNumber":40},{"time":65964.38938541661,"duration":96.59081249999872,"noteNumber":63,"velocity":92,"programNumber":40},{"time":66100.7528854166,"duration":96.59081249999872,"noteNumber":61,"velocity":92,"programNumber":40},{"time":66237.1163854166,"duration":96.59081249999872,"noteNumber":60,"velocity":92,"programNumber":40},{"time":66373.47988541659,"duration":90.90899999999965,"noteNumber":58,"velocity":92,"programNumber":40},{"time":66509.84338541659,"duration":96.59081249999872,"noteNumber":69,"velocity":92,"programNumber":40},{"time":66646.20688541658,"duration":96.59081249999872,"noteNumber":70,"velocity":92,"programNumber":40},{"time":66782.57038541658,"duration":96.59081249999872,"noteNumber":73,"velocity":92,"programNumber":40},{"time":66918.93388541657,"duration":90.90899999999965,"noteNumber":70,"velocity":92,"programNumber":40},{"time":67055.29738541658,"duration":96.59081249999872,"noteNumber":68,"velocity":92,"programNumber":40},{"time":67191.66088541657,"duration":96.59081249999872,"noteNumber":67,"velocity":92,"programNumber":40},{"time":67328.02438541656,"duration":90.90899999999965,"noteNumber":65,"velocity":92,"programNumber":40},{"time":67464.38788541657,"duration":90.90899999999965,"noteNumber":63,"velocity":92,"programNumber":40},{"time":67600.75138541657,"duration":96.59081249999872,"noteNumber":74,"velocity":92,"programNumber":40},{"time":67737.11488541657,"duration":96.59081249999872,"noteNumber":75,"velocity":92,"programNumber":40},{"time":67873.47838541656,"duration":90.90899999999965,"noteNumber":79,"velocity":92,"programNumber":40},{"time":68009.84188541656,"duration":90.90899999999965,"noteNumber":75,"velocity":92,"programNumber":40},{"time":68146.20538541657,"duration":96.59081249999872,"noteNumber":80,"velocity":92,"programNumber":40},{"time":68282.56888541656,"duration":96.59081249999872,"noteNumber":75,"velocity":92,"programNumber":40},{"time":68418.93238541656,"duration":96.59081249999872,"noteNumber":72,"velocity":92,"programNumber":40},{"time":68555.29588541655,"duration":90.90899999999965,"noteNumber":68,"velocity":92,"programNumber":40},{"time":68691.65938541655,"duration":96.59081249999872,"noteNumber":67,"velocity":92,"programNumber":40},{"time":68828.02288541655,"duration":96.59081249999872,"noteNumber":68,"velocity":92,"programNumber":40},{"time":68964.38638541654,"duration":96.59081249999872,"noteNumber":66,"velocity":92,"programNumber":40},{"time":69100.74988541653,"duration":90.90899999999965,"noteNumber":63,"velocity":92,"programNumber":40},{"time":69237.11338541654,"duration":96.59081249999872,"noteNumber":61,"velocity":92,"programNumber":40},{"time":69373.47688541653,"duration":96.59081249999872,"noteNumber":65,"velocity":92,"programNumber":40},{"time":69509.84038541652,"duration":90.90899999999965,"noteNumber":68,"velocity":92,"programNumber":40},{"time":69646.20388541653,"duration":90.90899999999965,"noteNumber":65,"velocity":92,"programNumber":40},{"time":69782.56738541654,"duration":96.59081249999872,"noteNumber":63,"velocity":92,"programNumber":40},{"time":69918.93088541653,"duration":96.59081249999872,"noteNumber":66,"velocity":92,"programNumber":40},{"time":70055.29438541652,"duration":90.90899999999965,"noteNumber":68,"velocity":92,"programNumber":40},{"time":70191.65788541653,"duration":90.90899999999965,"noteNumber":66,"velocity":92,"programNumber":40},{"time":70328.02138541653,"duration":96.59081249999872,"noteNumber":65,"velocity":92,"programNumber":40},{"time":70464.38488541653,"duration":96.59081249999872,"noteNumber":73,"velocity":92,"programNumber":40},{"time":70600.74838541652,"duration":96.59081249999872,"noteNumber":72,"velocity":92,"programNumber":40},{"time":70737.11188541651,"duration":90.90899999999965,"noteNumber":70,"velocity":92,"programNumber":40},{"time":70873.47538541652,"duration":96.59081249999872,"noteNumber":68,"velocity":92,"programNumber":40},{"time":71009.83888541651,"duration":96.59081249999872,"noteNumber":66,"velocity":92,"programNumber":40},{"time":71146.2023854165,"duration":96.59081249999872,"noteNumber":65,"velocity":92,"programNumber":40},{"time":71282.5658854165,"duration":90.90899999999965,"noteNumber":63,"velocity":92,"programNumber":40},{"time":71418.9293854165,"duration":96.59081249999872,"noteNumber":61,"velocity":92,"programNumber":40},{"time":71555.2928854165,"duration":96.59081249999872,"noteNumber":65,"velocity":92,"programNumber":40},{"time":71691.65638541649,"duration":90.90899999999965,"noteNumber":68,"velocity":92,"programNumber":40},{"time":71828.01988541649,"duration":90.90899999999965,"noteNumber":65,"velocity":92,"programNumber":40},{"time":71964.3833854165,"duration":96.59081249999872,"noteNumber":61,"velocity":92,"programNumber":40},{"time":72100.74688541649,"duration":96.59081249999872,"noteNumber":68,"velocity":92,"programNumber":40},{"time":72237.11038541648,"duration":90.90899999999965,"noteNumber":71,"velocity":92,"programNumber":40},{"time":72373.47388541649,"duration":90.90899999999965,"noteNumber":68,"velocity":92,"programNumber":40},{"time":72509.8373854165,"duration":96.59081249999872,"noteNumber":62,"velocity":92,"programNumber":40},{"time":72646.20088541649,"duration":96.59081249999872,"noteNumber":68,"velocity":92,"programNumber":40},{"time":72782.56438541648,"duration":96.59081249999872,"noteNumber":71,"velocity":92,"programNumber":40},{"time":72918.92788541647,"duration":90.90899999999965,"noteNumber":68,"velocity":92,"programNumber":40},{"time":73055.29138541648,"duration":96.59081249999872,"noteNumber":63,"velocity":92,"programNumber":40},{"time":73191.65488541647,"duration":96.59081249999872,"noteNumber":66,"velocity":92,"programNumber":40},{"time":73328.01838541646,"duration":96.59081249999872,"noteNumber":70,"velocity":92,"programNumber":40},{"time":73464.38188541646,"duration":90.90899999999965,"noteNumber":66,"velocity":92,"programNumber":40},{"time":73600.74538541646,"duration":96.59081249999872,"noteNumber":63,"velocity":92,"programNumber":40},{"time":73737.10888541646,"duration":96.59081249999872,"noteNumber":67,"velocity":92,"programNumber":40},{"time":73873.47238541645,"duration":90.90899999999965,"noteNumber":70,"velocity":92,"programNumber":40},{"time":74009.83588541645,"duration":90.90899999999965,"noteNumber":67,"velocity":92,"programNumber":40},{"time":74146.19938541646,"duration":96.59081249999872,"noteNumber":65,"velocity":92,"programNumber":40},{"time":74282.56288541645,"duration":96.59081249999872,"noteNumber":68,"velocity":92,"programNumber":40},{"time":74418.92638541645,"duration":90.90899999999965,"noteNumber":70,"velocity":92,"programNumber":40},{"time":74555.28988541645,"duration":90.90899999999965,"noteNumber":68,"velocity":92,"programNumber":40},{"time":74691.65338541646,"duration":96.59081249999872,"noteNumber":67,"velocity":92,"programNumber":40},{"time":74828.01688541645,"duration":96.59081249999872,"noteNumber":75,"velocity":92,"programNumber":40},{"time":74964.38038541644,"duration":96.59081249999872,"noteNumber":74,"velocity":92,"programNumber":40},{"time":75100.74388541644,"duration":90.90899999999965,"noteNumber":72,"velocity":92,"programNumber":40},{"time":75237.10738541644,"duration":96.59081249999872,"noteNumber":70,"velocity":92,"programNumber":40},{"time":75373.47088541643,"duration":96.59081249999872,"noteNumber":68,"velocity":92,"programNumber":40},{"time":75509.83438541643,"duration":96.59081249999872,"noteNumber":67,"velocity":92,"programNumber":40},{"time":75646.19788541642,"duration":90.90899999999965,"noteNumber":65,"velocity":92,"programNumber":40},{"time":75782.56138541643,"duration":96.59081249999872,"noteNumber":63,"velocity":92,"programNumber":40},{"time":75918.92488541642,"duration":96.59081249999872,"noteNumber":67,"velocity":92,"programNumber":40},{"time":76055.28838541641,"duration":90.90899999999965,"noteNumber":70,"velocity":92,"programNumber":40},{"time":76191.65188541642,"duration":90.90899999999965,"noteNumber":67,"velocity":92,"programNumber":40},{"time":76328.01538541642,"duration":96.59081249999872,"noteNumber":63,"velocity":92,"programNumber":40},{"time":76464.37888541642,"duration":96.59081249999872,"noteNumber":70,"velocity":92,"programNumber":40},{"time":76600.74238541641,"duration":90.90899999999965,"noteNumber":73,"velocity":92,"programNumber":40},{"time":76737.10588541641,"duration":90.90899999999965,"noteNumber":70,"velocity":92,"programNumber":40},{"time":76873.46938541642,"duration":96.59081249999872,"noteNumber":64,"velocity":92,"programNumber":40},{"time":77009.83288541641,"duration":96.59081249999872,"noteNumber":70,"velocity":92,"programNumber":40},{"time":77146.1963854164,"duration":96.59081249999872,"noteNumber":73,"velocity":92,"programNumber":40},{"time":77282.5598854164,"duration":90.90899999999965,"noteNumber":70,"velocity":92,"programNumber":40},{"time":77418.9233854164,"duration":96.59081249999872,"noteNumber":65,"velocity":92,"programNumber":40},{"time":77555.2868854164,"duration":96.59081249999872,"noteNumber":68,"velocity":92,"programNumber":40},{"time":77691.65038541639,"duration":96.59081249999872,"noteNumber":72,"velocity":92,"programNumber":40},{"time":77828.01388541638,"duration":90.90899999999965,"noteNumber":68,"velocity":92,"programNumber":40},{"time":77964.37738541639,"duration":96.59081249999872,"noteNumber":66,"velocity":92,"programNumber":40},{"time":78100.74088541638,"duration":96.59081249999872,"noteNumber":75,"velocity":92,"programNumber":40},{"time":78237.10438541637,"duration":90.90899999999965,"noteNumber":72,"velocity":92,"programNumber":40},{"time":78373.46788541638,"duration":90.90899999999965,"noteNumber":66,"velocity":92,"programNumber":40},{"time":78509.83138541639,"duration":96.59081249999872,"noteNumber":65,"velocity":92,"programNumber":40},{"time":78646.19488541638,"duration":96.59081249999872,"noteNumber":77,"velocity":92,"programNumber":40},{"time":78782.55838541637,"duration":90.90899999999965,"noteNumber":73,"velocity":92,"programNumber":40},{"time":78918.92188541638,"duration":90.90899999999965,"noteNumber":70,"velocity":92,"programNumber":40},{"time":79055.28538541638,"duration":96.59081249999872,"noteNumber":68,"velocity":92,"programNumber":40},{"time":79191.64888541638,"duration":96.59081249999872,"noteNumber":77,"velocity":92,"programNumber":40},{"time":79328.01238541637,"duration":96.59081249999872,"noteNumber":74,"velocity":92,"programNumber":40},{"time":79464.37588541636,"duration":90.90899999999965,"noteNumber":68,"velocity":92,"programNumber":40},{"time":79600.73938541637,"duration":96.59081249999872,"noteNumber":66,"velocity":92,"programNumber":40},{"time":79737.10288541636,"duration":96.59081249999872,"noteNumber":78,"velocity":92,"programNumber":40},{"time":79873.46638541635,"duration":96.59081249999872,"noteNumber":75,"velocity":92,"programNumber":40},{"time":80009.82988541634,"duration":90.90899999999965,"noteNumber":70,"velocity":92,"programNumber":40},{"time":80146.19338541635,"duration":96.59081249999872,"noteNumber":66,"velocity":92,"programNumber":40},{"time":80282.55688541634,"duration":96.59081249999872,"noteNumber":76,"velocity":92,"programNumber":40},{"time":80418.92038541634,"duration":90.90899999999965,"noteNumber":73,"velocity":92,"programNumber":40},{"time":80555.28388541634,"duration":90.90899999999965,"noteNumber":70,"velocity":92,"programNumber":40},{"time":80691.64738541635,"duration":96.59081249999872,"noteNumber":66,"velocity":92,"programNumber":40},{"time":80828.01088541634,"duration":96.59081249999872,"noteNumber":64,"velocity":92,"programNumber":40},{"time":80964.37438541633,"duration":90.90899999999965,"noteNumber":61,"velocity":92,"programNumber":40},{"time":81100.73788541634,"duration":90.90899999999965,"noteNumber":58,"velocity":92,"programNumber":40},{"time":81237.10138541635,"duration":96.59081249999872,"noteNumber":59,"velocity":92,"programNumber":40},{"time":81373.46488541634,"duration":96.59081249999872,"noteNumber":63,"velocity":92,"programNumber":40},{"time":81509.82838541633,"duration":96.59081249999872,"noteNumber":66,"velocity":92,"programNumber":40},{"time":81646.19188541632,"duration":90.90899999999965,"noteNumber":71,"velocity":92,"programNumber":40},{"time":81782.55538541633,"duration":96.59081249999872,"noteNumber":75,"velocity":92,"programNumber":40},{"time":81918.91888541632,"duration":96.59081249999872,"noteNumber":78,"velocity":92,"programNumber":40},{"time":82055.28238541631,"duration":96.59081249999872,"noteNumber":83,"velocity":92,"programNumber":40},{"time":82191.6458854163,"duration":90.90899999999965,"noteNumber":87,"velocity":92,"programNumber":40},{"time":82328.00938541631,"duration":96.59081249999872,"noteNumber":63,"velocity":92,"programNumber":40},{"time":82464.3728854163,"duration":96.59081249999872,"noteNumber":73,"velocity":92,"programNumber":40},{"time":82600.7363854163,"duration":90.90899999999965,"noteNumber":70,"velocity":92,"programNumber":40},{"time":82737.0998854163,"duration":90.90899999999965,"noteNumber":67,"velocity":92,"programNumber":40},{"time":82873.46338541631,"duration":96.59081249999872,"noteNumber":63,"velocity":92,"programNumber":40},{"time":83009.8268854163,"duration":96.59081249999872,"noteNumber":61,"velocity":92,"programNumber":40},{"time":83146.1903854163,"duration":90.90899999999965,"noteNumber":58,"velocity":92,"programNumber":40},{"time":83282.5538854163,"duration":90.90899999999965,"noteNumber":55,"velocity":92,"programNumber":40},{"time":83418.91738541631,"duration":96.59081249999872,"noteNumber":56,"velocity":92,"programNumber":40},{"time":83555.2808854163,"duration":96.59081249999872,"noteNumber":59,"velocity":92,"programNumber":40},{"time":83691.6443854163,"duration":96.59081249999872,"noteNumber":63,"velocity":92,"programNumber":40},{"time":83828.00788541629,"duration":90.90899999999965,"noteNumber":68,"velocity":92,"programNumber":40},{"time":83964.37138541629,"duration":96.59081249999872,"noteNumber":71,"velocity":92,"programNumber":40},{"time":84100.73488541628,"duration":96.59081249999872,"noteNumber":75,"velocity":92,"programNumber":40},{"time":84237.09838541628,"duration":96.59081249999872,"noteNumber":80,"velocity":92,"programNumber":40},{"time":84373.46188541627,"duration":90.90899999999965,"noteNumber":83,"velocity":92,"programNumber":40},{"time":84509.82538541628,"duration":96.59081249999872,"noteNumber":64,"velocity":92,"programNumber":40},{"time":84646.18888541627,"duration":96.59081249999872,"noteNumber":68,"velocity":92,"programNumber":40},{"time":84782.55238541626,"duration":90.90899999999965,"noteNumber":71,"velocity":92,"programNumber":40},{"time":84918.91588541627,"duration":90.90899999999965,"noteNumber":68,"velocity":92,"programNumber":40},{"time":85055.27938541627,"duration":96.59081249999872,"noteNumber":66,"velocity":92,"programNumber":40},{"time":85191.64288541627,"duration":96.59081249999872,"noteNumber":69,"velocity":92,"programNumber":40},{"time":85328.00638541626,"duration":90.90899999999965,"noteNumber":71,"velocity":92,"programNumber":40},{"time":85464.36988541626,"duration":90.90899999999965,"noteNumber":69,"velocity":92,"programNumber":40},{"time":85600.73338541627,"duration":96.59081249999872,"noteNumber":68,"velocity":92,"programNumber":40},{"time":85737.09688541626,"duration":96.59081249999872,"noteNumber":71,"velocity":92,"programNumber":40},{"time":85873.46038541626,"duration":96.59081249999872,"noteNumber":76,"velocity":92,"programNumber":40},{"time":86009.82388541625,"duration":90.90899999999965,"noteNumber":71,"velocity":92,"programNumber":40},{"time":86146.18738541625,"duration":96.59081249999872,"noteNumber":69,"velocity":92,"programNumber":40},{"time":86282.55088541625,"duration":96.59081249999872,"noteNumber":72,"velocity":92,"programNumber":40},{"time":86418.91438541624,"duration":96.59081249999872,"noteNumber":76,"velocity":92,"programNumber":40},{"time":86555.27788541623,"duration":90.90899999999965,"noteNumber":72,"velocity":92,"programNumber":40},{"time":86691.64138541624,"duration":96.59081249999872,"noteNumber":70,"velocity":92,"programNumber":40},{"time":86828.00488541623,"duration":96.59081249999872,"noteNumber":73,"velocity":92,"programNumber":40},{"time":86964.36838541622,"duration":90.90899999999965,"noteNumber":78,"velocity":92,"programNumber":40},{"time":87100.73188541623,"duration":90.90899999999965,"noteNumber":73,"velocity":92,"programNumber":40},{"time":87237.09538541624,"duration":96.59081249999872,"noteNumber":71,"velocity":92,"programNumber":40},{"time":87373.45888541623,"duration":96.59081249999872,"noteNumber":75,"velocity":92,"programNumber":40},{"time":87509.82238541622,"duration":90.90899999999965,"noteNumber":78,"velocity":92,"programNumber":40},{"time":87646.18588541623,"duration":90.90899999999965,"noteNumber":75,"velocity":92,"programNumber":40},{"time":87782.54938541623,"duration":96.59081249999872,"noteNumber":72,"velocity":92,"programNumber":40},{"time":87918.91288541623,"duration":96.59081249999872,"noteNumber":75,"velocity":92,"programNumber":40},{"time":88055.27638541622,"duration":96.59081249999872,"noteNumber":80,"velocity":92,"programNumber":40},{"time":88191.63988541621,"duration":90.90899999999965,"noteNumber":75,"velocity":92,"programNumber":40},{"time":88328.00338541622,"duration":96.59081249999872,"noteNumber":73,"velocity":92,"programNumber":40},{"time":88464.36688541621,"duration":96.59081249999872,"noteNumber":76,"velocity":92,"programNumber":40},{"time":88600.7303854162,"duration":96.59081249999872,"noteNumber":82,"velocity":92,"programNumber":40},{"time":88737.0938854162,"duration":90.90899999999965,"noteNumber":76,"velocity":92,"programNumber":40},{"time":88873.4573854162,"duration":96.59081249999872,"noteNumber":75,"velocity":92,"programNumber":40},{"time":89009.8208854162,"duration":96.59081249999872,"noteNumber":78,"velocity":92,"programNumber":40},{"time":89146.18438541619,"duration":90.90899999999965,"noteNumber":83,"velocity":92,"programNumber":40},{"time":89282.54788541619,"duration":90.90899999999965,"noteNumber":78,"velocity":92,"programNumber":40},{"time":89418.9113854162,"duration":96.59081249999872,"noteNumber":76,"velocity":92,"programNumber":40},{"time":89555.27488541619,"duration":96.59081249999872,"noteNumber":80,"velocity":92,"programNumber":40},{"time":89691.63838541618,"duration":90.90899999999965,"noteNumber":83,"velocity":92,"programNumber":40},{"time":89828.00188541619,"duration":90.90899999999965,"noteNumber":80,"velocity":92,"programNumber":40},{"time":89964.3653854162,"duration":96.59081249999872,"noteNumber":76,"velocity":92,"programNumber":40},{"time":90100.72888541619,"duration":96.59081249999872,"noteNumber":79,"velocity":92,"programNumber":40},{"time":90237.09238541618,"duration":96.59081249999872,"noteNumber":82,"velocity":92,"programNumber":40},{"time":90373.45588541617,"duration":90.90899999999965,"noteNumber":79,"velocity":92,"programNumber":40},{"time":90509.81938541618,"duration":96.59081249999872,"noteNumber":75,"velocity":92,"programNumber":40},{"time":90646.18288541617,"duration":96.59081249999872,"noteNumber":78,"velocity":92,"programNumber":40},{"time":90782.54638541616,"duration":96.59081249999872,"noteNumber":83,"velocity":92,"programNumber":40},{"time":90918.90988541616,"duration":90.90899999999965,"noteNumber":78,"velocity":92,"programNumber":40},{"time":91055.27338541616,"duration":96.59081249999872,"noteNumber":74,"velocity":92,"programNumber":40},{"time":91191.63688541616,"duration":96.59081249999872,"noteNumber":77,"velocity":92,"programNumber":40},{"time":91328.00038541615,"duration":90.90899999999965,"noteNumber":80,"velocity":92,"programNumber":40},{"time":91464.36388541615,"duration":90.90899999999965,"noteNumber":77,"velocity":92,"programNumber":40},{"time":91600.72738541616,"duration":96.59081249999872,"noteNumber":73,"velocity":92,"programNumber":40},{"time":91737.09088541615,"duration":96.59081249999872,"noteNumber":76,"velocity":92,"programNumber":40},{"time":91873.45438541615,"duration":90.90899999999965,"noteNumber":81,"velocity":92,"programNumber":40},{"time":92009.81788541615,"duration":90.90899999999965,"noteNumber":76,"velocity":92,"programNumber":40},{"time":92146.18138541616,"duration":96.59081249999872,"noteNumber":72,"velocity":92,"programNumber":40},{"time":92282.54488541615,"duration":96.59081249999872,"noteNumber":75,"velocity":92,"programNumber":40},{"time":92418.90838541614,"duration":96.59081249999872,"noteNumber":78,"velocity":92,"programNumber":40},{"time":92555.27188541614,"duration":90.90899999999965,"noteNumber":75,"velocity":92,"programNumber":40},{"time":92691.63538541614,"duration":96.59081249999872,"noteNumber":71,"velocity":92,"programNumber":40},{"time":92827.99888541613,"duration":96.59081249999872,"noteNumber":74,"velocity":92,"programNumber":40},{"time":92964.36238541613,"duration":96.59081249999872,"noteNumber":79,"velocity":92,"programNumber":40},{"time":93100.72588541612,"duration":90.90899999999965,"noteNumber":74,"velocity":92,"programNumber":40},{"time":93237.08938541613,"duration":96.59081249999872,"noteNumber":70,"velocity":92,"programNumber":40},{"time":93373.45288541612,"duration":96.59081249999872,"noteNumber":73,"velocity":92,"programNumber":40},{"time":93509.81638541611,"duration":90.90899999999965,"noteNumber":76,"velocity":92,"programNumber":40},{"time":93646.17988541612,"duration":90.90899999999965,"noteNumber":73,"velocity":92,"programNumber":40},{"time":93782.54338541612,"duration":96.59081249999872,"noteNumber":69,"velocity":92,"programNumber":40},{"time":93918.90688541612,"duration":96.59081249999872,"noteNumber":72,"velocity":92,"programNumber":40},{"time":94055.27038541611,"duration":90.90899999999965,"noteNumber":77,"velocity":92,"programNumber":40},{"time":94191.63388541611,"duration":90.90899999999965,"noteNumber":72,"velocity":92,"programNumber":40},{"time":94327.99738541612,"duration":96.59081249999872,"noteNumber":69,"velocity":92,"programNumber":40},{"time":94464.36088541611,"duration":96.59081249999872,"noteNumber":72,"velocity":92,"programNumber":40},{"time":94600.7243854161,"duration":96.59081249999872,"noteNumber":75,"velocity":92,"programNumber":40},{"time":94737.0878854161,"duration":90.90899999999965,"noteNumber":72,"velocity":92,"programNumber":40},{"time":94873.4513854161,"duration":96.59081249999872,"noteNumber":68,"velocity":92,"programNumber":40},{"time":95009.8148854161,"duration":96.59081249999872,"noteNumber":71,"velocity":92,"programNumber":40},{"time":95146.17838541609,"duration":96.59081249999872,"noteNumber":76,"velocity":92,"programNumber":40},{"time":95282.54188541608,"duration":90.90899999999965,"noteNumber":71,"velocity":92,"programNumber":40},{"time":95418.90538541609,"duration":96.59081249999872,"noteNumber":67,"velocity":92,"programNumber":40},{"time":95555.26888541608,"duration":96.59081249999872,"noteNumber":70,"velocity":92,"programNumber":40},{"time":95691.63238541607,"duration":90.90899999999965,"noteNumber":73,"velocity":92,"programNumber":40},{"time":95827.99588541608,"duration":90.90899999999965,"noteNumber":70,"velocity":92,"programNumber":40},{"time":95964.35938541609,"duration":96.59081249999872,"noteNumber":66,"velocity":92,"programNumber":40},{"time":96100.72288541608,"duration":96.59081249999872,"noteNumber":69,"velocity":92,"programNumber":40},{"time":96237.08638541607,"duration":90.90899999999965,"noteNumber":74,"velocity":92,"programNumber":40},{"time":96373.44988541608,"duration":90.90899999999965,"noteNumber":69,"velocity":92,"programNumber":40},{"time":96509.81338541608,"duration":96.59081249999872,"noteNumber":65,"velocity":92,"programNumber":40},{"time":96646.17688541608,"duration":96.59081249999872,"noteNumber":69,"velocity":92,"programNumber":40},{"time":96782.54038541607,"duration":96.59081249999872,"noteNumber":74,"velocity":92,"programNumber":40},{"time":96918.90388541606,"duration":90.90899999999965,"noteNumber":69,"velocity":92,"programNumber":40},{"time":97055.26738541607,"duration":96.59081249999872,"noteNumber":65,"velocity":92,"programNumber":40},{"time":97191.63088541606,"duration":96.59081249999872,"noteNumber":69,"velocity":92,"programNumber":40},{"time":97327.99438541605,"duration":96.59081249999872,"noteNumber":75,"velocity":92,"programNumber":40},{"time":97464.35788541604,"duration":90.90899999999965,"noteNumber":69,"velocity":92,"programNumber":40},{"time":97600.72138541605,"duration":96.59081249999872,"noteNumber":64,"velocity":92,"programNumber":40},{"time":97737.08488541604,"duration":96.59081249999872,"noteNumber":68,"velocity":92,"programNumber":40},{"time":97873.44838541604,"duration":90.90899999999965,"noteNumber":71,"velocity":92,"programNumber":40},{"time":98009.81188541604,"duration":90.90899999999965,"noteNumber":76,"velocity":92,"programNumber":40},{"time":98146.17538541605,"duration":96.59081249999872,"noteNumber":80,"velocity":92,"programNumber":40},{"time":98282.53888541604,"duration":96.59081249999872,"noteNumber":83,"velocity":92,"programNumber":40},{"time":98418.90238541603,"duration":90.90899999999965,"noteNumber":88,"velocity":92,"programNumber":40},{"time":98555.26588541604,"duration":90.90899999999965,"noteNumber":92,"velocity":92,"programNumber":40},{"time":98691.62938541605,"duration":96.59081249999872,"noteNumber":77,"velocity":92,"programNumber":40},{"time":98827.99288541604,"duration":96.59081249999872,"noteNumber":81,"velocity":92,"programNumber":40},{"time":98964.35638541603,"duration":96.59081249999872,"noteNumber":86,"velocity":92,"programNumber":40},{"time":99100.71988541602,"duration":90.90899999999965,"noteNumber":81,"velocity":92,"programNumber":40},{"time":99237.08338541603,"duration":96.59081249999872,"noteNumber":77,"velocity":92,"programNumber":40},{"time":99373.44688541602,"duration":96.59081249999872,"noteNumber":81,"velocity":92,"programNumber":40},{"time":99509.81038541601,"duration":96.59081249999872,"noteNumber":87,"velocity":92,"programNumber":40},{"time":99646.173885416,"duration":90.90899999999965,"noteNumber":81,"velocity":92,"programNumber":40},{"time":99782.53738541601,"duration":96.59081249999872,"noteNumber":76,"velocity":92,"programNumber":40},{"time":99918.900885416,"duration":96.59081249999872,"noteNumber":80,"velocity":92,"programNumber":40},{"time":100055.264385416,"duration":90.90899999999965,"noteNumber":83,"velocity":92,"programNumber":40},{"time":100191.627885416,"duration":90.90899999999965,"noteNumber":88,"velocity":92,"programNumber":40},{"time":100327.99138541601,"duration":96.59081249999872,"noteNumber":92,"velocity":92,"programNumber":40},{"time":100464.354885416,"duration":96.59081249999872,"noteNumber":95,"velocity":92,"programNumber":40},{"time":100600.718385416,"duration":90.90899999999965,"noteNumber":100,"velocity":92,"programNumber":40},{"time":100737.081885416,"duration":90.90899999999965,"noteNumber":104,"velocity":92,"programNumber":40},{"time":100873.44538541601,"duration":96.59081249999872,"noteNumber":81,"velocity":92,"programNumber":40},{"time":101009.808885416,"duration":96.59081249999872,"noteNumber":84,"velocity":92,"programNumber":40},{"time":101146.172385416,"duration":96.59081249999872,"noteNumber":88,"velocity":92,"programNumber":40},{"time":101282.53588541599,"duration":90.90899999999965,"noteNumber":84,"velocity":92,"programNumber":40},{"time":101418.89938541599,"duration":96.59081249999872,"noteNumber":83,"velocity":92,"programNumber":40},{"time":101555.26288541598,"duration":96.59081249999872,"noteNumber":86,"velocity":92,"programNumber":40},{"time":101691.62638541598,"duration":96.59081249999872,"noteNumber":88,"velocity":92,"programNumber":40},{"time":101827.98988541597,"duration":90.90899999999965,"noteNumber":86,"velocity":92,"programNumber":40},{"time":101964.35338541598,"duration":96.59081249999872,"noteNumber":84,"velocity":92,"programNumber":40},{"time":102100.71688541597,"duration":96.59081249999872,"noteNumber":93,"velocity":92,"programNumber":40},{"time":102237.08038541596,"duration":90.90899999999965,"noteNumber":91,"velocity":92,"programNumber":40},{"time":102373.44388541597,"duration":90.90899999999965,"noteNumber":89,"velocity":92,"programNumber":40},{"time":102509.80738541597,"duration":96.59081249999872,"noteNumber":88,"velocity":92,"programNumber":40},{"time":102646.17088541597,"duration":96.59081249999872,"noteNumber":86,"velocity":92,"programNumber":40},{"time":102782.53438541596,"duration":90.90899999999965,"noteNumber":84,"velocity":92,"programNumber":40},{"time":102918.89788541596,"duration":90.90899999999965,"noteNumber":83,"velocity":92,"programNumber":40},{"time":103055.26138541597,"duration":96.59081249999872,"noteNumber":81,"velocity":92,"programNumber":40},{"time":103191.62488541596,"duration":96.59081249999872,"noteNumber":84,"velocity":92,"programNumber":40},{"time":103327.98838541596,"duration":96.59081249999872,"noteNumber":88,"velocity":92,"programNumber":40},{"time":103464.35188541595,"duration":90.90899999999965,"noteNumber":84,"velocity":92,"programNumber":40},{"time":103600.71538541596,"duration":96.59081249999872,"noteNumber":83,"velocity":92,"programNumber":40},{"time":103737.07888541595,"duration":96.59081249999872,"noteNumber":86,"velocity":92,"programNumber":40},{"time":103873.44238541594,"duration":96.59081249999872,"noteNumber":88,"velocity":92,"programNumber":40},{"time":104009.80588541593,"duration":90.90899999999965,"noteNumber":86,"velocity":92,"programNumber":40},{"time":104146.16938541594,"duration":96.59081249999872,"noteNumber":84,"velocity":92,"programNumber":40},{"time":104282.53288541593,"duration":96.59081249999872,"noteNumber":93,"velocity":92,"programNumber":40},{"time":104418.89638541592,"duration":90.90899999999965,"noteNumber":91,"velocity":92,"programNumber":40},{"time":104555.25988541593,"duration":90.90899999999965,"noteNumber":89,"velocity":92,"programNumber":40},{"time":104691.62338541594,"duration":96.59081249999872,"noteNumber":88,"velocity":92,"programNumber":40},{"time":104827.98688541593,"duration":96.59081249999872,"noteNumber":86,"velocity":92,"programNumber":40},{"time":104964.35038541592,"duration":90.90899999999965,"noteNumber":85,"velocity":92,"programNumber":40},{"time":105100.71388541593,"duration":90.90899999999965,"noteNumber":81,"velocity":92,"programNumber":40},{"time":105237.07738541593,"duration":96.59081249999872,"noteNumber":86,"velocity":92,"programNumber":40},{"time":105373.44088541593,"duration":96.59081249999872,"noteNumber":91,"velocity":92,"programNumber":40},{"time":105509.80438541592,"duration":96.59081249999872,"noteNumber":89,"velocity":92,"programNumber":40},{"time":105646.16788541591,"duration":90.90899999999965,"noteNumber":88,"velocity":92,"programNumber":40},{"time":105782.53138541592,"duration":96.59081249999872,"noteNumber":86,"velocity":92,"programNumber":40},{"time":105918.89488541591,"duration":96.59081249999872,"noteNumber":84,"velocity":92,"programNumber":40},{"time":106055.2583854159,"duration":96.59081249999872,"noteNumber":83,"velocity":92,"programNumber":40},{"time":106191.6218854159,"duration":90.90899999999965,"noteNumber":79,"velocity":92,"programNumber":40},{"time":106327.9853854159,"duration":96.59081249999872,"noteNumber":84,"velocity":92,"programNumber":40},{"time":106464.3488854159,"duration":96.59081249999872,"noteNumber":89,"velocity":92,"programNumber":40},{"time":106600.71238541589,"duration":90.90899999999965,"noteNumber":88,"velocity":92,"programNumber":40},{"time":106737.07588541589,"duration":90.90899999999965,"noteNumber":86,"velocity":92,"programNumber":40},{"time":106873.4393854159,"duration":96.59081249999872,"noteNumber":84,"velocity":92,"programNumber":40},{"time":107009.80288541589,"duration":96.59081249999872,"noteNumber":83,"velocity":92,"programNumber":40},{"time":107146.16638541588,"duration":90.90899999999965,"noteNumber":81,"velocity":92,"programNumber":40},{"time":107282.52988541589,"duration":90.90899999999965,"noteNumber":77,"velocity":92,"programNumber":40},{"time":107418.8933854159,"duration":96.59081249999872,"noteNumber":83,"velocity":92,"programNumber":40},{"time":107555.25688541589,"duration":96.59081249999872,"noteNumber":88,"velocity":92,"programNumber":40},{"time":107691.62038541588,"duration":96.59081249999872,"noteNumber":86,"velocity":92,"programNumber":40},{"time":107827.98388541587,"duration":90.90899999999965,"noteNumber":84,"velocity":92,"programNumber":40},{"time":107964.34738541588,"duration":96.59081249999872,"noteNumber":83,"velocity":92,"programNumber":40},{"time":108100.71088541587,"duration":96.59081249999872,"noteNumber":81,"velocity":92,"programNumber":40},{"time":108237.07438541586,"duration":96.59081249999872,"noteNumber":80,"velocity":92,"programNumber":40},{"time":108373.43788541586,"duration":90.90899999999965,"noteNumber":76,"velocity":92,"programNumber":40},{"time":108509.80138541586,"duration":96.59081249999872,"noteNumber":81,"velocity":92,"programNumber":40},{"time":108646.16488541586,"duration":96.59081249999872,"noteNumber":86,"velocity":92,"programNumber":40},{"time":108782.52838541585,"duration":90.90899999999965,"noteNumber":84,"velocity":92,"programNumber":40},{"time":108918.89188541585,"duration":90.90899999999965,"noteNumber":83,"velocity":92,"programNumber":40},{"time":109055.25538541586,"duration":96.59081249999872,"noteNumber":81,"velocity":92,"programNumber":40},{"time":109191.61888541585,"duration":96.59081249999872,"noteNumber":79,"velocity":92,"programNumber":40},{"time":109327.98238541585,"duration":90.90899999999965,"noteNumber":77,"velocity":92,"programNumber":40},{"time":109464.34588541585,"duration":90.90899999999965,"noteNumber":76,"velocity":92,"programNumber":40},{"time":109600.70938541586,"duration":96.59081249999872,"noteNumber":75,"velocity":92,"programNumber":40},{"time":109737.07288541585,"duration":96.59081249999872,"noteNumber":84,"velocity":92,"programNumber":40},{"time":109873.43638541584,"duration":96.59081249999872,"noteNumber":81,"velocity":92,"programNumber":40},{"time":110009.79988541584,"duration":90.90899999999965,"noteNumber":78,"velocity":92,"programNumber":40},{"time":110146.16338541584,"duration":96.59081249999872,"noteNumber":75,"velocity":92,"programNumber":40},{"time":110282.52688541583,"duration":96.59081249999872,"noteNumber":72,"velocity":92,"programNumber":40},{"time":110418.89038541583,"duration":96.59081249999872,"noteNumber":69,"velocity":92,"programNumber":40},{"time":110555.25388541582,"duration":90.90899999999965,"noteNumber":63,"velocity":92,"programNumber":40},{"time":110691.61738541583,"duration":96.59081249999872,"noteNumber":84,"velocity":92,"programNumber":40},{"time":110827.98088541582,"duration":96.59081249999872,"noteNumber":81,"velocity":92,"programNumber":40},{"time":110964.34438541581,"duration":90.90899999999965,"noteNumber":76,"velocity":92,"programNumber":40},{"time":111100.70788541582,"duration":90.90899999999965,"noteNumber":72,"velocity":92,"programNumber":40},{"time":111237.07138541582,"duration":96.59081249999872,"noteNumber":69,"velocity":92,"programNumber":40},{"time":111373.43488541582,"duration":96.59081249999872,"noteNumber":64,"velocity":92,"programNumber":40},{"time":111509.79838541581,"duration":90.90899999999965,"noteNumber":60,"velocity":92,"programNumber":40},{"time":111646.16188541582,"duration":90.90899999999965,"noteNumber":57,"velocity":92,"programNumber":40},{"time":111782.52538541582,"duration":96.59081249999872,"noteNumber":83,"velocity":92,"programNumber":40},{"time":111918.88888541581,"duration":96.59081249999872,"noteNumber":80,"velocity":92,"programNumber":40},{"time":112055.2523854158,"duration":96.59081249999872,"noteNumber":74,"velocity":92,"programNumber":40},{"time":112191.6158854158,"duration":90.90899999999965,"noteNumber":71,"velocity":92,"programNumber":40},{"time":112327.9793854158,"duration":96.59081249999872,"noteNumber":68,"velocity":92,"programNumber":40},{"time":112464.3428854158,"duration":96.59081249999872,"noteNumber":62,"velocity":92,"programNumber":40},{"time":112600.70638541579,"duration":96.59081249999872,"noteNumber":59,"velocity":92,"programNumber":40},{"time":112737.06988541578,"duration":90.90899999999965,"noteNumber":56,"velocity":92,"programNumber":40},{"time":112873.43338541579,"duration":96.59081249999872,"noteNumber":57,"velocity":92,"programNumber":40},{"time":113009.79688541578,"duration":96.59081249999872,"noteNumber":81,"velocity":92,"programNumber":40},{"time":113146.16038541577,"duration":90.90899999999965,"noteNumber":80,"velocity":92,"programNumber":40},{"time":113282.52388541578,"duration":90.90899999999965,"noteNumber":79,"velocity":92,"programNumber":40},{"time":113418.88738541579,"duration":96.59081249999872,"noteNumber":78,"velocity":92,"programNumber":40},{"time":113555.25088541578,"duration":96.59081249999872,"noteNumber":77,"velocity":92,"programNumber":40},{"time":113691.61438541577,"duration":90.90899999999965,"noteNumber":76,"velocity":92,"programNumber":40},{"time":113827.97788541578,"duration":90.90899999999965,"noteNumber":75,"velocity":92,"programNumber":40},{"time":113964.34138541578,"duration":96.59081249999872,"noteNumber":74,"velocity":92,"programNumber":40},{"time":114100.70488541578,"duration":96.59081249999872,"noteNumber":73,"velocity":92,"programNumber":40},{"time":114237.06838541577,"duration":96.59081249999872,"noteNumber":72,"velocity":92,"programNumber":40},{"time":114373.43188541576,"duration":90.90899999999965,"noteNumber":71,"velocity":92,"programNumber":40},{"time":114509.79538541577,"duration":96.59081249999872,"noteNumber":70,"velocity":92,"programNumber":40},{"time":114646.15888541576,"duration":96.59081249999872,"noteNumber":69,"velocity":92,"programNumber":40},{"time":114782.52238541575,"duration":96.59081249999872,"noteNumber":68,"velocity":92,"programNumber":40},{"time":114918.88588541574,"duration":90.90899999999965,"noteNumber":67,"velocity":92,"programNumber":40},{"time":115055.24938541575,"duration":96.59081249999872,"noteNumber":66,"velocity":92,"programNumber":40},{"time":115191.61288541574,"duration":96.59081249999872,"noteNumber":65,"velocity":92,"programNumber":40},{"time":115327.97638541574,"duration":90.90899999999965,"noteNumber":64,"velocity":92,"programNumber":40},{"time":115464.33988541574,"duration":90.90899999999965,"noteNumber":63,"velocity":92,"programNumber":40},{"time":115600.70338541575,"duration":96.59081249999872,"noteNumber":62,"velocity":92,"programNumber":40},{"time":115737.06688541574,"duration":96.59081249999872,"noteNumber":61,"velocity":92,"programNumber":40},{"time":115873.43038541573,"duration":90.90899999999965,"noteNumber":60,"velocity":92,"programNumber":40},{"time":116009.79388541574,"duration":90.90899999999965,"noteNumber":59,"velocity":92,"programNumber":40},{"time":116146.15738541575,"duration":96.59081249999872,"noteNumber":57,"velocity":92,"programNumber":40},{"time":116282.52088541574,"duration":96.59081249999872,"noteNumber":60,"velocity":92,"programNumber":40},{"time":116418.88438541573,"duration":96.59081249999872,"noteNumber":65,"velocity":92,"programNumber":40},{"time":116555.24788541572,"duration":90.90899999999965,"noteNumber":64,"velocity":92,"programNumber":40},{"time":116691.61138541573,"duration":96.59081249999872,"noteNumber":56,"velocity":92,"programNumber":40},{"time":116827.97488541572,"duration":96.59081249999872,"noteNumber":64,"velocity":92,"programNumber":40},{"time":116964.33838541571,"duration":96.59081249999872,"noteNumber":62,"velocity":92,"programNumber":40},{"time":117100.7018854157,"duration":90.90899999999965,"noteNumber":59,"velocity":92,"programNumber":40},{"time":117237.06538541571,"duration":96.59081249999872,"noteNumber":57,"velocity":92,"programNumber":40},{"time":117373.4288854157,"duration":96.59081249999872,"noteNumber":60,"velocity":92,"programNumber":40},{"time":117509.7923854157,"duration":90.90899999999965,"noteNumber":59,"velocity":92,"programNumber":40},{"time":117646.1558854157,"duration":90.90899999999965,"noteNumber":62,"velocity":92,"programNumber":40},{"time":117782.51938541571,"duration":96.59081249999872,"noteNumber":60,"velocity":92,"programNumber":40},{"time":117918.8828854157,"duration":96.59081249999872,"noteNumber":64,"velocity":92,"programNumber":40},{"time":118055.2463854157,"duration":90.90899999999965,"noteNumber":56,"velocity":92,"programNumber":40},{"time":118191.6098854157,"duration":90.90899999999965,"noteNumber":59,"velocity":92,"programNumber":40},{"time":118327.97338541571,"duration":96.59081249999872,"noteNumber":57,"velocity":92,"programNumber":40},{"time":118464.3368854157,"duration":96.59081249999872,"noteNumber":60,"velocity":92,"programNumber":40},{"time":118600.7003854157,"duration":96.59081249999872,"noteNumber":59,"velocity":92,"programNumber":40},{"time":118737.06388541569,"duration":90.90899999999965,"noteNumber":62,"velocity":92,"programNumber":40},{"time":118873.42738541569,"duration":96.59081249999872,"noteNumber":60,"velocity":92,"programNumber":40},{"time":119009.79088541568,"duration":96.59081249999872,"noteNumber":64,"velocity":92,"programNumber":40},{"time":119146.15438541568,"duration":96.59081249999872,"noteNumber":56,"velocity":92,"programNumber":40},{"time":119282.51788541567,"duration":90.90899999999965,"noteNumber":59,"velocity":92,"programNumber":40},{"time":119418.88138541568,"duration":96.59081249999872,"noteNumber":57,"velocity":92,"programNumber":40},{"time":119555.24488541567,"duration":96.59081249999872,"noteNumber":60,"velocity":92,"programNumber":40},{"time":119691.60838541566,"duration":90.90899999999965,"noteNumber":59,"velocity":92,"programNumber":40},{"time":119827.97188541567,"duration":90.90899999999965,"noteNumber":62,"velocity":92,"programNumber":40},{"time":119964.33538541567,"duration":90.90899999999965,"noteNumber":60,"velocity":92,"programNumber":40},{"time":120100.69888541568,"duration":96.59081249999872,"noteNumber":64,"velocity":92,"programNumber":40},{"time":120237.06238541567,"duration":90.90899999999965,"noteNumber":56,"velocity":92,"programNumber":40},{"time":120373.42588541568,"duration":90.90899999999965,"noteNumber":59,"velocity":92,"programNumber":40},{"time":120509.78938541569,"duration":96.59081249999872,"noteNumber":57,"velocity":92,"programNumber":40},{"time":120646.15288541568,"duration":96.59081249999872,"noteNumber":60,"velocity":92,"programNumber":40},{"time":120782.51638541567,"duration":96.59081249999872,"noteNumber":59,"velocity":92,"programNumber":40},{"time":120918.87988541566,"duration":90.90899999999965,"noteNumber":62,"velocity":92,"programNumber":40},{"time":121055.24338541567,"duration":96.59081249999872,"noteNumber":60,"velocity":92,"programNumber":40},{"time":121191.60688541566,"duration":96.59081249999872,"noteNumber":64,"velocity":92,"programNumber":40},{"time":121327.97038541565,"duration":96.59081249999872,"noteNumber":56,"velocity":92,"programNumber":40},{"time":121464.33388541565,"duration":90.90899999999965,"noteNumber":59,"velocity":92,"programNumber":40},{"time":121600.69738541565,"duration":1636.3619999999937,"noteNumber":57,"velocity":127,"programNumber":40},{"time":123237.05938541565,"duration":68.18175000000338,"noteNumber":61,"velocity":127,"programNumber":40},{"time":123305.24113541565,"duration":68.18175000000338,"noteNumber":64,"velocity":127,"programNumber":40},{"time":123373.42288541565,"duration":68.18175000000338,"noteNumber":69,"velocity":127,"programNumber":40},{"time":123441.60463541566,"duration":68.18175000000338,"noteNumber":73,"velocity":127,"programNumber":40},{"time":123509.78638541566,"duration":68.18175000000338,"noteNumber":76,"velocity":127,"programNumber":40},{"time":123577.96813541566,"duration":68.18175000000338,"noteNumber":81,"velocity":127,"programNumber":40},{"time":123646.14988541567,"duration":68.18175000000338,"noteNumber":85,"velocity":127,"programNumber":40},{"time":123714.33163541567,"duration":68.18175000000338,"noteNumber":88,"velocity":127,"programNumber":40},{"time":123782.51338541567,"duration":727.2719999999972,"noteNumber":93,"velocity":127,"programNumber":40},{"time":124600.69438541567,"duration":68.18175000000338,"noteNumber":92,"velocity":60,"programNumber":40},{"time":124668.87613541567,"duration":68.18175000000338,"noteNumber":90,"velocity":60,"programNumber":40},{"time":124737.05788541568,"duration":68.18175000000338,"noteNumber":88,"velocity":60,"programNumber":40},{"time":124805.23963541568,"duration":68.18175000000338,"noteNumber":86,"velocity":60,"programNumber":40},{"time":124873.42138541568,"duration":68.18175000000338,"noteNumber":85,"velocity":60,"programNumber":40},{"time":124941.60313541569,"duration":68.18175000000338,"noteNumber":83,"velocity":60,"programNumber":40},{"time":125009.78488541569,"duration":68.18175000000338,"noteNumber":81,"velocity":60,"programNumber":40},{"time":125077.9666354157,"duration":68.18175000000338,"noteNumber":80,"velocity":60,"programNumber":40},{"time":125146.1483854157,"duration":68.18175000000338,"noteNumber":78,"velocity":60,"programNumber":40},{"time":125214.3301354157,"duration":68.18175000000338,"noteNumber":76,"velocity":60,"programNumber":40},{"time":125282.5118854157,"duration":68.18175000000338,"noteNumber":74,"velocity":60,"programNumber":40},{"time":125350.69363541571,"duration":68.18175000000338,"noteNumber":73,"velocity":60,"programNumber":40},{"time":125418.87538541571,"duration":68.18175000000338,"noteNumber":71,"velocity":60,"programNumber":40},{"time":125487.05713541571,"duration":68.18175000000338,"noteNumber":69,"velocity":60,"programNumber":40},{"time":125555.23888541572,"duration":68.18175000000338,"noteNumber":68,"velocity":60,"programNumber":40},{"time":125623.42063541572,"duration":68.18175000000338,"noteNumber":66,"velocity":60,"programNumber":40},{"time":125691.60238541572,"duration":68.18175000000338,"noteNumber":64,"velocity":60,"programNumber":40},{"time":125759.78413541573,"duration":68.18175000000338,"noteNumber":62,"velocity":60,"programNumber":40},{"time":125827.96588541573,"duration":68.18175000000338,"noteNumber":61,"velocity":60,"programNumber":40},{"time":125896.14763541573,"duration":68.18175000000338,"noteNumber":59,"velocity":60,"programNumber":40},{"time":125964.32938541574,"duration":727.2719999999972,"noteNumber":57,"velocity":60,"programNumber":40},{"time":126782.51038541574,"duration":68.18175000000338,"noteNumber":61,"velocity":127,"programNumber":40},{"time":126850.69213541574,"duration":68.18175000000338,"noteNumber":64,"velocity":127,"programNumber":40},{"time":126918.87388541574,"duration":68.18175000000338,"noteNumber":69,"velocity":127,"programNumber":40},{"time":126987.05563541575,"duration":68.18175000000338,"noteNumber":73,"velocity":127,"programNumber":40},{"time":127055.23738541575,"duration":68.18175000000338,"noteNumber":76,"velocity":127,"programNumber":40},{"time":127123.41913541575,"duration":68.18175000000338,"noteNumber":81,"velocity":127,"programNumber":40},{"time":127191.60088541576,"duration":68.18175000000338,"noteNumber":85,"velocity":127,"programNumber":40},{"time":127259.78263541576,"duration":68.18175000000338,"noteNumber":88,"velocity":127,"programNumber":40},{"time":127327.96438541576,"duration":68.18175000000338,"noteNumber":93,"velocity":127,"programNumber":40},{"time":127396.14613541577,"duration":727.2719999999972,"noteNumber":97,"velocity":127,"programNumber":40},{"time":128214.32713541576,"duration":68.18175000000338,"noteNumber":95,"velocity":60,"programNumber":40},{"time":128282.50888541577,"duration":68.18175000000338,"noteNumber":93,"velocity":60,"programNumber":40},{"time":128350.69063541577,"duration":68.18175000000338,"noteNumber":92,"velocity":60,"programNumber":40},{"time":128418.87238541577,"duration":68.18175000000338,"noteNumber":90,"velocity":60,"programNumber":40},{"time":128487.05413541578,"duration":68.18175000000338,"noteNumber":88,"velocity":60,"programNumber":40},{"time":128555.23588541578,"duration":68.18175000000338,"noteNumber":86,"velocity":60,"programNumber":40},{"time":128623.41763541578,"duration":68.18175000000338,"noteNumber":85,"velocity":60,"programNumber":40},{"time":128691.59938541579,"duration":68.18175000000338,"noteNumber":83,"velocity":60,"programNumber":40},{"time":128759.78113541579,"duration":68.18175000000338,"noteNumber":81,"velocity":60,"programNumber":40},{"time":128827.96288541579,"duration":68.18175000000338,"noteNumber":80,"velocity":60,"programNumber":40},{"time":128896.1446354158,"duration":68.18175000000338,"noteNumber":78,"velocity":60,"programNumber":40},{"time":128964.3263854158,"duration":68.18175000000338,"noteNumber":76,"velocity":60,"programNumber":40},{"time":129032.5081354158,"duration":68.18175000000338,"noteNumber":74,"velocity":60,"programNumber":40},{"time":129100.6898854158,"duration":68.18175000000338,"noteNumber":73,"velocity":60,"programNumber":40},{"time":129168.87163541581,"duration":68.18175000000338,"noteNumber":71,"velocity":60,"programNumber":40},{"time":129237.05338541581,"duration":68.18175000000338,"noteNumber":69,"velocity":60,"programNumber":40},{"time":129305.23513541582,"duration":68.18175000000338,"noteNumber":68,"velocity":60,"programNumber":40},{"time":129373.41688541582,"duration":68.18175000000338,"noteNumber":66,"velocity":60,"programNumber":40},{"time":129441.59863541582,"duration":68.18175000000338,"noteNumber":64,"velocity":60,"programNumber":40},{"time":129509.78038541583,"duration":68.18175000000338,"noteNumber":62,"velocity":60,"programNumber":40},{"time":129577.96213541583,"duration":68.18175000000338,"noteNumber":61,"velocity":60,"programNumber":40},{"time":129646.14388541583,"duration":68.18175000000338,"noteNumber":59,"velocity":60,"programNumber":40},{"time":129714.32563541584,"duration":727.2719999999972,"noteNumber":57,"velocity":60,"programNumber":40},{"time":130532.50663541583,"duration":68.18175000000338,"noteNumber":61,"velocity":127,"programNumber":40},{"time":130600.68838541584,"duration":68.18175000000338,"noteNumber":64,"velocity":127,"programNumber":40},{"time":130668.87013541584,"duration":68.18175000000338,"noteNumber":69,"velocity":127,"programNumber":40},{"time":130737.05188541584,"duration":68.18175000000338,"noteNumber":73,"velocity":127,"programNumber":40},{"time":130805.23363541585,"duration":68.18175000000338,"noteNumber":76,"velocity":127,"programNumber":40},{"time":130873.41538541585,"duration":68.18175000000338,"noteNumber":81,"velocity":127,"programNumber":40},{"time":130941.59713541585,"duration":68.18175000000338,"noteNumber":85,"velocity":127,"programNumber":40},{"time":131009.77888541586,"duration":68.18175000000338,"noteNumber":88,"velocity":127,"programNumber":40},{"time":131077.96063541586,"duration":68.18174999998882,"noteNumber":93,"velocity":127,"programNumber":40},{"time":131146.14238541585,"duration":68.18174999998882,"noteNumber":97,"velocity":127,"programNumber":40},{"time":131214.32413541584,"duration":727.2719999999972,"noteNumber":100,"velocity":127,"programNumber":40},{"time":132032.50513541585,"duration":68.18174999998882,"noteNumber":98,"velocity":60,"programNumber":40},{"time":132100.68688541584,"duration":68.18174999998882,"noteNumber":97,"velocity":60,"programNumber":40},{"time":132168.86863541583,"duration":68.18174999998882,"noteNumber":95,"velocity":60,"programNumber":40},{"time":132237.05038541582,"duration":68.18174999998882,"noteNumber":93,"velocity":60,"programNumber":40},{"time":132305.2321354158,"duration":68.18174999998882,"noteNumber":92,"velocity":60,"programNumber":40},{"time":132373.4138854158,"duration":68.18174999998882,"noteNumber":90,"velocity":60,"programNumber":40},{"time":132441.59563541578,"duration":68.18174999998882,"noteNumber":88,"velocity":60,"programNumber":40},{"time":132509.77738541577,"duration":68.18174999998882,"noteNumber":86,"velocity":60,"programNumber":40},{"time":132577.95913541576,"duration":68.18174999998882,"noteNumber":85,"velocity":60,"programNumber":40},{"time":132646.14088541575,"duration":68.18174999998882,"noteNumber":83,"velocity":60,"programNumber":40},{"time":132714.32263541574,"duration":68.18174999998882,"noteNumber":81,"velocity":60,"programNumber":40},{"time":132782.50438541573,"duration":68.18174999998882,"noteNumber":80,"velocity":60,"programNumber":40},{"time":132850.68613541572,"duration":68.18174999998882,"noteNumber":78,"velocity":60,"programNumber":40},{"time":132918.8678854157,"duration":68.18174999998882,"noteNumber":76,"velocity":60,"programNumber":40},{"time":132987.0496354157,"duration":68.18174999998882,"noteNumber":74,"velocity":60,"programNumber":40},{"time":133055.23138541568,"duration":68.18174999998882,"noteNumber":73,"velocity":60,"programNumber":40},{"time":133123.41313541567,"duration":68.18174999998882,"noteNumber":71,"velocity":60,"programNumber":40},{"time":133191.59488541566,"duration":68.18174999998882,"noteNumber":69,"velocity":60,"programNumber":40},{"time":133259.77663541565,"duration":68.18174999998882,"noteNumber":68,"velocity":60,"programNumber":40},{"time":133327.95838541564,"duration":68.18174999998882,"noteNumber":66,"velocity":60,"programNumber":40},{"time":133396.14013541563,"duration":68.18174999998882,"noteNumber":64,"velocity":60,"programNumber":40},{"time":133464.32188541561,"duration":68.18174999998882,"noteNumber":62,"velocity":60,"programNumber":40},{"time":133532.5036354156,"duration":68.18174999998882,"noteNumber":61,"velocity":60,"programNumber":40},{"time":133600.6853854156,"duration":68.18174999998882,"noteNumber":59,"velocity":60,"programNumber":40},{"time":133668.86713541558,"duration":727.2719999999972,"noteNumber":57,"velocity":60,"programNumber":40},{"time":134487.0481354156,"duration":68.18174999998882,"noteNumber":61,"velocity":127,"programNumber":40},{"time":134555.22988541558,"duration":68.18174999998882,"noteNumber":64,"velocity":127,"programNumber":40},{"time":134623.41163541557,"duration":68.18174999998882,"noteNumber":69,"velocity":127,"programNumber":40},{"time":134691.59338541556,"duration":68.18174999998882,"noteNumber":73,"velocity":127,"programNumber":40},{"time":134759.77513541555,"duration":68.18174999998882,"noteNumber":76,"velocity":127,"programNumber":40},{"time":134827.95688541554,"duration":68.18174999998882,"noteNumber":81,"velocity":127,"programNumber":40},{"time":134896.13863541553,"duration":68.18174999998882,"noteNumber":85,"velocity":127,"programNumber":40},{"time":134964.3203854155,"duration":68.18174999998882,"noteNumber":88,"velocity":127,"programNumber":40},{"time":135032.5021354155,"duration":68.18174999998882,"noteNumber":93,"velocity":127,"programNumber":40},{"time":135100.6838854155,"duration":68.18174999998882,"noteNumber":97,"velocity":127,"programNumber":40},{"time":135168.86563541548,"duration":68.18174999998882,"noteNumber":100,"velocity":127,"programNumber":40},{"time":135237.04738541547,"duration":727.2719999999972,"noteNumber":105,"velocity":127,"programNumber":40},{"time":136055.22838541548,"duration":68.18174999998882,"noteNumber":104,"velocity":60,"programNumber":40},{"time":136123.41013541547,"duration":68.18174999998882,"noteNumber":102,"velocity":60,"programNumber":40},{"time":136191.59188541546,"duration":68.18174999998882,"noteNumber":100,"velocity":60,"programNumber":40},{"time":136259.77363541545,"duration":68.18174999998882,"noteNumber":98,"velocity":60,"programNumber":40},{"time":136327.95538541544,"duration":68.18174999998882,"noteNumber":97,"velocity":60,"programNumber":40},{"time":136396.13713541543,"duration":68.18174999998882,"noteNumber":95,"velocity":60,"programNumber":40},{"time":136464.3188854154,"duration":68.18174999998882,"noteNumber":93,"velocity":60,"programNumber":40},{"time":136532.5006354154,"duration":68.18174999998882,"noteNumber":92,"velocity":60,"programNumber":40},{"time":136600.6823854154,"duration":68.18174999998882,"noteNumber":90,"velocity":60,"programNumber":40},{"time":136668.86413541538,"duration":68.18174999998882,"noteNumber":88,"velocity":60,"programNumber":40},{"time":136737.04588541537,"duration":68.18174999998882,"noteNumber":86,"velocity":60,"programNumber":40},{"time":136805.22763541536,"duration":68.18174999998882,"noteNumber":85,"velocity":60,"programNumber":40},{"time":136873.40938541535,"duration":68.18174999998882,"noteNumber":83,"velocity":60,"programNumber":40},{"time":136941.59113541534,"duration":68.18174999998882,"noteNumber":81,"velocity":60,"programNumber":40},{"time":137009.77288541532,"duration":68.18174999998882,"noteNumber":80,"velocity":60,"programNumber":40},{"time":137077.9546354153,"duration":68.18174999998882,"noteNumber":78,"velocity":60,"programNumber":40},{"time":137146.1363854153,"duration":68.18174999998882,"noteNumber":76,"velocity":60,"programNumber":40},{"time":137214.3181354153,"duration":68.18174999998882,"noteNumber":74,"velocity":60,"programNumber":40},{"time":137282.49988541528,"duration":68.18174999998882,"noteNumber":73,"velocity":60,"programNumber":40},{"time":137350.68163541527,"duration":68.18174999998882,"noteNumber":71,"velocity":60,"programNumber":40},{"time":137418.86338541526,"duration":68.18174999998882,"noteNumber":69,"velocity":60,"programNumber":40},{"time":137487.04513541525,"duration":68.18174999998882,"noteNumber":68,"velocity":60,"programNumber":40},{"time":137555.22688541524,"duration":68.18174999998882,"noteNumber":66,"velocity":60,"programNumber":40},{"time":137623.40863541522,"duration":68.18174999998882,"noteNumber":64,"velocity":60,"programNumber":40},{"time":137691.5903854152,"duration":68.18174999998882,"noteNumber":62,"velocity":60,"programNumber":40},{"time":137759.7721354152,"duration":68.18174999998882,"noteNumber":61,"velocity":60,"programNumber":40},{"time":137827.9538854152,"duration":62.499937499989755,"noteNumber":59,"velocity":60,"programNumber":40},{"time":137896.13563541518,"duration":409.09049999999115,"noteNumber":57,"velocity":63,"programNumber":40},{"time":138305.22613541517,"duration":68.18174999998882,"noteNumber":58,"velocity":63,"programNumber":40},{"time":138373.40788541516,"duration":68.18174999998882,"noteNumber":59,"velocity":66,"programNumber":40},{"time":138441.58963541515,"duration":68.18174999998882,"noteNumber":60,"velocity":69,"programNumber":40},{"time":138509.77138541514,"duration":68.18174999998882,"noteNumber":61,"velocity":72,"programNumber":40},{"time":138577.95313541513,"duration":68.18174999998882,"noteNumber":62,"velocity":75,"programNumber":40},{"time":138646.13488541511,"duration":68.18174999998882,"noteNumber":63,"velocity":78,"programNumber":40},{"time":138714.3166354151,"duration":68.18174999998882,"noteNumber":64,"velocity":81,"programNumber":40},{"time":138782.4983854151,"duration":68.18174999998882,"noteNumber":65,"velocity":84,"programNumber":40},{"time":138850.68013541508,"duration":68.18174999998882,"noteNumber":66,"velocity":87,"programNumber":40},{"time":138918.86188541507,"duration":68.18174999998882,"noteNumber":67,"velocity":90,"programNumber":40},{"time":138987.04363541506,"duration":68.18174999998882,"noteNumber":68,"velocity":93,"programNumber":40},{"time":139055.22538541505,"duration":68.18174999998882,"noteNumber":69,"velocity":96,"programNumber":40},{"time":139123.40713541504,"duration":68.18174999998882,"noteNumber":70,"velocity":99,"programNumber":40},{"time":139191.58888541503,"duration":68.18174999998882,"noteNumber":71,"velocity":102,"programNumber":40},{"time":139259.770635415,"duration":68.18174999998882,"noteNumber":72,"velocity":105,"programNumber":40},{"time":139327.952385415,"duration":68.18174999998882,"noteNumber":73,"velocity":108,"programNumber":40},{"time":139396.134135415,"duration":68.18174999998882,"noteNumber":74,"velocity":111,"programNumber":40},{"time":139464.31588541498,"duration":68.18174999998882,"noteNumber":75,"velocity":115,"programNumber":40},{"time":139532.49763541497,"duration":68.18174999998882,"noteNumber":76,"velocity":119,"programNumber":40},{"time":139600.67938541496,"duration":68.18174999998882,"noteNumber":77,"velocity":123,"programNumber":40},{"time":139668.86113541495,"duration":68.18174999998882,"noteNumber":78,"velocity":127,"programNumber":40},{"time":139737.04288541494,"duration":68.18174999998882,"noteNumber":79,"velocity":127,"programNumber":40},{"time":139805.22463541492,"duration":68.18174999998882,"noteNumber":80,"velocity":127,"programNumber":40},{"time":139873.4063854149,"duration":68.18174999998882,"noteNumber":81,"velocity":127,"programNumber":40},{"time":139941.5881354149,"duration":68.18174999998882,"noteNumber":80,"velocity":127,"programNumber":40},{"time":140009.7698854149,"duration":68.18174999998882,"noteNumber":79,"velocity":124,"programNumber":40},{"time":140077.95163541488,"duration":68.18174999998882,"noteNumber":78,"velocity":121,"programNumber":40},{"time":140146.13338541487,"duration":68.18174999998882,"noteNumber":77,"velocity":118,"programNumber":40},{"time":140214.31513541486,"duration":68.18174999998882,"noteNumber":76,"velocity":115,"programNumber":40},{"time":140282.49688541485,"duration":68.18174999998882,"noteNumber":75,"velocity":112,"programNumber":40},{"time":140350.67863541484,"duration":68.18174999998882,"noteNumber":74,"velocity":109,"programNumber":40},{"time":140418.86038541482,"duration":68.18174999998882,"noteNumber":73,"velocity":106,"programNumber":40},{"time":140487.0421354148,"duration":68.18174999998882,"noteNumber":72,"velocity":103,"programNumber":40},{"time":140555.2238854148,"duration":68.18174999998882,"noteNumber":71,"velocity":100,"programNumber":40},{"time":140623.4056354148,"duration":68.18174999998882,"noteNumber":70,"velocity":97,"programNumber":40},{"time":140691.58738541478,"duration":68.18174999998882,"noteNumber":69,"velocity":93,"programNumber":40},{"time":140759.76913541477,"duration":68.18174999998882,"noteNumber":68,"velocity":89,"programNumber":40},{"time":140827.95088541476,"duration":68.18174999998882,"noteNumber":67,"velocity":85,"programNumber":40},{"time":140896.13263541475,"duration":68.18174999998882,"noteNumber":66,"velocity":81,"programNumber":40},{"time":140964.31438541473,"duration":68.18174999998882,"noteNumber":65,"velocity":77,"programNumber":40},{"time":141032.49613541472,"duration":68.18174999998882,"noteNumber":64,"velocity":73,"programNumber":40},{"time":141100.6778854147,"duration":68.18174999998882,"noteNumber":63,"velocity":69,"programNumber":40},{"time":141168.8596354147,"duration":68.18174999998882,"noteNumber":62,"velocity":65,"programNumber":40},{"time":141237.0413854147,"duration":68.18174999998882,"noteNumber":61,"velocity":61,"programNumber":40},{"time":141305.22313541468,"duration":68.18174999998882,"noteNumber":60,"velocity":57,"programNumber":40},{"time":141373.40488541467,"duration":68.18174999998882,"noteNumber":59,"velocity":53,"programNumber":40},{"time":141441.58663541466,"duration":62.499937499989755,"noteNumber":58,"velocity":49,"programNumber":40},{"time":141509.76838541465,"duration":818.1810000000114,"noteNumber":57,"velocity":45,"programNumber":40},{"time":142327.94938541466,"duration":130.68168750000768,"noteNumber":61,"velocity":108,"programNumber":40},{"time":142327.94938541466,"duration":130.68168750000768,"noteNumber":64,"velocity":108,"programNumber":40},{"time":142464.31288541466,"duration":727.2719999999972,"noteNumber":73,"velocity":108,"programNumber":40},{"time":142464.31288541466,"duration":727.2719999999972,"noteNumber":81,"velocity":108,"programNumber":40}]]}
+},{}],26:[function(require,module,exports){
 
 var tonal = require('tonal');
 var frampton = require('../../frampton/dist/web-frampton');
 var mediaConfig = require('../piano_long.json');
-var song = require('../ode_to_joy.json');
+var song = require('../caprice5.json');
 
 var finder = new frampton.MediaFinder(mediaConfig);
 
@@ -3455,12 +3457,13 @@ function scheduleSegment(el) {
 
   var segment = new frampton.VideoSegment(video);
   segment
-    .setDuration(el.duration / 1000)
-    .setAudioFadeDuration(250)
-    .setWidth('10%')
+    .setWidth('25%')
     .setTop('25%');
 
-  var left = noteNumberRange.getPercent(el.noteNumber) * 100;
+  var duration = Math.max(el.duration / 1000, 0.2);
+  segment.setDuration(duration);
+
+  var left = noteNumberRange.getPercent(el.noteNumber) * 80;
   segment.setLeft(left + '%');
 
   renderer.scheduleSegmentRender(segment, initialDelay + el.time);
@@ -3490,7 +3493,7 @@ function makeNoteRange() {
   return range;
 }
 
-},{"../../frampton/dist/web-frampton":22,"../ode_to_joy.json":41,"../piano_long.json":42,"tonal":40}],26:[function(require,module,exports){
+},{"../../frampton/dist/web-frampton":22,"../caprice5.json":25,"../piano_long.json":42,"tonal":41}],27:[function(require,module,exports){
 'use strict'
 
 // shorthand tonal notation (with quality after number)
@@ -3641,7 +3644,7 @@ module.exports = { parse: parse, type: type,
   altToQ: altToQ, qToAlt: qToAlt,
   build: build, shorthand: shorthand }
 
-},{}],27:[function(require,module,exports){
+},{}],28:[function(require,module,exports){
 'use strict'
 
 var REGEX = /^([a-gA-G])(#{1,}|b{1,}|x{1,}|)(-?\d*)\s*(.*)\s*$/
@@ -3787,7 +3790,7 @@ module.exports = parser
  * parser.freq('A') // => null
  */
 
-},{}],28:[function(require,module,exports){
+},{}],29:[function(require,module,exports){
 'use strict';
 
 var tonalPitch = require('tonal-pitch');
@@ -4105,7 +4108,7 @@ exports.rotate = rotate;
 exports.rotateAsc = rotateAsc;
 exports.select = select;
 exports.listFn = listFn;
-},{"tonal-distance":29,"tonal-notation":35,"tonal-pitch":37,"tonal-transpose":39}],29:[function(require,module,exports){
+},{"tonal-distance":30,"tonal-notation":36,"tonal-pitch":38,"tonal-transpose":40}],30:[function(require,module,exports){
 'use strict';
 
 var tonalPitch = require('tonal-pitch');
@@ -4170,7 +4173,7 @@ var interval = distance
 exports.distance = distance;
 exports.distInSemitones = distInSemitones;
 exports.interval = interval;
-},{"tonal-pitch":37}],30:[function(require,module,exports){
+},{"tonal-pitch":38}],31:[function(require,module,exports){
 'use strict';
 
 // Encoding pitches into fifhts/octave notation
@@ -4214,7 +4217,7 @@ function decode (f, o) {
 
 exports.encode = encode;
 exports.decode = decode;
-},{}],31:[function(require,module,exports){
+},{}],32:[function(require,module,exports){
 'use strict';
 
 var tonalNote = require('tonal-note');
@@ -4256,7 +4259,7 @@ function scaleFilter (notes, m) {
 }
 
 exports.scaleFilter = scaleFilter;
-},{"tonal-array":28,"tonal-midi":34,"tonal-note":36}],32:[function(require,module,exports){
+},{"tonal-array":29,"tonal-midi":35,"tonal-note":37}],33:[function(require,module,exports){
 'use strict';
 
 var tonalMidi = require('tonal-midi');
@@ -4348,7 +4351,7 @@ exports.fromEqualTemp = fromEqualTemp;
 exports.midiFromFreq = midiFromFreq;
 exports.fromFreq = fromFreq;
 exports.cents = cents;
-},{"tonal-midi":34}],33:[function(require,module,exports){
+},{"tonal-midi":35}],34:[function(require,module,exports){
 'use strict';
 
 var tonalPitch = require('tonal-pitch');
@@ -4507,7 +4510,7 @@ exports.ic = ic;
 exports.itype = itype;
 exports.invert = invert;
 exports.simplify = simplify;
-},{"tonal-pitch":37}],34:[function(require,module,exports){
+},{"tonal-pitch":38}],35:[function(require,module,exports){
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('tonal-pitch')) :
   typeof define === 'function' && define.amd ? define(['exports', 'tonal-pitch'], factory) :
@@ -4582,7 +4585,7 @@ exports.simplify = simplify;
   exports.fromMidiS = fromMidiS;
 
 }));
-},{"tonal-pitch":37}],35:[function(require,module,exports){
+},{"tonal-pitch":38}],36:[function(require,module,exports){
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
@@ -4647,7 +4650,7 @@ exports.simplify = simplify;
   exports.toAcc = toAcc;
 
 }));
-},{}],36:[function(require,module,exports){
+},{}],37:[function(require,module,exports){
 'use strict';
 
 var tonalPitch = require('tonal-pitch');
@@ -4757,7 +4760,7 @@ exports.pc = pc;
 exports.enharmonics = enharmonics;
 exports.enh = enh;
 exports.simpleEnh = simpleEnh;
-},{"tonal-pitch":37,"tonal-transpose":39}],37:[function(require,module,exports){
+},{"tonal-pitch":38,"tonal-transpose":40}],38:[function(require,module,exports){
 'use strict';
 
 var noteParser = require('note-parser');
@@ -5031,7 +5034,7 @@ exports.strPitch = strPitch;
 exports.noteFn = noteFn;
 exports.ivlFn = ivlFn;
 exports.pitchFn = pitchFn;
-},{"interval-notation":26,"note-parser":27,"tonal-encoding":30,"tonal-notation":35}],38:[function(require,module,exports){
+},{"interval-notation":27,"note-parser":28,"tonal-encoding":31,"tonal-notation":36}],39:[function(require,module,exports){
 'use strict';
 
 var tonalArray = require('tonal-array');
@@ -5133,7 +5136,7 @@ exports.range = range;
 exports.chromatic = chromatic;
 exports.cycleOfFifths = cycleOfFifths;
 exports.scaleRange = scaleRange;
-},{"tonal-array":28,"tonal-filter":31,"tonal-midi":34,"tonal-transpose":39}],39:[function(require,module,exports){
+},{"tonal-array":29,"tonal-filter":32,"tonal-midi":35,"tonal-transpose":40}],40:[function(require,module,exports){
 'use strict';
 
 var tonalPitch = require('tonal-pitch');
@@ -5195,7 +5198,7 @@ function trFifths (t, n) {
 exports.transpose = transpose;
 exports.tr = tr;
 exports.trFifths = trFifths;
-},{"tonal-pitch":37}],40:[function(require,module,exports){
+},{"tonal-pitch":38}],41:[function(require,module,exports){
 'use strict';
 
 var tonalNote = require('tonal-note');
@@ -5256,628 +5259,9 @@ exports.range = tonalRange.range;
 exports.chromatic = tonalRange.chromatic;
 exports.cycleOfFifths = tonalRange.cycleOfFifths;
 exports.scaleRange = tonalRange.scaleRange;
-},{"tonal-array":28,"tonal-distance":29,"tonal-filter":31,"tonal-freq":32,"tonal-interval":33,"tonal-midi":34,"tonal-note":36,"tonal-range":38,"tonal-transpose":39}],41:[function(require,module,exports){
+},{"tonal-array":29,"tonal-distance":30,"tonal-filter":32,"tonal-freq":33,"tonal-interval":34,"tonal-midi":35,"tonal-note":37,"tonal-range":39,"tonal-transpose":40}],42:[function(require,module,exports){
 module.exports={
-    "tracks": [
-        [{
-            "time": 0,
-            "duration": 496.09375,
-            "noteNumber": 60,
-            "velocity": 72,
-            "programNumber": 0
-        }, {
-            "time": 0,
-            "duration": 496.09375,
-            "noteNumber": 64,
-            "velocity": 70,
-            "programNumber": 0
-        }, {
-            "time": 500,
-            "duration": 496.09375,
-            "noteNumber": 64,
-            "velocity": 76,
-            "programNumber": 0
-        }, {
-            "time": 1000,
-            "duration": 496.09375,
-            "noteNumber": 65,
-            "velocity": 79,
-            "programNumber": 0
-        }, {
-            "time": 0,
-            "duration": 1902.34375,
-            "noteNumber": 48,
-            "velocity": 89,
-            "programNumber": 0
-        }, {
-            "time": 0,
-            "duration": 1902.34375,
-            "noteNumber": 55,
-            "velocity": 90,
-            "programNumber": 0
-        }, {
-            "time": 1500,
-            "duration": 496.09375,
-            "noteNumber": 67,
-            "velocity": 82,
-            "programNumber": 0
-        }, {
-            "time": 2000,
-            "duration": 496.09375,
-            "noteNumber": 67,
-            "velocity": 79,
-            "programNumber": 0
-        }, {
-            "time": 2000,
-            "duration": 902.34375,
-            "noteNumber": 55,
-            "velocity": 96,
-            "programNumber": 0
-        }, {
-            "time": 2500,
-            "duration": 496.09375,
-            "noteNumber": 65,
-            "velocity": 70,
-            "programNumber": 0
-        }, {
-            "time": 3000,
-            "duration": 496.09375,
-            "noteNumber": 64,
-            "velocity": 69,
-            "programNumber": 0
-        }, {
-            "time": 3000,
-            "duration": 902.34375,
-            "noteNumber": 55,
-            "velocity": 97,
-            "programNumber": 0
-        }, {
-            "time": 3500,
-            "duration": 496.09375,
-            "noteNumber": 62,
-            "velocity": 69,
-            "programNumber": 0
-        }, {
-            "time": 4000,
-            "duration": 496.09375,
-            "noteNumber": 60,
-            "velocity": 73,
-            "programNumber": 0
-        }, {
-            "time": 4500,
-            "duration": 496.09375,
-            "noteNumber": 60,
-            "velocity": 74,
-            "programNumber": 0
-        }, {
-            "time": 5000,
-            "duration": 496.09375,
-            "noteNumber": 62,
-            "velocity": 78,
-            "programNumber": 0
-        }, {
-            "time": 4000,
-            "duration": 1902.34375,
-            "noteNumber": 48,
-            "velocity": 100,
-            "programNumber": 0
-        }, {
-            "time": 4000,
-            "duration": 1902.34375,
-            "noteNumber": 52,
-            "velocity": 99,
-            "programNumber": 0
-        }, {
-            "time": 4000,
-            "duration": 1902.34375,
-            "noteNumber": 55,
-            "velocity": 98,
-            "programNumber": 0
-        }, {
-            "time": 5500,
-            "duration": 496.09375,
-            "noteNumber": 64,
-            "velocity": 83,
-            "programNumber": 0
-        }, {
-            "time": 6000,
-            "duration": 744.140625,
-            "noteNumber": 64,
-            "velocity": 78,
-            "programNumber": 0
-        }, {
-            "time": 6000,
-            "duration": 902.34375,
-            "noteNumber": 55,
-            "velocity": 101,
-            "programNumber": 0
-        }, {
-            "time": 6750,
-            "duration": 248.046875,
-            "noteNumber": 62,
-            "velocity": 69,
-            "programNumber": 0
-        }, {
-            "time": 7000,
-            "duration": 902.34375,
-            "noteNumber": 55,
-            "velocity": 96,
-            "programNumber": 0
-        }, {
-            "time": 7000,
-            "duration": 990.234375,
-            "noteNumber": 59,
-            "velocity": 74,
-            "programNumber": 0
-        }, {
-            "time": 7000,
-            "duration": 990.234375,
-            "noteNumber": 62,
-            "velocity": 74,
-            "programNumber": 0
-        }, {
-            "time": 8000,
-            "duration": 496.09375,
-            "noteNumber": 60,
-            "velocity": 85,
-            "programNumber": 0
-        }, {
-            "time": 8000,
-            "duration": 496.09375,
-            "noteNumber": 64,
-            "velocity": 82,
-            "programNumber": 0
-        }, {
-            "time": 8500,
-            "duration": 496.09375,
-            "noteNumber": 64,
-            "velocity": 76,
-            "programNumber": 0
-        }, {
-            "time": 9000,
-            "duration": 496.09375,
-            "noteNumber": 65,
-            "velocity": 80,
-            "programNumber": 0
-        }, {
-            "time": 8000,
-            "duration": 1902.34375,
-            "noteNumber": 48,
-            "velocity": 101,
-            "programNumber": 0
-        }, {
-            "time": 8000,
-            "duration": 1902.34375,
-            "noteNumber": 55,
-            "velocity": 98,
-            "programNumber": 0
-        }, {
-            "time": 9500,
-            "duration": 496.09375,
-            "noteNumber": 67,
-            "velocity": 79,
-            "programNumber": 0
-        }, {
-            "time": 10000,
-            "duration": 496.09375,
-            "noteNumber": 67,
-            "velocity": 78,
-            "programNumber": 0
-        }, {
-            "time": 10000,
-            "duration": 902.34375,
-            "noteNumber": 55,
-            "velocity": 100,
-            "programNumber": 0
-        }, {
-            "time": 10500,
-            "duration": 496.09375,
-            "noteNumber": 65,
-            "velocity": 70,
-            "programNumber": 0
-        }, {
-            "time": 11000,
-            "duration": 496.09375,
-            "noteNumber": 64,
-            "velocity": 72,
-            "programNumber": 0
-        }, {
-            "time": 11000,
-            "duration": 902.34375,
-            "noteNumber": 55,
-            "velocity": 94,
-            "programNumber": 0
-        }, {
-            "time": 11500,
-            "duration": 496.09375,
-            "noteNumber": 62,
-            "velocity": 70,
-            "programNumber": 0
-        }, {
-            "time": 12000,
-            "duration": 496.09375,
-            "noteNumber": 60,
-            "velocity": 72,
-            "programNumber": 0
-        }, {
-            "time": 12500,
-            "duration": 496.09375,
-            "noteNumber": 60,
-            "velocity": 73,
-            "programNumber": 0
-        }, {
-            "time": 13000,
-            "duration": 496.09375,
-            "noteNumber": 62,
-            "velocity": 78,
-            "programNumber": 0
-        }, {
-            "time": 12000,
-            "duration": 1902.34375,
-            "noteNumber": 48,
-            "velocity": 99,
-            "programNumber": 0
-        }, {
-            "time": 12000,
-            "duration": 1902.34375,
-            "noteNumber": 52,
-            "velocity": 99,
-            "programNumber": 0
-        }, {
-            "time": 12000,
-            "duration": 1902.34375,
-            "noteNumber": 55,
-            "velocity": 98,
-            "programNumber": 0
-        }, {
-            "time": 13500,
-            "duration": 496.09375,
-            "noteNumber": 64,
-            "velocity": 83,
-            "programNumber": 0
-        }, {
-            "time": 14000,
-            "duration": 744.140625,
-            "noteNumber": 62,
-            "velocity": 74,
-            "programNumber": 0
-        }, {
-            "time": 14000,
-            "duration": 902.34375,
-            "noteNumber": 55,
-            "velocity": 100,
-            "programNumber": 0
-        }, {
-            "time": 14750,
-            "duration": 248.046875,
-            "noteNumber": 60,
-            "velocity": 71,
-            "programNumber": 0
-        }, {
-            "time": 15000,
-            "duration": 902.34375,
-            "noteNumber": 48,
-            "velocity": 77,
-            "programNumber": 0
-        }, {
-            "time": 15000,
-            "duration": 990.234375,
-            "noteNumber": 60,
-            "velocity": 77,
-            "programNumber": 0
-        }, {
-            "time": 16000,
-            "duration": 496.09375,
-            "noteNumber": 62,
-            "velocity": 85,
-            "programNumber": 0
-        }, {
-            "time": 16500,
-            "duration": 496.09375,
-            "noteNumber": 62,
-            "velocity": 75,
-            "programNumber": 0
-        }, {
-            "time": 17000,
-            "duration": 496.09375,
-            "noteNumber": 64,
-            "velocity": 80,
-            "programNumber": 0
-        }, {
-            "time": 16000,
-            "duration": 1902.34375,
-            "noteNumber": 55,
-            "velocity": 58,
-            "programNumber": 0
-        }, {
-            "time": 17500,
-            "duration": 496.09375,
-            "noteNumber": 60,
-            "velocity": 67,
-            "programNumber": 0
-        }, {
-            "time": 18000,
-            "duration": 496.09375,
-            "noteNumber": 62,
-            "velocity": 81,
-            "programNumber": 0
-        }, {
-            "time": 18500,
-            "duration": 248.046875,
-            "noteNumber": 64,
-            "velocity": 81,
-            "programNumber": 0
-        }, {
-            "time": 18000,
-            "duration": 902.34375,
-            "noteNumber": 55,
-            "velocity": 50,
-            "programNumber": 0
-        }, {
-            "time": 18750,
-            "duration": 248.046875,
-            "noteNumber": 65,
-            "velocity": 81,
-            "programNumber": 0
-        }, {
-            "time": 19000,
-            "duration": 496.09375,
-            "noteNumber": 64,
-            "velocity": 75,
-            "programNumber": 0
-        }, {
-            "time": 19000,
-            "duration": 902.34375,
-            "noteNumber": 55,
-            "velocity": 49,
-            "programNumber": 0
-        }, {
-            "time": 19500,
-            "duration": 496.09375,
-            "noteNumber": 60,
-            "velocity": 67,
-            "programNumber": 0
-        }, {
-            "time": 20000,
-            "duration": 496.09375,
-            "noteNumber": 62,
-            "velocity": 81,
-            "programNumber": 0
-        }, {
-            "time": 20500,
-            "duration": 248.046875,
-            "noteNumber": 64,
-            "velocity": 79,
-            "programNumber": 0
-        }, {
-            "time": 20000,
-            "duration": 902.34375,
-            "noteNumber": 55,
-            "velocity": 50,
-            "programNumber": 0
-        }, {
-            "time": 20750,
-            "duration": 248.046875,
-            "noteNumber": 65,
-            "velocity": 79,
-            "programNumber": 0
-        }, {
-            "time": 21000,
-            "duration": 496.09375,
-            "noteNumber": 64,
-            "velocity": 75,
-            "programNumber": 0
-        }, {
-            "time": 21000,
-            "duration": 902.34375,
-            "noteNumber": 56,
-            "velocity": 52,
-            "programNumber": 0
-        }, {
-            "time": 21500,
-            "duration": 496.09375,
-            "noteNumber": 62,
-            "velocity": 70,
-            "programNumber": 0
-        }, {
-            "time": 22000,
-            "duration": 451.171875,
-            "noteNumber": 57,
-            "velocity": 52,
-            "programNumber": 0
-        }, {
-            "time": 22000,
-            "duration": 496.09375,
-            "noteNumber": 60,
-            "velocity": 71,
-            "programNumber": 0
-        }, {
-            "time": 22500,
-            "duration": 451.171875,
-            "noteNumber": 54,
-            "velocity": 43,
-            "programNumber": 0
-        }, {
-            "time": 22500,
-            "duration": 496.09375,
-            "noteNumber": 62,
-            "velocity": 79,
-            "programNumber": 0
-        }, {
-            "time": 23000,
-            "duration": 902.34375,
-            "noteNumber": 55,
-            "velocity": 51,
-            "programNumber": 0
-        }, {
-            "time": 23500,
-            "duration": 996.09375,
-            "noteNumber": 64,
-            "velocity": 84,
-            "programNumber": 0
-        }, {
-            "time": 24000,
-            "duration": 902.34375,
-            "noteNumber": 60,
-            "velocity": 55,
-            "programNumber": 0
-        }, {
-            "time": 24500,
-            "duration": 496.09375,
-            "noteNumber": 64,
-            "velocity": 97,
-            "programNumber": 0
-        }, {
-            "time": 25000,
-            "duration": 496.09375,
-            "noteNumber": 65,
-            "velocity": 100,
-            "programNumber": 0
-        }, {
-            "time": 25000,
-            "duration": 902.34375,
-            "noteNumber": 58,
-            "velocity": 44,
-            "programNumber": 0
-        }, {
-            "time": 25500,
-            "duration": 496.09375,
-            "noteNumber": 67,
-            "velocity": 103,
-            "programNumber": 0
-        }, {
-            "time": 26000,
-            "duration": 496.09375,
-            "noteNumber": 67,
-            "velocity": 101,
-            "programNumber": 0
-        }, {
-            "time": 26000,
-            "duration": 902.34375,
-            "noteNumber": 57,
-            "velocity": 49,
-            "programNumber": 0
-        }, {
-            "time": 26500,
-            "duration": 496.09375,
-            "noteNumber": 65,
-            "velocity": 92,
-            "programNumber": 0
-        }, {
-            "time": 27000,
-            "duration": 496.09375,
-            "noteNumber": 64,
-            "velocity": 89,
-            "programNumber": 0
-        }, {
-            "time": 27000,
-            "duration": 902.34375,
-            "noteNumber": 53,
-            "velocity": 42,
-            "programNumber": 0
-        }, {
-            "time": 27500,
-            "duration": 496.09375,
-            "noteNumber": 62,
-            "velocity": 88,
-            "programNumber": 0
-        }, {
-            "time": 28000,
-            "duration": 451.171875,
-            "noteNumber": 52,
-            "velocity": 49,
-            "programNumber": 0
-        }, {
-            "time": 28000,
-            "duration": 496.09375,
-            "noteNumber": 60,
-            "velocity": 93,
-            "programNumber": 0
-        }, {
-            "time": 28500,
-            "duration": 451.171875,
-            "noteNumber": 52,
-            "velocity": 46,
-            "programNumber": 0
-        }, {
-            "time": 28500,
-            "duration": 496.09375,
-            "noteNumber": 60,
-            "velocity": 97,
-            "programNumber": 0
-        }, {
-            "time": 29000,
-            "duration": 451.171875,
-            "noteNumber": 55,
-            "velocity": 51,
-            "programNumber": 0
-        }, {
-            "time": 29000,
-            "duration": 496.09375,
-            "noteNumber": 62,
-            "velocity": 100,
-            "programNumber": 0
-        }, {
-            "time": 29500,
-            "duration": 451.171875,
-            "noteNumber": 60,
-            "velocity": 53,
-            "programNumber": 0
-        }, {
-            "time": 29500,
-            "duration": 496.09375,
-            "noteNumber": 64,
-            "velocity": 103,
-            "programNumber": 0
-        }, {
-            "time": 30000,
-            "duration": 744.140625,
-            "noteNumber": 62,
-            "velocity": 94,
-            "programNumber": 0
-        }, {
-            "time": 30000,
-            "duration": 902.34375,
-            "noteNumber": 55,
-            "velocity": 46,
-            "programNumber": 0
-        }, {
-            "time": 30750,
-            "duration": 248.046875,
-            "noteNumber": 60,
-            "velocity": 90,
-            "programNumber": 0
-        }, {
-            "time": 31000,
-            "duration": 902.34375,
-            "noteNumber": 48,
-            "velocity": 48,
-            "programNumber": 0
-        }, {
-            "time": 31000,
-            "duration": 902.34375,
-            "noteNumber": 52,
-            "velocity": 47,
-            "programNumber": 0
-        }, {
-            "time": 31000,
-            "duration": 902.34375,
-            "noteNumber": 55,
-            "velocity": 45,
-            "programNumber": 0
-        }, {
-            "time": 31000,
-            "duration": 990.234375,
-            "noteNumber": 60,
-            "velocity": 93,
-            "programNumber": 0
-        }]
-    ]
-}
-
-},{}],42:[function(require,module,exports){
-module.exports={
-    "path": "media/piano-long/",
+    "path": "media/big-piano-long-converted/",
     "videos": [{
         "filename": "A0.mp4",
         "duration": 4.352,
@@ -6587,4 +5971,4 @@ module.exports={
     "frames": []
 }
 
-},{}]},{},[25]);
+},{}]},{},[26]);

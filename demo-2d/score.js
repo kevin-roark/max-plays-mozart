@@ -2,7 +2,7 @@
 var tonal = require('tonal');
 var frampton = require('../../frampton/dist/web-frampton');
 var mediaConfig = require('../piano_long.json');
-var song = require('../ode_to_joy.json');
+var song = require('../caprice5.json');
 
 var finder = new frampton.MediaFinder(mediaConfig);
 
@@ -26,12 +26,13 @@ function scheduleSegment(el) {
 
   var segment = new frampton.VideoSegment(video);
   segment
-    .setDuration(el.duration / 1000)
-    .setAudioFadeDuration(250)
-    .setWidth('10%')
+    .setWidth('25%')
     .setTop('25%');
 
-  var left = noteNumberRange.getPercent(el.noteNumber) * 100;
+  var duration = Math.max(el.duration / 1000, 0.2);
+  segment.setDuration(duration);
+
+  var left = noteNumberRange.getPercent(el.noteNumber) * 80;
   segment.setLeft(left + '%');
 
   renderer.scheduleSegmentRender(segment, initialDelay + el.time);

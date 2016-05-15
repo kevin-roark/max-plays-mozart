@@ -5,7 +5,7 @@ var frampton = require('../../frampton/dist/web-frampton');
 var WebRenderer3D = require('../../frampton/dist/renderer/web-renderer-3d');
 var OrbitControls = require('../../frampton/dist/threejs/orbit-controls');
 var mediaConfig = require('../piano_long.json');
-var song = require('../moon1-2.json');
+var song = require('../ode_to_joy.json');
 
 var finder = new frampton.MediaFinder(mediaConfig);
 
@@ -22,17 +22,17 @@ var noteNumberRange = makeNoteRange();
 
 var initialDelay = 2000;
 iterateTracks(function(trackIndex, el) {
-  scheduleSegment(el, trackIndex);
+  scheduleSegment(el);
 });
 
-function scheduleSegment(el, trackIndex) {
+function scheduleSegment(el) {
   var note = tonal.fromMidi(el.noteNumber);
   var video = finder.findVideoWithPatern(note);
 
   var segment = new frampton.VideoSegment(video);
-
-  var duration = Math.max(el.duration / 1000, 0.2);
-  segment.setDuration(duration);
+  segment
+    .setDuration(el.duration / 1000)
+    .setAudioFadeDuration(250);
 
   segment.threeOptions = {
     videoMeshWidth: 200, videoMeshHeight: 112,
@@ -40,7 +40,7 @@ function scheduleSegment(el, trackIndex) {
       return new THREE.BoxGeometry(videoMeshWidth, videoMeshHeight, 40);
     },
     meshConfigurer: function(mesh) {
-      var radius = 100;
+      var radius = 450;
       var angle = noteNumberRange.getPercent(el.noteNumber) * Math.PI * 2;
       var x = Math.cos(angle) * radius;
       var z = Math.sin(angle) * radius;

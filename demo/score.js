@@ -53,6 +53,9 @@ function scheduleSegment(el, trackIndex) {
   var duration = Math.max(el.duration / 1000, 0.2);
   segment.setDuration(duration);
 
+  var volume = Math.min(1, (el.velocity + 1) / 128);
+  segment.setVolume(volume);
+
   segment.threeOptions = {
     videoMeshWidth: 200, videoMeshHeight: 112, videoSourceWidth: 568, videoSourceHeight: 320,
     geometryProvider: (videoMeshWidth, videoMeshHeight) => {

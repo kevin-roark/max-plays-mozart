@@ -45427,6 +45427,9 @@ function scheduleSegment(el, trackIndex) {
   var duration = Math.max(el.duration / 1000, 0.2);
   segment.setDuration(duration);
 
+  var volume = Math.min(1, (el.velocity + 1) / 128);
+  segment.setVolume(volume);
+
   segment.threeOptions = {
     videoMeshWidth: 200, videoMeshHeight: 112, videoSourceWidth: 568, videoSourceHeight: 320,
     geometryProvider: (videoMeshWidth, videoMeshHeight) => {
@@ -47442,7 +47445,7 @@ module.exports={
         "duration": 5.504,
         "volumeInfo": {
             "mean": -27.8,
-            "max": -8.4
+            "max": -8.3
         },
         "tags": []
     }, {
@@ -47450,7 +47453,7 @@ module.exports={
         "duration": 5.483,
         "volumeInfo": {
             "mean": -27.7,
-            "max": -9.7
+            "max": -9.6
         },
         "tags": []
     }, {
@@ -47466,7 +47469,7 @@ module.exports={
         "duration": 2.582,
         "volumeInfo": {
             "mean": -25.8,
-            "max": -8.8
+            "max": -8.7
         },
         "tags": []
     }, {
@@ -47474,7 +47477,7 @@ module.exports={
         "duration": 1.323,
         "volumeInfo": {
             "mean": -31.3,
-            "max": -7.9
+            "max": -8
         },
         "tags": []
     }, {
@@ -47490,7 +47493,7 @@ module.exports={
         "duration": 6.272,
         "volumeInfo": {
             "mean": -26.4,
-            "max": -8.3
+            "max": -8.4
         },
         "tags": []
     }, {
@@ -47498,7 +47501,7 @@ module.exports={
         "duration": 5.696,
         "volumeInfo": {
             "mean": -27.4,
-            "max": -9.5
+            "max": -9.4
         },
         "tags": []
     }, {
@@ -47522,15 +47525,15 @@ module.exports={
         "duration": 2.603,
         "volumeInfo": {
             "mean": -29.7,
-            "max": -8.1
+            "max": -7.9
         },
         "tags": []
     }, {
         "filename": "Ab7.mp4",
         "duration": 1.387,
         "volumeInfo": {
-            "mean": -29.9,
-            "max": -8.9
+            "mean": -29.8,
+            "max": -8.8
         },
         "tags": []
     }, {
@@ -47538,7 +47541,7 @@ module.exports={
         "duration": 3.712,
         "volumeInfo": {
             "mean": -25.1,
-            "max": -8.4
+            "max": -8.3
         },
         "tags": []
     }, {
@@ -47578,7 +47581,7 @@ module.exports={
         "duration": 4.48,
         "volumeInfo": {
             "mean": -31.4,
-            "max": -8
+            "max": -7.9
         },
         "tags": []
     }, {
@@ -47586,15 +47589,15 @@ module.exports={
         "duration": 2.518,
         "volumeInfo": {
             "mean": -29.8,
-            "max": -8.6
+            "max": -8.7
         },
         "tags": []
     }, {
         "filename": "B7.mp4",
         "duration": 1.408,
         "volumeInfo": {
-            "mean": -35,
-            "max": -12.5
+            "mean": -34.9,
+            "max": -12.4
         },
         "tags": []
     }, {
@@ -47602,14 +47605,14 @@ module.exports={
         "duration": 4.118,
         "volumeInfo": {
             "mean": -27.7,
-            "max": -10.7
+            "max": -10.8
         },
         "tags": []
     }, {
         "filename": "Bb1.mp4",
         "duration": 4.502,
         "volumeInfo": {
-            "mean": -23.1,
+            "mean": -23,
             "max": -7.7
         },
         "tags": []
@@ -47633,8 +47636,8 @@ module.exports={
         "filename": "Bb4.mp4",
         "duration": 5.312,
         "volumeInfo": {
-            "mean": -28.1,
-            "max": -8.4
+            "mean": -28,
+            "max": -8.3
         },
         "tags": []
     }, {
@@ -47642,14 +47645,14 @@ module.exports={
         "duration": 4.523,
         "volumeInfo": {
             "mean": -27.7,
-            "max": -7.6
+            "max": -7.5
         },
         "tags": []
     }, {
         "filename": "Bb6.mp4",
         "duration": 2.582,
         "volumeInfo": {
-            "mean": -30.2,
+            "mean": -30.1,
             "max": -8.4
         },
         "tags": []
@@ -47681,7 +47684,7 @@ module.exports={
         "filename": "C3.mp4",
         "duration": 6.614,
         "volumeInfo": {
-            "mean": -27.1,
+            "mean": -27,
             "max": -8.2
         },
         "tags": []
@@ -47697,7 +47700,7 @@ module.exports={
         "filename": "C5.mp4",
         "duration": 5.547,
         "volumeInfo": {
-            "mean": -32.7,
+            "mean": -32.6,
             "max": -8.7
         },
         "tags": []
@@ -47706,7 +47709,7 @@ module.exports={
         "duration": 4.736,
         "volumeInfo": {
             "mean": -27.5,
-            "max": -9.6
+            "max": -9.7
         },
         "tags": []
     }, {
@@ -47721,8 +47724,8 @@ module.exports={
         "filename": "C8.mp4",
         "duration": 4.246,
         "volumeInfo": {
-            "mean": -36.4,
-            "max": -8.5
+            "mean": -36.2,
+            "max": -8.1
         },
         "tags": []
     }, {
@@ -47730,7 +47733,7 @@ module.exports={
         "duration": 4.779,
         "volumeInfo": {
             "mean": -26,
-            "max": -8.9
+            "max": -8.7
         },
         "tags": []
     }, {
@@ -47754,7 +47757,7 @@ module.exports={
         "duration": 7.958,
         "volumeInfo": {
             "mean": -28.2,
-            "max": -7.5
+            "max": -7.4
         },
         "tags": []
     }, {
@@ -47777,7 +47780,7 @@ module.exports={
         "filename": "D7.mp4",
         "duration": 2.603,
         "volumeInfo": {
-            "mean": -32.4,
+            "mean": -32.3,
             "max": -8.4
         },
         "tags": []
@@ -47810,7 +47813,7 @@ module.exports={
         "duration": 9.984,
         "volumeInfo": {
             "mean": -28.5,
-            "max": -8.7
+            "max": -8.8
         },
         "tags": []
     }, {
@@ -47834,7 +47837,7 @@ module.exports={
         "duration": 2.262,
         "volumeInfo": {
             "mean": -27.8,
-            "max": -8.2
+            "max": -8
         },
         "tags": []
     }, {
@@ -47857,7 +47860,7 @@ module.exports={
         "filename": "E3.mp4",
         "duration": 6.72,
         "volumeInfo": {
-            "mean": -28.4,
+            "mean": -28.3,
             "max": -8.5
         },
         "tags": []
@@ -47866,7 +47869,7 @@ module.exports={
         "duration": 8.256,
         "volumeInfo": {
             "mean": -30.4,
-            "max": -8.4
+            "max": -8.5
         },
         "tags": []
     }, {
@@ -47874,7 +47877,7 @@ module.exports={
         "duration": 4.843,
         "volumeInfo": {
             "mean": -32,
-            "max": -11.4
+            "max": -11.3
         },
         "tags": []
     }, {
@@ -47882,7 +47885,7 @@ module.exports={
         "duration": 3.392,
         "volumeInfo": {
             "mean": -26.9,
-            "max": -7.4
+            "max": -7.3
         },
         "tags": []
     }, {
@@ -47890,7 +47893,7 @@ module.exports={
         "duration": 2.411,
         "volumeInfo": {
             "mean": -31,
-            "max": -9.3
+            "max": -8.4
         },
         "tags": []
     }, {
@@ -47905,7 +47908,7 @@ module.exports={
         "filename": "Eb2.mp4",
         "duration": 4.779,
         "volumeInfo": {
-            "mean": -24.8,
+            "mean": -24.7,
             "max": -8.4
         },
         "tags": []
@@ -47954,15 +47957,15 @@ module.exports={
         "duration": 5.163,
         "volumeInfo": {
             "mean": -24.9,
-            "max": -7.9
+            "max": -7.8
         },
         "tags": []
     }, {
         "filename": "F2.mp4",
         "duration": 6.23,
         "volumeInfo": {
-            "mean": -24.9,
-            "max": -8.3
+            "mean": -24.8,
+            "max": -8.4
         },
         "tags": []
     }, {
@@ -48002,14 +48005,14 @@ module.exports={
         "duration": 2.112,
         "volumeInfo": {
             "mean": -34.9,
-            "max": -11.6
+            "max": -11.7
         },
         "tags": []
     }, {
         "filename": "G1.mp4",
         "duration": 4.864,
         "volumeInfo": {
-            "mean": -24.7,
+            "mean": -24.6,
             "max": -8.2
         },
         "tags": []
@@ -48034,7 +48037,7 @@ module.exports={
         "duration": 6.4,
         "volumeInfo": {
             "mean": -30.1,
-            "max": -8.6
+            "max": -8.5
         },
         "tags": []
     }, {
@@ -48050,14 +48053,14 @@ module.exports={
         "duration": 2.71,
         "volumeInfo": {
             "mean": -29.4,
-            "max": -8.8
+            "max": -8.6
         },
         "tags": []
     }, {
         "filename": "G7.mp4",
         "duration": 1.387,
         "volumeInfo": {
-            "mean": -31,
+            "mean": -30.9,
             "max": -9.4
         },
         "tags": []
@@ -48066,7 +48069,7 @@ module.exports={
         "duration": 5.568,
         "volumeInfo": {
             "mean": -26.2,
-            "max": -8.3
+            "max": -8.2
         },
         "tags": []
     }, {

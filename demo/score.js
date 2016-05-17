@@ -52,6 +52,7 @@ function scheduleSegment(el, trackIndex) {
 
   var duration = Math.max(el.duration / 1000, 0.2);
   segment.setDuration(duration);
+  segment.setAudioFadeDuration(120);
 
   var volume = Math.min(1, (el.velocity + 1) / 128);
   segment.setVolume(volume);

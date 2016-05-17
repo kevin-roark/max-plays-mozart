@@ -46151,23 +46151,17 @@ function scheduleSegment(el) {
   var video = finder.findVideoWithPatern(note);
 
   var segment = new frampton.VideoSegment(video);
-  segment
-    .setDuration(el.duration / 1000)
-    .setAudioFadeDuration(250);
+  segment.setDuration(el.duration / 1000);
 
   segment.threeOptions = {
-    videoMeshWidth: 200, videoMeshHeight: 112, videoSourceWidth: 568, videoSourceHeight: 320,
+    videoMeshWidth: 250, videoMeshHeight: 140, videoSourceWidth: 568, videoSourceHeight: 320,
     geometryProvider: (videoMeshWidth, videoMeshHeight) => {
       return new THREE.BoxGeometry(videoMeshWidth, videoMeshHeight, 40);
     },
     meshConfigurer: function(mesh) {
-      var radius = 450;
-      var angle = noteNumberRange.getPercent(el.noteNumber) * Math.PI * 2;
-      var x = Math.cos(angle) * radius;
-      var z = Math.sin(angle) * radius;
-      mesh.position.set(x, 45, z);
-      mesh.rotation.y = -angle - Math.PI/2;
+      var z = 200 + noteNumberRange.getPercent(el.noteNumber) * -500;
 
+      mesh.position.set(0, 45, z);
       mesh.castShadow = true;
     }
   };
@@ -46206,7 +46200,7 @@ function setupEnvironment() {
   renderer.renderer.gammaOutput = true;
   renderer.renderer.antialias = true;
 
-  renderer.camera.position.z = 1;
+  renderer.camera.position.z = 500;
 
   var controls = new OrbitControls(renderer.camera, renderer.renderer.domElement);
   controls.enableDamping = true;
@@ -46228,7 +46222,7 @@ function setupEnvironment() {
 }
 
 function createGround() {
-  var geometry = new THREE.PlaneGeometry(1500, 1500);
+  var geometry = new THREE.PlaneGeometry(1000, 1000);
   geometry.computeFaceNormals();
   geometry.computeVertexNormals();
 

@@ -48,6 +48,7 @@ function scheduleSegment(x) {
   var segment = new frampton.VideoSegment(video);
   segment.loop = true;
   segment.threeOptions = {
+    videoSourceWidth: 568, videoSourceHeight: 320,
     geometryProvider: (videoMeshWidth, videoMeshHeight) => {
       return new THREE.BoxGeometry(videoMeshWidth, videoMeshHeight, 50);
     },

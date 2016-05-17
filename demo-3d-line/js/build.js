@@ -46156,7 +46156,7 @@ function scheduleSegment(el) {
     .setAudioFadeDuration(250);
 
   segment.threeOptions = {
-    videoMeshWidth: 250, videoMeshHeight: 140,
+    videoMeshWidth: 250, videoMeshHeight: 140, videoSourceWidth: 568, videoSourceHeight: 320,
     geometryProvider: (videoMeshWidth, videoMeshHeight) => {
       return new THREE.BoxGeometry(videoMeshWidth, videoMeshHeight, 40);
     },
@@ -48644,7 +48644,7 @@ module.exports={
 
 },{}],45:[function(require,module,exports){
 module.exports={
-    "path": "media/piano-long/",
+    "path": "media/big-piano-long-converted/",
     "videos": [{
         "filename": "A0.mp4",
         "duration": 4.352,

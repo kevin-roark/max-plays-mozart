@@ -35,7 +35,7 @@ function scheduleSegment(el) {
     .setAudioFadeDuration(250);
 
   segment.threeOptions = {
-    videoMeshWidth: 250, videoMeshHeight: 140,
+    videoMeshWidth: 250, videoMeshHeight: 140, videoSourceWidth: 568, videoSourceHeight: 320,
     geometryProvider: (videoMeshWidth, videoMeshHeight) => {
       return new THREE.BoxGeometry(videoMeshWidth, videoMeshHeight, 40);
     },

@@ -46156,7 +46156,7 @@ function scheduleSegment(el, trackIndex) {
   segment.setDuration(duration);
 
   segment.threeOptions = {
-    videoMeshWidth: 200, videoMeshHeight: 112,
+    videoMeshWidth: 200, videoMeshHeight: 112, videoSourceWidth: 568, videoSourceHeight: 320,
     geometryProvider: (videoMeshWidth, videoMeshHeight) => {
       return new THREE.BoxGeometry(videoMeshWidth, videoMeshHeight, 40);
     },

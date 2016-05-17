@@ -46168,6 +46168,7 @@ function scheduleSegment(x, delay) {
 
   var segment = new frampton.VideoSegment(video);
   segment.threeOptions = {
+    videoSourceWidth: 568, videoSourceHeight: 320,
     geometryProvider: (videoMeshWidth, videoMeshHeight) => {
       return new THREE.BoxGeometry(videoMeshWidth, videoMeshHeight, 50);
     },
@@ -46220,7 +46221,7 @@ function createSpotLight() {
 
 },{"../../frampton/dist/renderer/web-renderer-3d":9,"../../frampton/dist/threejs/orbit-controls":23,"../../frampton/dist/web-frampton":24,"../../frampton/node_modules/three":26,"../piano_long.json":29}],29:[function(require,module,exports){
 module.exports={
-    "path": "media/piano-long/",
+    "path": "media/big-piano-long-converted/",
     "videos": [{
         "filename": "A0.mp4",
         "duration": 4.352,
@@ -46559,10 +46560,10 @@ module.exports={
         "tags": []
     }, {
         "filename": "D4.mp4",
-        "duration": 7.723,
+        "duration": 7.958,
         "volumeInfo": {
-            "mean": -27.9,
-            "max": -7.6
+            "mean": -28.2,
+            "max": -7.5
         },
         "tags": []
     }, {
@@ -46727,10 +46728,10 @@ module.exports={
         "tags": []
     }, {
         "filename": "Eb4.mp4",
-        "duration": 7.958,
+        "duration": 7.723,
         "volumeInfo": {
-            "mean": -28.2,
-            "max": -7.5
+            "mean": -27.9,
+            "max": -7.6
         },
         "tags": []
     }, {

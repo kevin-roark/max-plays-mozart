@@ -15,7 +15,7 @@ var renderer = new frampton.WebRenderer({
 
 var noteNumberRange = makeNoteRange();
 
-var numberOfRows = 4;
+var numberOfRows = 5;
 var numberOfColumns = Math.floor(noteNumberRange.range / numberOfRows);
 
 var initialDelay = 2000;
@@ -30,17 +30,20 @@ function scheduleSegment(el) {
   var segment = new frampton.VideoSegment(video);
   segment.setWidth('33%');
 
-  var duration = Math.max(el.duration / 1000, 1);
+  var duration = Math.max(el.duration / 1000, 0.7);
   segment.setDuration(duration);
 
   var notePercent = noteNumberRange.getPercent(el.noteNumber) * 100;
   var row = Math.floor(Math.floor(notePercent) % numberOfRows);
   var column = Math.floor(Math.floor(notePercent) % numberOfColumns);
 
-  var top = noteNumberRange.getPercent(el.noteNumber) * 90 - 20; (row / numberOfRows) * 100;
+  var volume = Math.min(1, (el.velocity + 1) / 128);
+  segment.setVolume(volume);
+
+  var top = noteNumberRange.getPercent(el.noteNumber) * 85 - 10; (row / numberOfRows) * 100;
   segment.setTop(top + '%');
 
-  var left = (column / numberOfColumns) * 100;
+  var left = (column / numberOfColumns) * 85 - 4 ;
   segment.setLeft(left + '%');
 
   console.log('note ' + el.noteNumber + ' left ' + left + ' top ' + top);

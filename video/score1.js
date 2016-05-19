@@ -27,6 +27,8 @@ function scheduleSegment(el) {
   var volume = Math.min(1, (el.velocity + 1) / 128);
   segment.setVolume(volume);
 
+  segment.setAudioFadeDuration(20 / 1000);
+
   renderer.scheduleSegmentRender(segment, 100 + el.time);
 }
 

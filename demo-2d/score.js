@@ -15,8 +15,7 @@ var renderer = new frampton.WebRenderer({
 
 var noteNumberRange = makeNoteRange();
 
-var numberOfRows = 5;
-var numberOfColumns = Math.floor(noteNumberRange.range / numberOfRows);
+var numberOfColumns = 4;
 
 var initialDelay = 2000;
 iterateTracks(function(trackIndex, el) {
@@ -33,20 +32,27 @@ function scheduleSegment(el) {
   var duration = Math.max(el.duration / 1000, 0.7);
   segment.setDuration(duration);
 
-  var notePercent = noteNumberRange.getPercent(el.noteNumber) * 100;
-  var row = Math.floor(Math.floor(notePercent) % numberOfRows);
-  var column = Math.floor(Math.floor(notePercent) % numberOfColumns);
-
   var volume = Math.min(1, (el.velocity + 1) / 128);
   segment.setVolume(volume);
 
-  var top = noteNumberRange.getPercent(el.noteNumber) * 85 - 10; (row / numberOfRows) * 100;
-  segment.setTop(top + '%');
-
-  var left = (column / numberOfColumns) * 85 - 4 ;
+  var column = Math.floor(noteNumberRange.getPercent(el.noteNumber) * numberOfColumns);
+  var left = (column / numberOfColumns) * 67;
   segment.setLeft(left + '%');
 
-  console.log('note ' + el.noteNumber + ' left ' + left + ' top ' + top);
+  // the top levels need to vary within a column
+  // concept math to figure this out
+  // say you are at min 60 -> max 80
+  // range: 20, per column (at 4 columns): 5
+  // 67 -> diff from min = 7
+  // bottomBound = 65, topBound = 70
+  var rangeChunkPerColumn = Math.ceil(noteNumberRange.range / numberOfColumns);
+  var diffFromMin = el.noteNumber - noteNumberRange.min;
+  var bottomBound = el.noteNumber - (diffFromMin % rangeChunkPerColumn);
+  var topBound = bottomBound + rangeChunkPerColumn;
+  var top = (topBound - el.noteNumber) / (topBound - bottomBound) * 60;
+  segment.setTop(top + '%');
+
+  console.log('note ' + el.noteNumber + ' column ' + column + ' left ' + left + ' top ' + top);
 
   renderer.scheduleSegmentRender(segment, initialDelay + el.time);
 }

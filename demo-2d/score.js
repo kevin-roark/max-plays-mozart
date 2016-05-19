@@ -2,7 +2,7 @@
 var tonal = require('tonal');
 var frampton = require('../../frampton/dist/web-frampton');
 var mediaConfig = require('../piano_long.json');
-var song = require('../caprice5.json');
+var song = require('../turc.json');
 
 var finder = new frampton.MediaFinder(mediaConfig);
 
@@ -15,6 +15,9 @@ var renderer = new frampton.WebRenderer({
 
 var noteNumberRange = makeNoteRange();
 
+var numberOfRows = 5;
+var numberOfColumns = Math.floor(noteNumberRange.range / numberOfRows);
+
 var initialDelay = 2000;
 iterateTracks(function(trackIndex, el) {
   scheduleSegment(el);
@@ -25,15 +28,25 @@ function scheduleSegment(el) {
   var video = finder.findVideoWithPatern(note);
 
   var segment = new frampton.VideoSegment(video);
-  segment
-    .setWidth('25%')
-    .setTop('25%');
+  segment.setWidth('33%');
 
-  var duration = Math.max(el.duration / 1000, 0.2);
+  var duration = Math.max(el.duration / 1000, 0.7);
   segment.setDuration(duration);
 
-  var left = noteNumberRange.getPercent(el.noteNumber) * 80;
+  var notePercent = noteNumberRange.getPercent(el.noteNumber) * 100;
+  var row = Math.floor(Math.floor(notePercent) % numberOfRows);
+  var column = Math.floor(Math.floor(notePercent) % numberOfColumns);
+
+  var volume = Math.min(1, (el.velocity + 1) / 128);
+  segment.setVolume(volume);
+
+  var top = noteNumberRange.getPercent(el.noteNumber) * 85 - 10; (row / numberOfRows) * 100;
+  segment.setTop(top + '%');
+
+  var left = (column / numberOfColumns) * 85 - 4 ;
   segment.setLeft(left + '%');
+
+  console.log('note ' + el.noteNumber + ' left ' + left + ' top ' + top);
 
   renderer.scheduleSegmentRender(segment, initialDelay + el.time);
 }

@@ -1,0 +1,710 @@
+{
+    "path": "media/big-piano-long/",
+    "videos": [{
+        "filename": "A0.mp4",
+        "duration": 4.352,
+        "volumeInfo": {
+            "mean": -27.3,
+            "max": -9.5
+        },
+        "tags": []
+    }, {
+        "filename": "A1.mp4",
+        "duration": 5.91,
+        "volumeInfo": {
+            "mean": -25.9,
+            "max": -7.6
+        },
+        "tags": []
+    }, {
+        "filename": "A2.mp4",
+        "duration": 6.614,
+        "volumeInfo": {
+            "mean": -25.1,
+            "max": -8
+        },
+        "tags": []
+    }, {
+        "filename": "A3.mp4",
+        "duration": 5.504,
+        "volumeInfo": {
+            "mean": -27.8,
+            "max": -8.3
+        },
+        "tags": []
+    }, {
+        "filename": "A4.mp4",
+        "duration": 5.483,
+        "volumeInfo": {
+            "mean": -27.7,
+            "max": -9.6
+        },
+        "tags": []
+    }, {
+        "filename": "A5.mp4",
+        "duration": 4.331,
+        "volumeInfo": {
+            "mean": -26.9,
+            "max": -7.6
+        },
+        "tags": []
+    }, {
+        "filename": "A6.mp4",
+        "duration": 2.582,
+        "volumeInfo": {
+            "mean": -25.8,
+            "max": -8.7
+        },
+        "tags": []
+    }, {
+        "filename": "A7.mp4",
+        "duration": 1.323,
+        "volumeInfo": {
+            "mean": -31.3,
+            "max": -8
+        },
+        "tags": []
+    }, {
+        "filename": "Ab1.mp4",
+        "duration": 5.184,
+        "volumeInfo": {
+            "mean": -25,
+            "max": -8.4
+        },
+        "tags": []
+    }, {
+        "filename": "Ab2.mp4",
+        "duration": 6.272,
+        "volumeInfo": {
+            "mean": -26.4,
+            "max": -8.4
+        },
+        "tags": []
+    }, {
+        "filename": "Ab3.mp4",
+        "duration": 5.696,
+        "volumeInfo": {
+            "mean": -27.4,
+            "max": -9.4
+        },
+        "tags": []
+    }, {
+        "filename": "Ab4.mp4",
+        "duration": 5.846,
+        "volumeInfo": {
+            "mean": -28.8,
+            "max": -9.4
+        },
+        "tags": []
+    }, {
+        "filename": "Ab5.mp4",
+        "duration": 4.331,
+        "volumeInfo": {
+            "mean": -27.4,
+            "max": -7.7
+        },
+        "tags": []
+    }, {
+        "filename": "Ab6.mp4",
+        "duration": 2.603,
+        "volumeInfo": {
+            "mean": -29.7,
+            "max": -7.9
+        },
+        "tags": []
+    }, {
+        "filename": "Ab7.mp4",
+        "duration": 1.387,
+        "volumeInfo": {
+            "mean": -29.8,
+            "max": -8.8
+        },
+        "tags": []
+    }, {
+        "filename": "B0.mp4",
+        "duration": 3.712,
+        "volumeInfo": {
+            "mean": -25.1,
+            "max": -8.3
+        },
+        "tags": []
+    }, {
+        "filename": "B1.mp4",
+        "duration": 5.398,
+        "volumeInfo": {
+            "mean": -25.1,
+            "max": -7.9
+        },
+        "tags": []
+    }, {
+        "filename": "B2.mp4",
+        "duration": 5.846,
+        "volumeInfo": {
+            "mean": -27.8,
+            "max": -8.1
+        },
+        "tags": []
+    }, {
+        "filename": "B3.mp4",
+        "duration": 6.144,
+        "volumeInfo": {
+            "mean": -26.2,
+            "max": -8.3
+        },
+        "tags": []
+    }, {
+        "filename": "B4.mp4",
+        "duration": 6.614,
+        "volumeInfo": {
+            "mean": -27.1,
+            "max": -7.5
+        },
+        "tags": []
+    }, {
+        "filename": "B5.mp4",
+        "duration": 4.48,
+        "volumeInfo": {
+            "mean": -31.4,
+            "max": -7.9
+        },
+        "tags": []
+    }, {
+        "filename": "B6.mp4",
+        "duration": 2.518,
+        "volumeInfo": {
+            "mean": -29.8,
+            "max": -8.7
+        },
+        "tags": []
+    }, {
+        "filename": "B7.mp4",
+        "duration": 1.408,
+        "volumeInfo": {
+            "mean": -34.9,
+            "max": -12.4
+        },
+        "tags": []
+    }, {
+        "filename": "Bb0.mp4",
+        "duration": 4.118,
+        "volumeInfo": {
+            "mean": -27.7,
+            "max": -10.8
+        },
+        "tags": []
+    }, {
+        "filename": "Bb1.mp4",
+        "duration": 4.502,
+        "volumeInfo": {
+            "mean": -23,
+            "max": -7.7
+        },
+        "tags": []
+    }, {
+        "filename": "Bb2.mp4",
+        "duration": 5.974,
+        "volumeInfo": {
+            "mean": -26.1,
+            "max": -8.6
+        },
+        "tags": []
+    }, {
+        "filename": "Bb3.mp4",
+        "duration": 5.547,
+        "volumeInfo": {
+            "mean": -24.6,
+            "max": -7.5
+        },
+        "tags": []
+    }, {
+        "filename": "Bb4.mp4",
+        "duration": 5.312,
+        "volumeInfo": {
+            "mean": -28,
+            "max": -8.3
+        },
+        "tags": []
+    }, {
+        "filename": "Bb5.mp4",
+        "duration": 4.523,
+        "volumeInfo": {
+            "mean": -27.7,
+            "max": -7.5
+        },
+        "tags": []
+    }, {
+        "filename": "Bb6.mp4",
+        "duration": 2.582,
+        "volumeInfo": {
+            "mean": -30.1,
+            "max": -8.4
+        },
+        "tags": []
+    }, {
+        "filename": "Bb7.mp4",
+        "duration": 1.43,
+        "volumeInfo": {
+            "mean": -31.5,
+            "max": -8.7
+        },
+        "tags": []
+    }, {
+        "filename": "C1.mp4",
+        "duration": 3.926,
+        "volumeInfo": {
+            "mean": -28.7,
+            "max": -9.2
+        },
+        "tags": []
+    }, {
+        "filename": "C2.mp4",
+        "duration": 5.974,
+        "volumeInfo": {
+            "mean": -24.4,
+            "max": -8.3
+        },
+        "tags": []
+    }, {
+        "filename": "C3.mp4",
+        "duration": 6.614,
+        "volumeInfo": {
+            "mean": -27,
+            "max": -8.2
+        },
+        "tags": []
+    }, {
+        "filename": "C4.mp4",
+        "duration": 6.464,
+        "volumeInfo": {
+            "mean": -27.9,
+            "max": -8.5
+        },
+        "tags": []
+    }, {
+        "filename": "C5.mp4",
+        "duration": 5.547,
+        "volumeInfo": {
+            "mean": -32.6,
+            "max": -8.7
+        },
+        "tags": []
+    }, {
+        "filename": "C6.mp4",
+        "duration": 4.736,
+        "volumeInfo": {
+            "mean": -27.5,
+            "max": -9.7
+        },
+        "tags": []
+    }, {
+        "filename": "C7.mp4",
+        "duration": 2.582,
+        "volumeInfo": {
+            "mean": -28.2,
+            "max": -8.1
+        },
+        "tags": []
+    }, {
+        "filename": "C8.mp4",
+        "duration": 4.246,
+        "volumeInfo": {
+            "mean": -36.2,
+            "max": -8.1
+        },
+        "tags": []
+    }, {
+        "filename": "D1.mp4",
+        "duration": 4.779,
+        "volumeInfo": {
+            "mean": -26,
+            "max": -8.7
+        },
+        "tags": []
+    }, {
+        "filename": "D2.mp4",
+        "duration": 4.8,
+        "volumeInfo": {
+            "mean": -24,
+            "max": -7.7
+        },
+        "tags": []
+    }, {
+        "filename": "D3.mp4",
+        "duration": 6.08,
+        "volumeInfo": {
+            "mean": -25.6,
+            "max": -8.5
+        },
+        "tags": []
+    }, {
+        "filename": "D4.mp4",
+        "duration": 7.958,
+        "volumeInfo": {
+            "mean": -28.2,
+            "max": -7.4
+        },
+        "tags": []
+    }, {
+        "filename": "D5.mp4",
+        "duration": 5.462,
+        "volumeInfo": {
+            "mean": -26.8,
+            "max": -7.3
+        },
+        "tags": []
+    }, {
+        "filename": "D6.mp4",
+        "duration": 3.734,
+        "volumeInfo": {
+            "mean": -27.4,
+            "max": -9.3
+        },
+        "tags": []
+    }, {
+        "filename": "D7.mp4",
+        "duration": 2.603,
+        "volumeInfo": {
+            "mean": -32.3,
+            "max": -8.4
+        },
+        "tags": []
+    }, {
+        "filename": "Db1.mp4",
+        "duration": 3.328,
+        "volumeInfo": {
+            "mean": -30.9,
+            "max": -14.1
+        },
+        "tags": []
+    }, {
+        "filename": "Db2.mp4",
+        "duration": 5.547,
+        "volumeInfo": {
+            "mean": -24.5,
+            "max": -8.4
+        },
+        "tags": []
+    }, {
+        "filename": "Db3.mp4",
+        "duration": 6.763,
+        "volumeInfo": {
+            "mean": -24.8,
+            "max": -9
+        },
+        "tags": []
+    }, {
+        "filename": "Db4.mp4",
+        "duration": 9.984,
+        "volumeInfo": {
+            "mean": -28.5,
+            "max": -8.8
+        },
+        "tags": []
+    }, {
+        "filename": "Db5.mp4",
+        "duration": 5.782,
+        "volumeInfo": {
+            "mean": -27,
+            "max": -7.8
+        },
+        "tags": []
+    }, {
+        "filename": "Db6.mp4",
+        "duration": 4.16,
+        "volumeInfo": {
+            "mean": -30.4,
+            "max": -11.9
+        },
+        "tags": []
+    }, {
+        "filename": "Db7.mp4",
+        "duration": 2.262,
+        "volumeInfo": {
+            "mean": -27.8,
+            "max": -8
+        },
+        "tags": []
+    }, {
+        "filename": "E1.mp4",
+        "duration": 4.011,
+        "volumeInfo": {
+            "mean": -24.7,
+            "max": -8.1
+        },
+        "tags": []
+    }, {
+        "filename": "E2.mp4",
+        "duration": 5.824,
+        "volumeInfo": {
+            "mean": -26.4,
+            "max": -8.7
+        },
+        "tags": []
+    }, {
+        "filename": "E3.mp4",
+        "duration": 6.72,
+        "volumeInfo": {
+            "mean": -28.3,
+            "max": -8.5
+        },
+        "tags": []
+    }, {
+        "filename": "E4.mp4",
+        "duration": 8.256,
+        "volumeInfo": {
+            "mean": -30.4,
+            "max": -8.5
+        },
+        "tags": []
+    }, {
+        "filename": "E5.mp4",
+        "duration": 4.843,
+        "volumeInfo": {
+            "mean": -32,
+            "max": -11.3
+        },
+        "tags": []
+    }, {
+        "filename": "E6.mp4",
+        "duration": 3.392,
+        "volumeInfo": {
+            "mean": -26.9,
+            "max": -7.3
+        },
+        "tags": []
+    }, {
+        "filename": "E7.mp4",
+        "duration": 2.411,
+        "volumeInfo": {
+            "mean": -31,
+            "max": -8.4
+        },
+        "tags": []
+    }, {
+        "filename": "Eb1.mp4",
+        "duration": 4.971,
+        "volumeInfo": {
+            "mean": -22.9,
+            "max": -8.1
+        },
+        "tags": []
+    }, {
+        "filename": "Eb2.mp4",
+        "duration": 4.779,
+        "volumeInfo": {
+            "mean": -24.7,
+            "max": -8.4
+        },
+        "tags": []
+    }, {
+        "filename": "Eb3.mp4",
+        "duration": 5.632,
+        "volumeInfo": {
+            "mean": -27.1,
+            "max": -8.7
+        },
+        "tags": []
+    }, {
+        "filename": "Eb4.mp4",
+        "duration": 7.723,
+        "volumeInfo": {
+            "mean": -27.9,
+            "max": -7.6
+        },
+        "tags": []
+    }, {
+        "filename": "Eb5.mp4",
+        "duration": 5.014,
+        "volumeInfo": {
+            "mean": -29.8,
+            "max": -10.4
+        },
+        "tags": []
+    }, {
+        "filename": "Eb6.mp4",
+        "duration": 3.883,
+        "volumeInfo": {
+            "mean": -28.9,
+            "max": -7.6
+        },
+        "tags": []
+    }, {
+        "filename": "Eb7.mp4",
+        "duration": 2.262,
+        "volumeInfo": {
+            "mean": -30,
+            "max": -8.2
+        },
+        "tags": []
+    }, {
+        "filename": "F1.mp4",
+        "duration": 5.163,
+        "volumeInfo": {
+            "mean": -24.9,
+            "max": -7.8
+        },
+        "tags": []
+    }, {
+        "filename": "F2.mp4",
+        "duration": 6.23,
+        "volumeInfo": {
+            "mean": -24.8,
+            "max": -8.4
+        },
+        "tags": []
+    }, {
+        "filename": "F3.mp4",
+        "duration": 5.654,
+        "volumeInfo": {
+            "mean": -27.9,
+            "max": -8.4
+        },
+        "tags": []
+    }, {
+        "filename": "F4.mp4",
+        "duration": 7.382,
+        "volumeInfo": {
+            "mean": -28.9,
+            "max": -7.3
+        },
+        "tags": []
+    }, {
+        "filename": "F5.mp4",
+        "duration": 5.27,
+        "volumeInfo": {
+            "mean": -30.9,
+            "max": -8.3
+        },
+        "tags": []
+    }, {
+        "filename": "F6.mp4",
+        "duration": 3.67,
+        "volumeInfo": {
+            "mean": -30,
+            "max": -9.1
+        },
+        "tags": []
+    }, {
+        "filename": "F7.mp4",
+        "duration": 2.112,
+        "volumeInfo": {
+            "mean": -34.9,
+            "max": -11.7
+        },
+        "tags": []
+    }, {
+        "filename": "G1.mp4",
+        "duration": 4.864,
+        "volumeInfo": {
+            "mean": -24.6,
+            "max": -8.2
+        },
+        "tags": []
+    }, {
+        "filename": "G2.mp4",
+        "duration": 5.846,
+        "volumeInfo": {
+            "mean": -27.3,
+            "max": -8.7
+        },
+        "tags": []
+    }, {
+        "filename": "G3.mp4",
+        "duration": 6.08,
+        "volumeInfo": {
+            "mean": -28.2,
+            "max": -8
+        },
+        "tags": []
+    }, {
+        "filename": "G4.mp4",
+        "duration": 6.4,
+        "volumeInfo": {
+            "mean": -30.1,
+            "max": -8.5
+        },
+        "tags": []
+    }, {
+        "filename": "G5.mp4",
+        "duration": 3.798,
+        "volumeInfo": {
+            "mean": -27.6,
+            "max": -8.4
+        },
+        "tags": []
+    }, {
+        "filename": "G6.mp4",
+        "duration": 2.71,
+        "volumeInfo": {
+            "mean": -29.4,
+            "max": -8.6
+        },
+        "tags": []
+    }, {
+        "filename": "G7.mp4",
+        "duration": 1.387,
+        "volumeInfo": {
+            "mean": -30.9,
+            "max": -9.4
+        },
+        "tags": []
+    }, {
+        "filename": "Gb1.mp4",
+        "duration": 5.568,
+        "volumeInfo": {
+            "mean": -26.2,
+            "max": -8.2
+        },
+        "tags": []
+    }, {
+        "filename": "Gb2.mp4",
+        "duration": 4.544,
+        "volumeInfo": {
+            "mean": -22.6,
+            "max": -8.8
+        },
+        "tags": []
+    }, {
+        "filename": "Gb3.mp4",
+        "duration": 5.568,
+        "volumeInfo": {
+            "mean": -26.5,
+            "max": -8.4
+        },
+        "tags": []
+    }, {
+        "filename": "Gb4.mp4",
+        "duration": 7.019,
+        "volumeInfo": {
+            "mean": -31.4,
+            "max": -8.2
+        },
+        "tags": []
+    }, {
+        "filename": "Gb5.mp4",
+        "duration": 4.971,
+        "volumeInfo": {
+            "mean": -28.7,
+            "max": -8.4
+        },
+        "tags": []
+    }, {
+        "filename": "Gb6.mp4",
+        "duration": 2.774,
+        "volumeInfo": {
+            "mean": -28.4,
+            "max": -8.5
+        },
+        "tags": []
+    }, {
+        "filename": "Gb7.mp4",
+        "duration": 1.418,
+        "volumeInfo": {
+            "mean": -34.1,
+            "max": -11.2
+        },
+        "tags": []
+    }],
+    "audio": [],
+    "frames": []
+}

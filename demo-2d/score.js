@@ -2,7 +2,7 @@
 var tonal = require('tonal');
 var frampton = require('../../frampton/dist/web-frampton');
 var mediaConfig = require('../piano_long.json');
-var song = require('../turc.json');
+var song = require('../ode_to_joy.json');
 
 var finder = new frampton.MediaFinder(mediaConfig);
 
@@ -27,7 +27,7 @@ function scheduleSegment(el) {
   var video = finder.findVideoWithPatern(note);
 
   var segment = new frampton.VideoSegment(video);
-  segment.setWidth('33%');
+  segment.setWidth('33.33%');
 
   var duration = Math.max(el.duration / 1000, 0.7);
   segment.setDuration(duration);
@@ -36,7 +36,7 @@ function scheduleSegment(el) {
   segment.setVolume(volume);
 
   var column = Math.floor(noteNumberRange.getPercent(el.noteNumber) * numberOfColumns);
-  var left = (column / numberOfColumns) * 67;
+  var left = (column / numberOfColumns) * 66.67;
   segment.setLeft(left + '%');
 
   // the top levels need to vary within a column
@@ -49,7 +49,10 @@ function scheduleSegment(el) {
   var diffFromMin = el.noteNumber - noteNumberRange.min;
   var bottomBound = el.noteNumber - (diffFromMin % rangeChunkPerColumn);
   var topBound = bottomBound + rangeChunkPerColumn;
-  var top = (topBound - el.noteNumber) / (topBound - bottomBound) * 60;
+  var widthInPixels = 0.3333 * window.innerWidth;
+  var heightInPixels = widthInPixels * 9/16;
+  var heightAsPercent = (heightInPixels / window.innerHeight) * 100;
+  var top = (topBound - el.noteNumber) / (topBound - bottomBound) * (100 - heightAsPercent);
   segment.setTop(top + '%');
 
   console.log('note ' + el.noteNumber + ' column ' + column + ' left ' + left + ' top ' + top);

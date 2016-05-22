@@ -2,7 +2,7 @@ build:
 	browserify demo/score.js -o demo/js/build.js
 
 watch:
-	watchify demo/score.js -v -o demo/js/build.js
+	watchify js/score.js -v -o js/build.js
 
 prod:
 	browserify demo/score.js -o demo/js/build.js

@@ -60,6 +60,15 @@ body {
   transition: opacity ease 2s;
 }
 
+.loading-message {
+  position: fixed;
+  left: 40px; top: 40px;
+  font-size: 48px;
+  font-family: "Droid Sans", "Helvetica Neue", sans-serif;
+  color: rgba(101, 0, 203, 0.75);
+  transition: opacity ease 0.3s;
+}
+
 .click-to-start {
   position: absolute;
   left: 50%; top: 50%;
@@ -71,7 +80,18 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  transition: opacity ease 0.3s;
 }
   .click-to-start:hover {
     box-shadow: 3px 5px 8px 3px rgba(0, 0, 0, 0.3);
+  }
+
+.list-of-songs {
+  display: inline-block;
+  padding: 20px;
+  margin-left: 20px;
+  background-color: white;
+}
+  .list-of-songs li {
+    margin: 20px;
   }

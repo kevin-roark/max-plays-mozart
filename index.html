@@ -22,6 +22,12 @@
   <meta name="twitter:creator" content="@LIMP__BISCUIT" />
 </head>
 <body>
+  <video class="background-video">
+    <source src="media/piano-long/B1.mp4" type="video/webm">
+  </video>
+
+  <div class="art-title">Max Plays Mozart</div>
+
   <ul class="list-of-songs">
     <li>
       <a href="play/?song=ode_to_joy" target="_blank">Ode to Joy 2D</a>
@@ -56,5 +62,18 @@
       <a href="play/?song=turc&3d=true" target="_blank">Turc 3D</a>
     </li>
   </ul>
+
+  <script>
+    var backgroundVideo = document.querySelector('.background-video');
+    backgroundVideo.playbackRate = 0.5;
+    backgroundVideo.play();
+
+    backgroundVideo.onended = function() {
+      var notes = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+      var videoName = notes[Math.floor(Math.random() * notes.length)] + Math.floor(Math.random() * 7);
+      backgroundVideo.src = 'media/piano-long/' + videoName + '.mp4';
+      backgroundVideo.play();
+    };
+  </script>
 </body>
 </html>

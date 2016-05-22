@@ -86,12 +86,36 @@ body {
     box-shadow: 3px 5px 8px 3px rgba(0, 0, 0, 0.3);
   }
 
+.art-title {
+  color: white;
+  font-size: 72px;
+  font-family: Times New Roman, Times, serif;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  margin: 20px;
+}
+
 .list-of-songs {
   display: inline-block;
-  padding: 20px;
-  margin-left: 20px;
-  background-color: white;
+  padding: 0;
+  margin: 0 20px 20px 20px;
+  background-color: rgba(255,255,255,0.1);
+  list-style: none;
 }
   .list-of-songs li {
     margin: 20px;
+    font-size: 38px;
+    font-family: "Droid Sans", "Helvetica Neue", sans-serif;
   }
+    .list-of-songs li a {
+      color: rgb(0,0,255);
+      padding: 10px;
+    }
+
+.background-video {
+  position: fixed;
+  top: 50%; left: 50%;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+}

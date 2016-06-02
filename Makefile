@@ -1,12 +1,12 @@
 build:
-	browserify demo/score.js -o demo/js/build.js
+	browserify js/score.js -o js/build.js
 
 watch:
 	watchify js/score.js -v -o js/build.js
 
 prod:
-	browserify demo/score.js -o demo/js/build.js
-	minify js/build/build.js > js/build/build.min.js
+	browserify js/score.js -o js/build.js
+	minify js/build.js > js/build.min.js
 	minify css/main.css > css/main.min.css
 
 serve:

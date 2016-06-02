@@ -1029,6 +1029,7 @@ module.exports = function (_Renderer) {
       video.currentTime = segment.startTime;
 
       video.playbackRate = segment.playbackRate;
+      console.log('video playbackRate ' + video.playbackRate);
       segment.addChangeHandler('playbackRate', function (playbackRate) {
         video.playbackRate = playbackRate;
       });
@@ -1862,7 +1863,7 @@ module.exports = function (_Segment) {
   }, {
     key: 'setDuration',
     value: function setDuration(duration, startAtEnd) {
-      this.duration = Math.min(duration, this.mediaDuration);
+      this.duration = Math.min(duration, this.mediaDuration * Math.max(this.playbackRate, 1.0));
 
       var maximalStartTime = this.mediaDuration - this.duration;
       if (startAtEnd || this.startTime > maximalStartTime) {
@@ -45504,7 +45505,7 @@ function stopLoading() {
 
 function setup() {
   var videoSourceMaker = function(filename) {
-    return '/' + mediaConfig.path + filename;
+    return '../' + mediaConfig.path + filename;
   };
 
   if (is3D) {

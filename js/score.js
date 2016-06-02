@@ -45,7 +45,7 @@ function stopLoading() {
 
 function setup() {
   var videoSourceMaker = function(filename) {
-    return '/' + mediaConfig.path + filename;
+    return '../' + mediaConfig.path + filename;
   };
 
   if (is3D) {

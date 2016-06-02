@@ -91,9 +91,16 @@ function start() {
 
   noteNumberRange = makeNoteRange();
 
+  var lastTrackEndTime = 0;
   iterateTracks(function(trackIndex, el) {
     scheduleSegment(el, trackIndex);
+    lastTrackEndTime = Math.max(initialDelay + el.time + el.duration, lastTrackEndTime);
   });
+
+  var pathname = window.location.pathname;
+  setTimeout(function() {
+    window.location = pathname.substring(0, pathname.indexOf('play/'));
+  }, lastTrackEndTime + 1000);
 }
 
 function getSongInfo(songName) {

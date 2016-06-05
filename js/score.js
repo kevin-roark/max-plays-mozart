@@ -12,7 +12,12 @@ var finder = new frampton.MediaFinder(mediaConfig);
 var initialDelay = 2000;
 var cameraStartYPosition = 1333;
 var numberOfColumns = 4;
-var renderer, noteNumberRange, controls, locker;
+var renderer, noteNumberRange, velocityRange, controls, locker;
+var backgroundBox, activeVideo;
+
+var videoSourceMaker = function(filename) {
+  return '../' + mediaConfig.path + filename;
+};
 
 var splashBackground = document.createElement('div');
 splashBackground.className = 'splash-background';
@@ -44,16 +49,12 @@ function stopLoading() {
 }
 
 function setup() {
-  var videoSourceMaker = function(filename) {
-    return '../' + mediaConfig.path + filename;
-  };
-
   if (is3D) {
     renderer = new WebRenderer3D({
       mediaConfig: mediaConfig,
       videoSourceMaker: videoSourceMaker,
       cameraProvider: function() {
-        return new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 1500);
+        return new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1500);
       }
     });
 
@@ -90,6 +91,7 @@ function start() {
   }
 
   noteNumberRange = makeNoteRange();
+  velocityRange = makeVelocityRange();
 
   var lastTrackEndTime = 0;
   iterateTracks(function(trackIndex, el) {
@@ -157,21 +159,30 @@ function scheduleSegment(el) {
   segment.setVolume(volume);
 
   if (is3D) {
+    var velocityPercent = velocityRange.getPercent(el.velocity);
     segment.threeOptions = {
-      videoMeshWidth: 200, videoMeshHeight: 112, videoSourceWidth: 568, videoSourceHeight: 320,
+      videoMeshWidth: 50 + velocityPercent * 250, videoMeshHeight: 28 + velocityPercent * 140,
+      videoSourceWidth: 568, videoSourceHeight: 320,
       geometryProvider: (videoMeshWidth, videoMeshHeight) => {
-        return new THREE.BoxGeometry(videoMeshWidth, videoMeshHeight, 40);
+        return new THREE.BoxGeometry(videoMeshWidth, videoMeshHeight, 10 + velocityPercent * 50);
       },
       meshConfigurer: function(mesh) {
         var radius = 290;
-        var angle = noteNumberRange.getPercent(el.noteNumber) * Math.PI * 2;
+        var angle = noteNumberRange.getPercent(el.noteNumber) * Math.PI + Math.PI;
+
         var x = Math.cos(angle) * radius;
         var z = Math.sin(angle) * radius;
-        mesh.position.set(x, 45, z);
+        var y = velocityPercent * 70 + 30;
+        mesh.position.set(x, y, z);
+
         mesh.rotation.y = -angle - Math.PI/2;
 
         mesh.castShadow = true;
       }
+    };
+
+    segment.onStart = function() {
+      activeVideo = segment._backingVideo;
     };
   }
   else {
@@ -208,10 +219,18 @@ function iterateTracks(fn) {
 }
 
 function makeNoteRange() {
+  return makeMidiRange('noteNumber');
+}
+
+function makeVelocityRange() {
+  return makeMidiRange('velocity');
+}
+
+function makeMidiRange (key) {
   var range = {min: 1000, max: 0};
   iterateTracks(function(trackIndex, el) {
-    range.min = Math.min(range.min, el.noteNumber);
-    range.max = Math.max(range.max, el.noteNumber);
+    range.min = Math.min(range.min, el[key]);
+    range.max = Math.max(range.max, el[key]);
   });
 
   range.range = range.max - range.min;
@@ -277,8 +296,24 @@ function setupEnvironment() {
   controls.rotate(0, 785);
   renderer.scene.add(controls.getObject());
 
+  var backgroundMaterial = createVideoMaterial();
+
+  backgroundBox = createBackgroundBox(backgroundMaterial.videoMaterial);
+  backgroundBox.position.set(0, 1000 / 2 - 40, 0);
+  renderer.scene.add(backgroundBox);
+
   renderer.addUpdateFunction(function(delta) {
     controls.update(delta);
+
+    if (activeVideo && activeVideo.readyState === activeVideo.HAVE_ENOUGH_DATA) {
+      if (!backgroundMaterial.videoMaterial.map) {
+        backgroundMaterial.videoMaterial.map = backgroundMaterial.videoTexture;
+        backgroundMaterial.videoMaterial.needsUpdate = true;
+      }
+
+      backgroundMaterial.videoContext.drawImage(activeVideo, 0, 0);
+      backgroundMaterial.videoTexture.needsUpdate = true;
+    }
   });
 
   var ground = createGround();
@@ -322,5 +357,50 @@ function setupEnvironment() {
     spt.distance = 500;
 
     return spt;
+  }
+
+  function createBackgroundBox(videoMaterial) {
+    var transparentMaterial = new THREE.MeshBasicMaterial( { transparent: true, opacity: 0 } );
+
+    var backgroundGeometry = new THREE.BoxGeometry(1000, 1000, 1000, 1, 1, 1);
+    var invisibleIndices = [4, 5, 6, 7];
+    for (var i = 0; i < backgroundGeometry.faces.length; i++) {
+      // assign material to each face (0 video, 1 trans)
+      backgroundGeometry.faces[i].materialIndex = invisibleIndices.indexOf(i) >= 0 ? 1 : 0;
+    }
+    backgroundGeometry.sortFacesByMaterialIndex(); // optional, to reduce draw calls
+
+    return new THREE.Mesh(
+      backgroundGeometry,
+      new THREE.MeshFaceMaterial( [videoMaterial, transparentMaterial] )
+    );
+  }
+
+  function createVideoMaterial(options) {
+    if (!options) options = {};
+    var videoMeshWidth = options.videoMeshWidth || 1000;
+    var videoMeshHeight = options.videoMeshHeight || 1000;
+    var videoSourceWidth = options.videoSourceWidth || 568;
+    var videoSourceHeight = options.videoSourceHeight || 320;
+
+    var videoCanvas = document.createElement('canvas');
+    videoCanvas.width = videoSourceWidth; videoCanvas.height = videoSourceHeight;
+
+    var videoContext = videoCanvas.getContext('2d');
+    videoContext.fillStyle = '#000000'; // background color if no video present
+    videoContext.fillRect( 0, 0, videoMeshWidth, videoMeshHeight);
+
+    var videoTexture = new THREE.Texture(videoCanvas);
+    videoTexture.minFilter = videoTexture.magFilter = THREE.LinearFilter;
+    videoTexture.format = THREE.RGBFormat;
+    videoTexture.generateMipmaps = false;
+
+    var videoMaterial = new THREE.MeshBasicMaterial({
+      color: 0xffffff,
+      overdraw: true,
+      side: THREE.BackSide
+    });
+
+    return { videoMaterial: videoMaterial, videoTexture: videoTexture, videoContext: videoContext };
   }
 }

@@ -10,7 +10,7 @@ var queryString = require('query-string');
 
 var finder = new frampton.MediaFinder(mediaConfig);
 var initialDelay = 2000;
-var cameraStartYPosition = 1333;
+var cameraStartYPosition = 200;
 var numberOfColumns = 4;
 var renderer, noteNumberRange, velocityRange, controls, locker;
 var backgroundBox, activeVideo;
@@ -160,19 +160,29 @@ function scheduleSegment(el) {
 
   if (is3D) {
     var velocityPercent = velocityRange.getPercent(el.velocity);
+    var notePercent = noteNumberRange.getPercent(el.noteNumber);
     segment.threeOptions = {
-      videoMeshWidth: 50 + velocityPercent * 250, videoMeshHeight: 28 + velocityPercent * 140,
+      videoMeshWidth: 50 + velocityPercent * 200, videoMeshHeight: 28 + velocityPercent * 112,
       videoSourceWidth: 568, videoSourceHeight: 320,
       geometryProvider: (videoMeshWidth, videoMeshHeight) => {
-        return new THREE.BoxGeometry(videoMeshWidth, videoMeshHeight, 10 + velocityPercent * 50);
+        return new THREE.BoxGeometry(videoMeshWidth, videoMeshHeight, 10 + velocityPercent * 40);
       },
       meshConfigurer: function(mesh) {
-        var radius = 290;
-        var angle = noteNumberRange.getPercent(el.noteNumber) * Math.PI + Math.PI;
+        var radiusRange = { min: 200, max: 400 };
+        var segmentCount = 3; var halfSegmentCount = Math.floor(segmentCount / 2);
+        var radialSegment = Math.min(segmentCount - 1, Math.floor(notePercent * segmentCount));
+        var segmentPercents = { min: radialSegment / segmentCount, max: (radialSegment + 1) / segmentCount };
+        var percentInSegment = 1 - (segmentPercents.max - notePercent) / (segmentPercents.max - segmentPercents.min);
+        var radius = radiusRange.min + (radiusRange.max - radiusRange.min) * percentInSegment;
+
+        var angle;
+        if (radialSegment == halfSegmentCount) angle = Math.PI*3/2;
+        else if (radialSegment < halfSegmentCount) angle = Math.PI*3/2 - (1 - (radialSegment / halfSegmentCount)) * Math.PI*0.2;
+        else angle = Math.PI*3/2 + ((segmentCount - (halfSegmentCount+1)) / (segmentCount - radialSegment)) * Math.PI*0.2;
 
         var x = Math.cos(angle) * radius;
         var z = Math.sin(angle) * radius;
-        var y = velocityPercent * 70 + 30;
+        var y = velocityPercent * 50 + 30;
         mesh.position.set(x, y, z);
 
         mesh.rotation.y = -angle - Math.PI/2;
@@ -239,6 +249,10 @@ function makeMidiRange (key) {
     return (range.max - x) / range.range;
   };
 
+  range.getValue = function(percent) {
+    return range.max - range.range * percent;
+  }
+
   return range;
 }
 
@@ -293,7 +307,7 @@ function setupEnvironment() {
 
   controls = new PointerLockControls(renderer.camera, {mass: 25, gravity: -0.75, jumpBoost: 100});
   controls.getObject().position.y = cameraStartYPosition;
-  controls.rotate(0, 785);
+  //controls.rotate(0, 785);
   renderer.scene.add(controls.getObject());
 
   var backgroundMaterial = createVideoMaterial();

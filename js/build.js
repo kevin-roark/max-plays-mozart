@@ -45483,6 +45483,7 @@ module.exports = function() {
 
 var tonal = require('tonal');
 var THREE = require('../../frampton/node_modules/three');
+var TWEEN = require('../../frampton/node_modules/tween.js');
 var PointerLockControls = require('../../frampton/dist/threejs/pointerlock-controls');
 var Pointerlocker = require('../js/pointerlocker');
 var frampton = require('../../frampton/dist/web-frampton');
@@ -45818,8 +45819,35 @@ function setupEnvironment() {
 
   var spt = createSpotLight();
   spt.position.set(0, 250, -50);
-  renderer.scene.add(spt);
+  controls.getObject().add(spt);
   //renderer.scene.add(spt.shadowCameraHelper); // add this to see shadow helper
+
+  var targetColor = 'g';
+  tweenSpotColor();
+  function tweenSpotColor() {
+    var goal = {r: 0.67, g: 0.5, b: 0.5};
+    var nextTarget;
+    switch (targetColor) {
+      case 'r': goal.r = 1; nextTarget = 'g'; break;
+      case 'g': goal.g = 1; nextTarget = 'b'; break;
+      default: goal.b = 1; nextTarget = 'r'; break;
+    }
+
+    var rgb = spt.color.toArray();
+
+    var tween = new TWEEN.Tween({r: rgb[0], g: rgb[1], b: rgb[2]})
+      .to(goal, 5000)
+      .easing(TWEEN.Easing.Quartic.In)
+      .onUpdate(function() {
+        spt.color.setRGB(this.r, this.g, this.b);
+      })
+      .onComplete(function() {
+        targetColor = nextTarget;
+        tweenSpotColor();
+      });
+
+    tween.start();
+  }
 
   function createGround() {
     var geometry = new THREE.PlaneGeometry(1500, 1500);
@@ -45828,7 +45856,7 @@ function setupEnvironment() {
 
     var material = new THREE.MeshPhongMaterial({
       color: 0xeeeeee,
-      emissive: 0x777777,
+      emissive: 0x444444,
       side: THREE.DoubleSide
     });
 
@@ -45840,7 +45868,7 @@ function setupEnvironment() {
   }
 
   function createSpotLight() {
-    var spt = new THREE.SpotLight(0xffaaaa, 1.5);
+    var spt = new THREE.SpotLight(0xff888888, 1.5);
     spt.castShadow = true;
     spt.shadow.camera.near = 0.1;
     spt.shadow.camera.far = 20000;
@@ -45901,7 +45929,7 @@ function setupEnvironment() {
   }
 }
 
-},{"../../frampton/dist/renderer/web-renderer-3d":9,"../../frampton/dist/threejs/pointerlock-controls":23,"../../frampton/dist/web-frampton":24,"../../frampton/node_modules/three":26,"../js/pointerlocker":28,"../piano_long.json":47,"query-string":32,"tonal":46}],30:[function(require,module,exports){
+},{"../../frampton/dist/renderer/web-renderer-3d":9,"../../frampton/dist/threejs/pointerlock-controls":23,"../../frampton/dist/web-frampton":24,"../../frampton/node_modules/three":26,"../../frampton/node_modules/tween.js":27,"../js/pointerlocker":28,"../piano_long.json":47,"query-string":32,"tonal":46}],30:[function(require,module,exports){
 'use strict'
 
 // shorthand tonal notation (with quality after number)

@@ -1,19 +1,20 @@
 
 var tonal = require('tonal');
+var queryString = require('query-string');
 var THREE = require('../../frampton/node_modules/three');
 var TWEEN = require('../../frampton/node_modules/tween.js');
-var PointerLockControls = require('../../frampton/dist/threejs/pointerlock-controls');
-var Pointerlocker = require('../js/pointerlocker');
 var frampton = require('../../frampton/dist/web-frampton');
 var WebRenderer3D = require('../../frampton/dist/renderer/web-renderer-3d');
+var PointerLockControls = require('../../frampton/dist/threejs/pointerlock-controls');
+var Pointerlocker = require('./pointerlocker');
+var songMap = require('./song-map');
 var mediaConfig = require('../piano_long.json');
-var queryString = require('query-string');
 
 var finder = new frampton.MediaFinder(mediaConfig);
 var initialDelay = 2000;
 var cameraStartYPosition = 200;
 var numberOfColumns = 4;
-var renderer, noteNumberRange, velocityRange, controls, locker;
+var renderer, noteNumberRange, velocityRange, controls, locker, midiPlayer;
 var backgroundBox, activeVideo;
 
 var videoSourceMaker = function(filename) {
@@ -29,12 +30,13 @@ loadingDiv.className = 'loading-message';
 loadingDiv.textContent = 'Loading fuckin music...';
 splashBackground.appendChild(loadingDiv);
 
-var parsedQueryString = queryString.parse(location.search || '?song=ode_to_joy');
+var parsedQueryString = queryString.parse(location.search || '?song=crazy');
+var songInfo = songMap(parsedQueryString.song);
 var is3D = !!parsedQueryString['3d'];
-var songPath = getSongInfo(parsedQueryString.song).songPath;
+var isMidiBacking = songInfo.backingMIDI && !!parsedQueryString.midiBacking;
 
 var song;
-getJSON(songPath, function(err, json) {
+getJSON(songInfo.guitarJSON, function(err, json) {
   song = json;
 
   stopLoading();
@@ -73,16 +75,40 @@ function setup() {
     });
   }
 
-  setupClickToStart(function () {
-    if (is3D) {
-      locker.requestPointerlock();
-    }
+  if (isMidiBacking) {
+    MIDI.loadPlugin({
+			soundfontUrl: "../soundfont/",
+			onprogress: function(state, progress) {
+				console.log('midi loading progress: ' + progress);
+			},
+			onsuccess: function() {
+        console.log("Sound being generated with " + MIDI.api + " " + JSON.stringify(MIDI.supports));
 
-    start();
-  });
+				midiPlayer = MIDI.Player;
+				midiPlayer.loadFile(songInfo.backingMIDI, function onsuccess () {
+        }, null, function onerror (e) {
+          console.log('midi loading error', e);
+        });
+
+        doClickToStart();
+			}
+		});
+  } else {
+    doClickToStart();
+  }
+
+  function doClickToStart() {
+    setupClickToStart(function () {
+      if (is3D) {
+        locker.requestPointerlock();
+      }
+
+      start();
+    });
+  }
 }
 
-function start() {
+function start () {
   if (is3D) {
     controls.enabled = true;
 
@@ -94,6 +120,23 @@ function start() {
   noteNumberRange = makeNoteRange();
   velocityRange = makeVelocityRange();
 
+  // schedule backing track
+  if (!isMidiBacking) {
+    var audio = new Audio();
+    audio.preload = true;
+    audio.src = songInfo.backingMP3;
+    audio.preferHTMLAudio = true;
+    setTimeout(function() {
+      audio.play();
+    }, initialDelay - 5);
+  } else {
+    setTimeout(function() {
+      console.log('midi player starting');
+      midiPlayer.start();
+    }, initialDelay - 5);
+  }
+
+  // schedule midi
   var lastTrackEndTime = 0;
   iterateTracks(function(trackIndex, el) {
     scheduleSegment(el, trackIndex);
@@ -104,46 +147,6 @@ function start() {
   setTimeout(function() {
     window.location = pathname.substring(0, pathname.indexOf('play/'));
   }, lastTrackEndTime + 1000);
-}
-
-function getSongInfo(songName) {
-  var songPath;
-  switch (songName) {
-    case 'moon1':
-      songPath = 'moon1-2.json';
-      break;
-
-    case 'moon1_2':
-      songPath = 'moon1-2.json';
-      break;
-
-    case 'string_quartet':
-      songPath = 'string_quartet.json';
-      break;
-
-    case 'turc':
-      songPath = 'turc.json';
-      break;
-
-    case 'caprice5':
-      songPath = 'caprice5.json';
-      break;
-
-    case 'dies_irae':
-      songPath = 'dies_irae.json';
-      break;
-
-    case 'nachtmusic':
-      songPath = 'nachtmusic.json';
-      break;
-
-    case 'ode_to_joy':
-    default:
-      songPath = 'ode_to_joy.json';
-      break;
-  }
-
-  return {songPath: '../songs/' + songPath};
 }
 
 function scheduleSegment(el) {
@@ -259,15 +262,14 @@ function makeMidiRange (key) {
 
 function getJSON(url, callback) {
   var xhr = new XMLHttpRequest();
-  xhr.open('get', url, true);
   xhr.responseType = 'json';
+  xhr.open('GET', url, true);
   xhr.onload = function() {
-    if (xhr.status === 200) {
-      callback(null, xhr.response);
-    }
-    else {
-      callback(xhr.status);
-    }
+    callback(null, xhr.response);
+  };
+  xhr.onerror = function() {
+    console.log(xhr.statusText);
+    callback(xhr.statusText, null);
   };
 
   xhr.send();

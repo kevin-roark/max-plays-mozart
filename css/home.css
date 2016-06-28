@@ -1,0 +1,189 @@
+html, body {
+  margin: 0; padding: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+.art-title {
+  color: white;
+  font-size: 96px;
+  font-family: Times New Roman, Times, serif;
+  letter-spacing: 10px;
+  margin: 60px 20px 0px 20px;
+}
+
+.art-description {
+  margin: 5px 20px 20px 20px;
+  color: rgb(51, 169, 254);
+  text-shadow: 1px 1px 1px rgba(255, 236, 66, 0.9), 3px 3px 1px rgba(255, 236, 66, 0.9), 5px 5px 1px rgba(255, 236, 66, 0.9);
+  font-size: 36px;
+  font-family: Times New Roman, Times, serif;
+  background: url(../media/home/flame.jpg) no-repeat center center fixed;
+  background-size: cover;
+  width: 75%;
+  padding: 8px;
+}
+
+.fire {
+  animation: fire-text-shadow 1s ease-in-out infinite alternate;
+}
+
+.burn {
+  animation: fire-text-shadow .65s ease-in-out infinite alternate;
+}
+
+.fire-box {
+  animation: fire-box-shadow 1s ease-in-out infinite alternate;
+}
+
+@keyframes fire-text-shadow {
+0% {text-shadow: 0 0 20px #fefcc9,
+  10px -10px 30px #feec85,
+  -20px -20px 40px #ffae34,
+  20px -40px 50px #ec760c,
+  -20px -60px 60px #cd4606,
+  0 -80px 70px #973716,
+  10px -90px 80px #451b0e;}
+100% {text-shadow: 0 0 20px #fefcc9,
+  10px -10px 30px #fefcc9,
+  -20px -20px 40px #feec85,
+  22px -42px 60px #ffae34,
+  -22px -58px 50px #ec760c,
+  0 -82px 80px #cd4606,
+  10px -90px 80px  #973716;}
+}
+
+@keyframes fire-box-shadow {
+0% {box-shadow: 7px 7px 20px #fefcc9, 7px 7px 60px #cd4606;}
+100% {box-shadow: 7px 7px 40px #fefcc9, 7px 7px 100px #cd4606;}
+}
+
+.about {
+  position: fixed; top: 10px; right: 10px;
+  font-family: Times New Roman, Times, serif;
+  font-size: 14px;
+  text-align: right;
+}
+
+  .artist {
+    font-size: 16px;
+  }
+  .artist a {
+    color: rgba(0, 0, 255, 0.9);
+    text-shadow: 1px 1px 6px rgba(0, 0, 255, 0.1);
+    text-decoration: none;
+  }
+    .artist a:hover, .arist a:focus {
+      text-decoration: underline;
+    }
+
+  .social {
+    margin-top: 8px;
+  }
+    .facebook-button {
+      margin-top: 4px;
+    }
+
+.controls {
+  position: fixed;
+  bottom: 0; right: 0;
+  padding: 10px;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: white;
+  font-size: 18px;
+}
+
+  .dimension-button {
+    cursor: pointer;
+  }
+    .dimension-button:hover, .dimension-button:focus {
+      animation: fire-text-shadow .65s ease-in-out infinite alternate;
+      color: black;
+    }
+
+.tracklist-wrapper, .graphics-wrapper, .guitar-wrapper {
+  float: left;
+}
+
+.tracklist-wrapper {
+  width: 15%;
+  min-width: 200px;
+}
+
+.graphics-wrapper {
+  width: 58%;
+  overflow-x: scroll;
+}
+  .graphics-wrapper img {
+    width: 40%; margin-left: 2%; margin-top: 3%;
+    vertical-align: middle;
+    text-align: justify;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+  }
+
+.guitar-wrapper {
+  width: 20%;
+  margin-top: -240px;
+}
+  .guitar-wrapper img {
+    width: 100%;
+  }
+
+.tracklist-header {
+  color: rgba(255, 0, 0, 0.9);
+  margin-left: 20px;
+  font-size: 32px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  font-family: Times New Roman, Times, serif;
+  letter-spacing: 5px;
+}
+
+.list-of-songs {
+  padding-top: 12px; padding-bottom: 12px;
+  margin: 12px 20px 20px 20px;
+  position: relative;
+  color: yellow;
+  text-shadow: 6px 6px 3px rgba(0,0,0,0.3), 4px 4px 2px rgba(0,0,0,0.5), 2px 2px 1px rgba(0,0,0, 0.75);
+}
+  .list-of-songs::after {
+    content: "";
+    background: url(../media/home/diamond.jpg);
+    opacity: 0.75;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    z-index: -1;
+  }
+  .list-of-songs li {
+    margin: 12px;
+    font-size: 15px;
+    font-family: 'Rock Salt', cursive;
+  }
+    .list-of-songs li a {
+      color: inherit;
+      transition: all 0.4s;
+      text-decoration: none;
+    }
+      .list-of-songs li a:hover, .list-of-songs li a:focus {
+        animation: fire-text-shadow .65s ease-in-out infinite alternate;
+        color: red;
+      }
+
+.background-video {
+  position: fixed;
+  top: 50%; left: 50%;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@media (max-width: 540px) {
+  .art-title {
+    font-size: 48px;
+  }
+  .art-description {
+    font-size: 28px;
+  }
+}

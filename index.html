@@ -2,8 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8"/>
-  <link rel="stylesheet" href="css/main.css">
-  <title>Max Plays Mozart | Carmichael Payamps</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/home.css">
+  <title>Max And Roll | Carmichael Payamps</title>
 
   <meta name="description" content="Software that plays any midi song by arranging videos of friend Max playing the piano" />
   <meta name="author" content="Carmichael Payamps">
@@ -23,76 +25,108 @@
 </head>
 <body>
   <video class="background-video">
-    <source src="media/piano-long/B1.mp4" type="video/webm">
+    <source src="media/piano-long/B1.mp4" type="video/mp4" />
   </video>
 
-  <div class="art-title">Max Plays Mozart</div>
+  <div class="art-title">
+    <span class="fire">MAX</span>
+    <span class="burn">AND</span>
+    <span class="fire">ROLL</span>
+  </div>
+
+  <div class="art-description">
+    &larr; &larr; &larr;
+    Carmichael's first classic rock album.
+    Our Friend Max renders slick video guitar licks over dead-inside backing tracks.
+    Bang your head and explore the tracks over to the left with a click!!!
+    &larr; &larr; &larr;
+  </div>
 
   <div class="about">
-    <div class="artist">made by <a target="_blank" href="http://www.carmichael.xyz">Carmichael Payamps</a></div>
-    <div class="friends">
-      friends with
-      <a target="_blank" href="http://sol.carmichael.xyz">Second Round Square Solo</a>,
-      <a target="_blank" href="http://www.lifeislife.xyz">Life in Review</a>,
-      <a target="_blank" href="http://www.gods.website">God's Website</a>
+    <div class="artist"><a target="_blank" href="http://www.carmichael.xyz">Carmichael Payamps</a></div>
+    <div class="social">
+      <div class="social-button twitter-button">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.colors.black/" data-hashtags="carmichael">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </div>
+      <div class="social-button facebook-button">
+        <div class="fb-like" data-href="http://www.colors.black/" data-width="100" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+      </div>
     </div>
   </div>
 
-  <div class="social">
-    <div class="social-button twitter-button">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.colors.black/" data-hashtags="carmichael">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    </div>
-    <div class="social-button facebook-button">
-      <div class="fb-like" data-href="http://www.colors.black/" data-width="100" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-    </div>
+  <div class="tracklist-wrapper">
+    <div class="tracklist-header">Tracklist<br/>&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;</div>
+    <ol class="list-of-songs fire-box">
+      <li>
+        <a href="play/?song=thunder&3d=true">Thunder</a>
+      </li>
+      <li>
+        <a href="play/?song=california&3d=true">California</a>
+      </li>
+      <li>
+        <a href="play/?song=come&3d=true">Come</a>
+      </li>
+      <li>
+        <a href="play/?song=europa&3d=true">Europa</a>
+      </li>
+      <li>
+        <a href="play/?song=lithium1&3d=true">Lithium1</a>
+      </li>
+      <li>
+        <a href="play/?song=lithium2&3d=true">Lithium2</a>
+      </li>
+      <li>
+        <a href="play/?song=hallowed&3d=true">Hallowed</a>
+      </li>
+      <li>
+        <a href="play/?song=risingsun&3d=true">Rising Sun</a>
+      </li>
+      <li>
+        <a href="play/?song=sweetchild&3d=true">Sweet Child</a>
+      </li>
+      <li>
+        <a href="play/?song=wayward&3d=true">Wayward</a>
+      </li>
+      <li>
+        <a href="play/?song=crazy&3d=true">Crazy</a>
+      </li>
+    </ol>
+    <div class="tracklist-header" style="padding-bottom: 100px;">&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;</div>
   </div>
 
-  <ul class="list-of-songs">
-    <li>
-      <a href="play/?song=thunder">Thunderstruck 2D</a>
-      <a href="play/?song=thunder&3d=true">Thunderstruck 3D</a>
-    </li>
-    <li>
-      <a href="play/?song=california">California 2D</a>
-      <a href="play/?song=california&3d=true">California 3D</a>
-    </li>
-    <li>
-      <a href="play/?song=come">Come 2D</a>
-      <a href="play/?song=come&3d=true">Come 3D</a>
-    </li>
-    <li>
-      <a href="play/?song=europa">Europa 2D</a>
-      <a href="play/?song=europa&3d=true">Europa 3D</a>
-    </li>
-    <li>
-      <a href="play/?song=lithium1">Lithium1 2D</a>
-      <a href="play/?song=lithium1&3d=true">Lithium1 3D</a>
-    </li>
-    <li>
-      <a href="play/?song=lithium2">Lithium2 2D</a>
-      <a href="play/?song=lithium2&3d=true">Lithium2 3D</a>
-    </li>
-    <li>
-      <a href="play/?song=hallowed">Hallowed 2D</a>
-      <a href="play/?song=hallowed&3d=true">Hallowed 3D</a>
-    </li>
-    <li>
-      <a href="play/?song=risingsun">Rising Sun 2D</a>
-      <a href="play/?song=risingsun&3d=true">Rising Sun 3D</a>
-    </li>
-    <li>
-      <a href="play/?song=sweetchild">Sweet Child 2D</a>
-      <a href="play/?song=sweetchild&3d=true">Sweet Child 3D</a>
-    </li>
-    <li>
-      <a href="play/?song=wayward">Wayward 2D</a>
-      <a href="play/?song=wayward&3d=true">Wayward 3D</a>
-    </li>
-    <li>
-      <a href="play/?song=crazy">Crazy 2D</a>
-      <a href="play/?song=crazy&3d=true">Crazy 3D</a>
-    </li>
-  </ul>
+  <div class="graphics-wrapper">
+    <img src="media/home/welcome.gif" />
+    <img src="media/home/whats_hot.gif" />
+    <img src="media/home/gallery.gif" />
+    <img src="media/home/rewards.gif" />
+    <img src="media/home/referrals.gif" />
+    <img src="media/home/technology.gif" />
+    <img src="media/home/videos.gif" />
+    <img src="media/home/save.gif" />
+    <img src="media/home/friends.gif" />
+    <img src="media/home/click_here.gif" />
+    <img src="media/home/feedback.gif" />
+    <img src="media/home/free_stuff.gif" />
+    <img src="media/home/more_to_come.gif" />
+    <img src="media/home/teamwork.gif" />
+    <img src="media/home/specials.gif" />
+    <img src="media/home/privacy.gif" />
+    <img src="media/home/professionalism.gif" />
+    <img src="media/home/tell_a_friend.gif" />
+    <img src="media/home/meetings.gif" />
+    <img src="media/home/webmaster.gif" />
+  </div>
+
+  <div class="guitar-wrapper">
+    <img src="media/home/guitar_player.gif" />
+    <img src="media/home/guitar_burning.gif" />
+    <img src="media/home/guitar_struming.gif" />
+    <img src="media/home/rock_on.gif" />
+  </div>
+
+  <div class="controls">
+    <div class="dimension-button">CLICK TO VIEW TRACKS IN 2D</div>
+  </div>
 
   <script>
     var backgroundVideo = document.querySelector('.background-video');
@@ -101,9 +135,27 @@
 
     backgroundVideo.onended = function() {
       var notes = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
-      var videoName = notes[Math.floor(Math.random() * notes.length)] + Math.floor(Math.random() * 7);
+      var videoName = notes[Math.floor(Math.random() * notes.length)] + (Math.floor(Math.random() * 7) + 1);
       backgroundVideo.src = 'media/piano-long/' + videoName + '.mp4';
       backgroundVideo.play();
+    };
+
+    var is3D = true;
+    var trackLinks = document.querySelectorAll('.list-of-songs li a');
+    var dimensionButton = document.querySelector('.dimension-button');
+    dimensionButton.onclick = function() {
+      is3D = !is3D;
+
+      dimensionButton.textContent = is3D ? 'CLICK TO VIEW TRACKS IN 2D' : 'ACTUALLY I WANT 3D';
+
+      for (var i = 0; i < trackLinks.length; i++) {
+        var trackLink = trackLinks[i];
+        if (is3D) {
+          trackLink.href = trackLink.href + '&3d=true';
+        } else {
+          trackLink.href = trackLink.href.replace('&3d=true', '');
+        }
+      }
     };
   </script>
   <script>(function(d, s, id){

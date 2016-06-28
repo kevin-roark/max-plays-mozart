@@ -45649,7 +45649,7 @@ function scheduleSegment(el) {
     var notePercent = noteNumberRange.getPercent(el.noteNumber);
     segment.threeOptions = {
       videoMeshWidth: 50 + velocityPercent * 200, videoMeshHeight: 28 + velocityPercent * 112,
-      videoSourceWidth: 568, videoSourceHeight: 320,
+      videoSourceWidth: 426, videoSourceHeight: 240,
       geometryProvider: (videoMeshWidth, videoMeshHeight) => {
         var p = Math.random();
         if (p < 0.45) {
@@ -45923,8 +45923,8 @@ function setupEnvironment() {
     if (!options) options = {};
     var videoMeshWidth = options.videoMeshWidth || 1000;
     var videoMeshHeight = options.videoMeshHeight || 1000;
-    var videoSourceWidth = options.videoSourceWidth || 568;
-    var videoSourceHeight = options.videoSourceHeight || 320;
+    var videoSourceWidth = options.videoSourceWidth || 426;
+    var videoSourceHeight = options.videoSourceHeight || 240;
 
     var videoCanvas = document.createElement('canvas');
     videoCanvas.width = videoSourceWidth; videoCanvas.height = videoSourceHeight;
@@ -47900,7 +47900,7 @@ exports.cycleOfFifths = tonalRange.cycleOfFifths;
 exports.scaleRange = tonalRange.scaleRange;
 },{"tonal-array":35,"tonal-distance":36,"tonal-filter":38,"tonal-freq":39,"tonal-interval":40,"tonal-midi":41,"tonal-note":43,"tonal-range":45,"tonal-transpose":46}],48:[function(require,module,exports){
 module.exports={
-    "path": "media/big-piano-long-converted/",
+    "path": "media/big-piano-long-converted-3/",
     "videos": [{
         "filename": "A0.mp4",
         "duration": 4.352,

@@ -52,7 +52,7 @@ module.exports = function songMap (songName) {
 
     case 'sweetchild':
       backingMIDIPath = 'sweetchild-backing.mid';
-      backingMP3Path = 'sweetchild-backing-mp3.mp3';
+      backingMP3Path = 'sweetchild-backing.mp3';
       guitarJSONPath = 'sweetchild-guitar.json';
       break;
 

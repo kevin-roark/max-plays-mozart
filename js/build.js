@@ -45651,7 +45651,16 @@ function scheduleSegment(el) {
       videoMeshWidth: 50 + velocityPercent * 200, videoMeshHeight: 28 + velocityPercent * 112,
       videoSourceWidth: 568, videoSourceHeight: 320,
       geometryProvider: (videoMeshWidth, videoMeshHeight) => {
-        return new THREE.BoxGeometry(videoMeshWidth, videoMeshHeight, 10 + velocityPercent * 40);
+        var p = Math.random();
+        if (p < 0.45) {
+          return new THREE.BoxGeometry(videoMeshWidth, videoMeshHeight, 10 + velocityPercent * 40);
+        } else if (p < 0.7) {
+          return new THREE.SphereGeometry(videoMeshWidth * 0.75 + videoMeshWidth * 0.25 * velocityPercent, 6, 6);
+        } else if (p < 0.85) {
+          return new THREE.TetrahedronGeometry(videoMeshWidth * 0.5 + videoMeshWidth * 0.25 * velocityPercent);
+        } else {
+          return new THREE.TorusKnotGeometry(videoMeshWidth * 0.25 + videoMeshWidth * 0.25 * velocityPercent, 10, 24, 6);
+        }
       },
       meshConfigurer: function(mesh) {
         var radiusRange = { min: 200, max: 400 };
@@ -45815,9 +45824,13 @@ function setupEnvironment() {
     }
   });
 
-  var ground = createGround();
+  var ground = createRoomPlane();
   ground.position.set(0, -50, 0);
   renderer.scene.add(ground);
+
+  var ceiling = createRoomPlane(true);
+  ceiling.position.set(0, 960, 0);
+  renderer.scene.add(ceiling);
 
   var spt = createSpotLight();
   spt.position.set(0, 250, -50);
@@ -45851,20 +45864,24 @@ function setupEnvironment() {
     tween.start();
   }
 
-  function createGround() {
+  function createRoomPlane(isCeiling) {
     var geometry = new THREE.PlaneGeometry(1500, 1500);
     geometry.computeFaceNormals();
     geometry.computeVertexNormals();
 
     var material = new THREE.MeshPhongMaterial({
-      color: 0xeeeeee,
-      emissive: 0x444444,
+      map: THREE.ImageUtils.loadTexture(isCeiling ? '../media/home/stadium.jpg' : '../media/home/flame.jpg'),
+      shininess: 50,
       side: THREE.DoubleSide
     });
 
     var mesh = new THREE.Mesh(geometry, material);
     mesh.rotation.x = -Math.PI / 2;
     mesh.receiveShadow = true;
+
+    if (isCeiling) {
+      mesh.rotation.z = Math.PI;
+    }
 
     return mesh;
   }
@@ -45986,7 +46003,7 @@ module.exports = function songMap (songName) {
 
     case 'sweetchild':
       backingMIDIPath = 'sweetchild-backing.mid';
-      backingMP3Path = 'sweetchild-backing-mp3.mp3';
+      backingMP3Path = 'sweetchild-backing.mp3';
       guitarJSONPath = 'sweetchild-guitar.json';
       break;
 

@@ -73,6 +73,8 @@ function setup() {
       mediaConfig: mediaConfig,
       videoSourceMaker: videoSourceMaker
     });
+
+    setupGuitarBorder();
   }
 
   if (isMidiBacking) {
@@ -116,6 +118,8 @@ function start () {
       controls.getObject().position.y = cameraStartYPosition;
     }, 20);
   }
+
+  showTracklist();
 
   noteNumberRange = makeNoteRange();
   velocityRange = makeVelocityRange();
@@ -287,7 +291,7 @@ function getJSON(url, callback) {
 function setupClickToStart(callback) {
   var clickToStart = document.createElement('div');
   clickToStart.className = 'click-to-start';
-  clickToStart.innerText = 'Click to hear Max Play the Piano';
+  clickToStart.innerHTML = 'Click to let... <br/> MAX ROCK';
   clickToStart.style.opacity = 0;
   splashBackground.appendChild(clickToStart);
 
@@ -317,6 +321,8 @@ function setupEnvironment() {
   renderer.renderer.gammaOutput = true;
   renderer.renderer.antialias = true;
 
+  var clock = new THREE.Clock();
+
   controls = new PointerLockControls(renderer.camera, {mass: 25, gravity: -0.75, jumpBoost: 100});
   controls.getObject().position.y = cameraStartYPosition;
   //controls.rotate(0, 785);
@@ -327,6 +333,13 @@ function setupEnvironment() {
   backgroundBox = createBackgroundBox(backgroundMaterial.videoMaterial);
   backgroundBox.position.set(0, 1000 / 2 - 40, 0);
   renderer.scene.add(backgroundBox);
+
+  var guitars = [];
+  addGuitarMeshes(function(g) {
+    guitars = g;
+  });
+
+  addFires();
 
   renderer.addUpdateFunction(function(delta) {
     controls.update(delta);
@@ -339,6 +352,22 @@ function setupEnvironment() {
 
       backgroundMaterial.videoContext.drawImage(activeVideo, 0, 0);
       backgroundMaterial.videoTexture.needsUpdate = true;
+    }
+
+    for (var i = 0; i < guitars.length; i++) {
+      var guitar = guitars[i];
+
+      guitar.position.x += 3 * (Math.random() - 0.5);
+      guitar.position.y += 3 * (Math.random() - 0.5);
+      guitar.position.z += 3 * (Math.random() - 0.5);
+
+      guitar.scale.x += 0.9 * (Math.random() - 0.5);
+      guitar.scale.x += 0.9 * (Math.random() - 0.5);
+      guitar.scale.x += 0.9 * (Math.random() - 0.5);
+
+      guitar.rotation.x += 0.5 * (Math.random() - 0.5);
+      guitar.rotation.y += 0.5 * (Math.random() - 0.5);
+      guitar.rotation.z += 0.5 * (Math.random() - 0.5);
     }
   });
 
@@ -464,4 +493,88 @@ function setupEnvironment() {
 
     return { videoMaterial: videoMaterial, videoTexture: videoTexture, videoContext: videoContext };
   }
+
+  function addGuitarMeshes (cb) {
+    var loader = new THREE.JSONLoader();
+    loader.load('../models/guitar.json', function (geometry, materials) {
+      var material = new THREE.MultiMaterial(materials);
+      var guitar = new THREE.Mesh(geometry, material);
+      var guitars = [];
+      for (var i = 0; i < 8; i++) {
+        guitars.push(i === 0 ? guitar : guitar.clone());
+      }
+
+      guitars.forEach(function(guitar, idx) {
+        var scale = 5 + Math.random() * 20;
+        guitar.scale.set(scale, scale, scale);
+
+        guitar.position.set(-500 + Math.random() * 1000, Math.random() * 180, -500 + Math.random() * 1000);
+
+        renderer.scene.add(guitar);
+      });
+
+      if (cb) cb(guitars);
+    });
+  }
+
+  function addFires () {
+    var texture = THREE.ImageUtils.loadTexture('../media/home/flame.jpg');
+
+    for (var i = 0; i < 20; i++) {
+      var r = 5 + Math.random() * 40;
+      var geometry = new THREE.SphereGeometry(r, 4, 4);
+
+      var material = new THREE.MeshBasicMaterial({
+        map: texture
+      });
+
+      var mesh = new THREE.Mesh(geometry, material);
+      mesh.position.set(-500 + Math.random() * 1000, Math.random() * 400, -500 + Math.random() * 1000);
+
+      renderer.scene.add(mesh);
+    }
+  }
+}
+
+function setupGuitarBorder () {
+  for (var x = 0; x < window.innerWidth; x += 32 + Math.random() * 32) {
+    var yVals = [0, window.innerHeight - 64];
+    for (var y = 0; y < yVals.length; y++) {
+      addGuitar(x, yVals[y]);
+    }
+  }
+
+  for (var y = 0; y < window.innerHeight; y += 32 + Math.random() * 32) {
+    var xVals = [0, window.innerWidth - 64];
+    for (var x = 0; x < xVals.length; x++) {
+      addGuitar(xVals[x], y);
+    }
+  }
+
+  function addGuitar (x, y) {
+    var img = new Image();
+    img.src = '../media/home/guitar_icon.png';
+    img.className = 'guitar-icon';
+    img.style.left = x + 'px';
+    img.style.top = y + 'px';
+    document.body.appendChild(img);
+  }
+}
+
+function showTracklist () {
+  var tracklist = document.createElement('div');
+  tracklist.className = 'tracklist';
+
+  tracklist.innerHTML = [parsedQueryString.song.toUpperCase(), 'Carmichael Payamps', 'MAX AND ROLL', '2016'].join('<br/>');
+
+  document.body.appendChild(tracklist);
+  setTimeout(function() {
+    tracklist.style.opacity = 1;
+    setTimeout(function() {
+      tracklist.style.opacity = 0;
+      setTimeout(function() {
+        document.body.removeChild(tracklist);
+      }, 1000);
+    }, 6666);
+  }, 1);
 }

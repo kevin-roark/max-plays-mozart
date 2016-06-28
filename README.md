@@ -8,3 +8,6 @@ Command to compress videos:
 
 ## TODO
 * minify js and autoprefix / minify css
+
+## CREDIT
+http://www.blendswap.com/blends/view/15675

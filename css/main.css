@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
+  background: url(../media/home/flame.jpg) black;
 }
 
 #canvas {
@@ -85,3 +85,19 @@ body {
   .click-to-start:hover {
     box-shadow: 3px 5px 8px 3px rgba(0, 0, 0, 0.3);
   }
+
+.guitar-icon {
+  position: fixed;
+}
+
+.tracklist {
+  position: fixed;
+  bottom: 15px; right: 15px;
+  color: #FFF;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.75);
+  font-size: 24px;
+  font-family: "Droid Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  transition: opacity ease 0.4s;
+  opacity: 0;
+}

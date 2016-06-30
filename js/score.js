@@ -132,7 +132,7 @@ function start () {
     audio.preferHTMLAudio = true;
     setTimeout(function() {
       audio.play();
-    }, initialDelay - 5);
+    }, initialDelay + 15); // lithium1 and lithium2 = + 50; thunder = -90; hallowed = +5; sweetchild = -930; rising = + 1600; wayward = +10; crazy = +15; come = +20, europa = +15
   } else {
     setTimeout(function() {
       console.log('midi player starting');

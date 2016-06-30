@@ -32,7 +32,7 @@ module.exports = function songMap (songName) {
       guitarJSONPath = 'lithium-guitar1.json';
       break;
 
-    case 'lithum2':
+    case 'lithium2':
       backingMIDIPath = 'lithium-backing2.mid';
       backingMP3Path = 'lithium-backing2-mp3.mp3';
       guitarJSONPath = 'lithium-guitar2.json';

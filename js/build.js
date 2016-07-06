@@ -45498,6 +45498,7 @@ var cameraStartYPosition = 200;
 var numberOfColumns = 4;
 var renderer, noteNumberRange, velocityRange, controls, locker, midiPlayer;
 var backgroundBox, activeVideo;
+var startTime, lastTrackEndTime = 0, backingAudioEl;
 
 var videoSourceMaker = function(filename) {
   return '../' + mediaConfig.path + filename;
@@ -45603,6 +45604,7 @@ function start () {
 
   showTracklist();
 
+  startTime = new Date();
   noteNumberRange = makeNoteRange();
   velocityRange = makeVelocityRange();
 
@@ -45615,6 +45617,8 @@ function start () {
     setTimeout(function() {
       audio.play();
     }, initialDelay + songInfo.backingOffset);
+
+    backingAudioEl = audio;
   } else {
     setTimeout(function() {
       console.log('midi player starting');
@@ -45623,7 +45627,6 @@ function start () {
   }
 
   // schedule midi
-  var lastTrackEndTime = 0;
   iterateTracks(function(trackIndex, el) {
     scheduleSegment(el, trackIndex);
     lastTrackEndTime = Math.max(initialDelay + el.time + el.duration, lastTrackEndTime);
@@ -45763,7 +45766,6 @@ function getJSON(url, callback) {
     callback(null, xhr.response);
   };
   xhr.onerror = function() {
-    console.log(xhr.statusText);
     callback(xhr.statusText, null);
   };
 
@@ -45821,7 +45823,7 @@ function setupEnvironment() {
     guitars = g;
   });
 
-  addFires();
+  addFloaters();
 
   renderer.addUpdateFunction(function(delta) {
     controls.update(delta);
@@ -45999,13 +46001,25 @@ function setupEnvironment() {
     });
   }
 
-  function addFires () {
-    var texture = THREE.ImageUtils.loadTexture('../media/home/flame.jpg');
+  function addFloaters () {
+    var textureNames = [
+      '../media/home/flame.jpg',
+      '../media/home/pinkflame.jpg',
+      '../media/home/lightning.jpg',
+      '../media/home/lightning2.jpg',
+      '../media/home/lightning3.jpg'
+    ];
 
     for (var i = 0; i < 20; i++) {
-      var r = 5 + Math.random() * 40;
-      var geometry = new THREE.SphereGeometry(r, 4, 4);
+      addFloater();
+    }
 
+    function addFloater () {
+      var r = 5 + Math.random() * 40;
+      var s = Math.floor(Math.random() * 6) + 3;
+      var geometry = new THREE.SphereGeometry(r, s, s);
+
+      var texture = THREE.ImageUtils.loadTexture(textureNames[Math.floor(Math.random() * textureNames.length)]);
       var material = new THREE.MeshBasicMaterial({
         map: texture
       });
@@ -46014,6 +46028,33 @@ function setupEnvironment() {
       mesh.position.set(-500 + Math.random() * 1000, Math.random() * 400, -500 + Math.random() * 1000);
 
       renderer.scene.add(mesh);
+
+      setTimeout(function() {
+        float(mesh);
+      }, 3000 + Math.random() * 5000);
+    }
+
+    function float (mesh, dir) {
+      var trackPercent = backingAudioEl.currentTime / backingAudioEl.duration;
+      var d = trackPercent < 0.25 ? 0 : trackPercent * 500;
+      var x = mesh.position.x + (Math.random() * d - d / 2);
+      var z = mesh.position.z + (Math.random() * d - d / 2);
+      var goal = {
+        x: Math.min(500, Math.max(-500, x)),
+        y: dir === 'up' ? 750 : 20,
+        z: Math.min(500, Math.max(-500, z))
+      };
+
+      var duration = (1 - trackPercent) * 10000 + 1000;
+
+      var tween = new TWEEN.Tween(mesh.position)
+        .to(goal, duration)
+        .onComplete(function() {
+          var nextDir = dir === 'up' ? 'down' : 'up';
+          float(mesh, nextDir);
+        });
+
+      tween.start();
     }
   }
 }

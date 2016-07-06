@@ -356,20 +356,26 @@ function setupEnvironment() {
       backgroundMaterial.videoTexture.needsUpdate = true;
     }
 
-    for (var i = 0; i < guitars.length; i++) {
-      var guitar = guitars[i];
+    var trackPercent = getTrackPercent();
+    if (trackPercent > 0.05) {
+      for (var i = 0; i < guitars.length; i++) {
+        var guitar = guitars[i];
 
-      guitar.position.x += 3 * (Math.random() - 0.5);
-      guitar.position.y += 3 * (Math.random() - 0.5);
-      guitar.position.z += 3 * (Math.random() - 0.5);
+        var p = trackPercent * 14 + 1;
+        guitar.position.x += p * (Math.random() - 0.5);
+        guitar.position.y += p * (Math.random() - 0.5);
+        guitar.position.z += p * (Math.random() - 0.5);
 
-      guitar.scale.x += 0.9 * (Math.random() - 0.5);
-      guitar.scale.x += 0.9 * (Math.random() - 0.5);
-      guitar.scale.x += 0.9 * (Math.random() - 0.5);
+        var s = trackPercent * 5 + 0.5;
+        guitar.scale.x += s * (Math.random() - 0.5);
+        guitar.scale.x += s * (Math.random() - 0.5);
+        guitar.scale.x += s * (Math.random() - 0.5);
 
-      guitar.rotation.x += 0.5 * (Math.random() - 0.5);
-      guitar.rotation.y += 0.5 * (Math.random() - 0.5);
-      guitar.rotation.z += 0.5 * (Math.random() - 0.5);
+        var r = trackPercent * 3 + 0.1;
+        guitar.rotation.x += r * (Math.random() - 0.5);
+        guitar.rotation.y += r * (Math.random() - 0.5);
+        guitar.rotation.z += r * (Math.random() - 0.5);
+      }
     }
   });
 
@@ -553,7 +559,7 @@ function setupEnvironment() {
     }
 
     function float (mesh, dir) {
-      var trackPercent = backingAudioEl.currentTime / backingAudioEl.duration;
+      var trackPercent = getTrackPercent();
       var d = trackPercent < 0.25 ? 0 : trackPercent * 500;
       var x = mesh.position.x + (Math.random() * d - d / 2);
       var z = mesh.position.z + (Math.random() * d - d / 2);
@@ -564,7 +570,6 @@ function setupEnvironment() {
       };
 
       var duration = (1 - trackPercent) * 10000 + 1000;
-
       var tween = new TWEEN.Tween(mesh.position)
         .to(goal, duration)
         .onComplete(function() {
@@ -573,6 +578,9 @@ function setupEnvironment() {
         });
 
       tween.start();
+
+      var scale = trackPercent * 5.2 + 1;
+      mesh.scale.set(scale, scale, scale);
     }
   }
 }
@@ -618,4 +626,11 @@ function showTracklist () {
       }, 1000);
     }, 6666);
   }, 1);
+}
+
+function getTrackPercent () {
+  if (!backingAudioEl) return 0;
+  var trackPercent = backingAudioEl.currentTime / backingAudioEl.duration;
+  if (isNaN(trackPercent)) trackPercent = 0;
+  return trackPercent;
 }

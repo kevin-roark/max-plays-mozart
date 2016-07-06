@@ -1,7 +1,7 @@
 
 var tonal = require('tonal');
 var queryString = require('query-string');
-var THREE = require('../../frampton/node_modules/three');
+var THREE = require('../../frampton/node_modules/three'); window.THREE = THREE;
 var TWEEN = require('../../frampton/node_modules/tween.js');
 var frampton = require('../../frampton/dist/web-frampton');
 var WebRenderer3D = require('../../frampton/dist/renderer/web-renderer-3d');
@@ -341,6 +341,11 @@ function setupEnvironment() {
     guitars = g;
   });
 
+  var guitarPlayers = [];
+  // addGuitarPlayers(function(g) {
+  //   guitarPlayers = g;
+  // });
+
   addFloaters();
 
   renderer.addUpdateFunction(function(delta) {
@@ -377,13 +382,41 @@ function setupEnvironment() {
         guitar.rotation.z += r * (Math.random() - 0.5);
       }
     }
+    if (trackPercent > 0.1) {
+      for (var i = 0; i < guitarPlayers.length; i++) {
+        var gp = guitarPlayers[i];
+
+        var p = trackPercent * 14 + 1;
+        guitar.position.x += p * (Math.random() - 0.5);
+        guitar.position.y += p * (Math.random() - 0.5);
+        guitar.position.z += p * (Math.random() - 0.5);
+
+        var s = trackPercent * 5 + 0.5;
+        guitar.scale.x += s * (Math.random() - 0.5);
+        guitar.scale.x += s * (Math.random() - 0.5);
+        guitar.scale.x += s * (Math.random() - 0.5);
+      }
+    }
   });
 
-  var ground = createRoomPlane();
+  var ground = createRoomPlane(false, '../media/home/flame.jpg');
   ground.position.set(0, -50, 0);
   renderer.scene.add(ground);
 
-  var ceiling = createRoomPlane(true);
+  var ceilingTextures = [
+    '../media/home/stadium.jpg',
+    '../media/home/stadium2.jpg',
+    '../media/home/stadium3.jpg',
+    '../media/home/stadium4.jpg',
+    '../media/home/stadium5.jpg',
+    '../media/home/stadium6.jpg',
+    '../media/home/stadium7.jpg',
+    '../media/home/stadium8.jpg',
+    '../media/home/stadium9.jpg',
+    '../media/home/stadium10.jpg',
+    '../media/home/stadium11.jpg'
+  ];
+  var ceiling = createRoomPlane(true, ceilingTextures[Math.floor(Math.random() * ceilingTextures.length)]);
   ceiling.position.set(0, 960, 0);
   renderer.scene.add(ceiling);
 
@@ -419,13 +452,13 @@ function setupEnvironment() {
     tween.start();
   }
 
-  function createRoomPlane(isCeiling) {
+  function createRoomPlane(isCeiling, texture) {
     var geometry = new THREE.PlaneGeometry(1500, 1500);
     geometry.computeFaceNormals();
     geometry.computeVertexNormals();
 
     var material = new THREE.MeshPhongMaterial({
-      map: THREE.ImageUtils.loadTexture(isCeiling ? '../media/home/stadium.jpg' : '../media/home/flame.jpg'),
+      map: THREE.ImageUtils.loadTexture(texture),
       shininess: 50,
       side: THREE.DoubleSide
     });
@@ -507,8 +540,10 @@ function setupEnvironment() {
     loader.load('../models/guitar.json', function (geometry, materials) {
       var material = new THREE.MultiMaterial(materials);
       var guitar = new THREE.Mesh(geometry, material);
+
+      var numGuitars = Math.floor(Math.random() * 5) + 6;
       var guitars = [];
-      for (var i = 0; i < 8; i++) {
+      for (var i = 0; i < numGuitars; i++) {
         guitars.push(i === 0 ? guitar : guitar.clone());
       }
 
@@ -525,6 +560,44 @@ function setupEnvironment() {
     });
   }
 
+  function addGuitarPlayers (cb) {
+    var guitarPlayerMeshes = [
+      '../models/guitar_player_1.fbx',
+      '../models/guitar_player_2.fbx',
+      '../models/guitar_player_3.fbx',
+      '../models/guitar_player_4.fbx',
+      '../models/piano_player_1.fbx',
+      '../models/piano_player_2.fbx'
+    ];
+    var numGuitarPlayers = Math.ceil(Math.random() * 2) + 1;
+    var loadCount = 0;
+    var loader = new THREE.FBXLoader();
+
+    var guitarPlayers = [];
+    for (var i = 0; i < numGuitarPlayers; i++) {
+      var meshName = guitarPlayerMeshes[Math.floor(guitarPlayerMeshes.length * Math.random())];
+      loader.load(meshName, function (geometry, materials) {
+        console.log(geometry);
+        var material = new THREE.MultiMaterial(materials);
+        var guitarPlayer = new THREE.Mesh(geometry, material);
+
+        guitarPlayer.position.set(-500 + Math.random() * 1000, Math.random() * 50, -500 + Math.random() * 1000);
+
+        renderer.scene.add(guitarPlayer);
+
+        loaded(guitarPlayer);
+      });
+    }
+
+    function loaded(mesh) {
+      guitarPlayers.push(mesh);
+      loadCount += 1;
+      if (loadCount === numGuitarPlayers) {
+        if (cb) cb(guitarPlayers);
+      }
+    }
+  }
+
   function addFloaters () {
     var textureNames = [
       '../media/home/flame.jpg',
@@ -534,7 +607,8 @@ function setupEnvironment() {
       '../media/home/lightning3.jpg'
     ];
 
-    for (var i = 0; i < 20; i++) {
+    var numFloaters = Math.floor(Math.random() * 11) + 15;
+    for (var i = 0; i < numFloaters; i++) {
       addFloater();
     }
 

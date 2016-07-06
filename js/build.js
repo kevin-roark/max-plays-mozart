@@ -45615,6 +45615,7 @@ function start () {
     setTimeout(function() {
       audio.play();
     }, initialDelay + songInfo.backingOffset);
+  } else {
     setTimeout(function() {
       console.log('midi player starting');
       midiPlayer.start();
@@ -46060,7 +46061,7 @@ function showTracklist () {
   }, 1);
 }
 
-},{"../../frampton/dist/renderer/web-renderer-3d":9,"../../frampton/dist/threejs/pointerlock-controls":23,"../../frampton/dist/web-frampton":24,"../../frampton/node_modules/three":26,"../../frampton/node_modules/tween.js":27,"../piano_long.json":49,"./pointerlocker":28,"./song-map":30,"query-string":34,"tonal":48}],30:[function(require,module,exports){
+},{"../../frampton/dist/renderer/web-renderer-3d":9,"../../frampton/dist/threejs/pointerlock-controls":23,"../../frampton/dist/web-frampton":24,"../../frampton/node_modules/three":26,"../../frampton/node_modules/tween.js":27,"../piano_long.json":48,"./pointerlocker":28,"./song-map":30,"query-string":33,"tonal":47}],30:[function(require,module,exports){
 
 module.exports = function songMap (songName) {
   var backingMIDIPath, backingMP3Path, guitarJSONPath;
@@ -46134,6 +46135,120 @@ module.exports = function songMap (songName) {
       backingMP3Path = 'wayward-backing-mp3.mp3';
       guitarJSONPath = 'wayward-guitar.json';
       backingOffset = 10;
+      break;
+
+    case 'aqua':
+      backingMIDIPath = 'aqua-backing.mid';
+      backingMP3Path = 'aqua-backing.mp3';
+      guitarJSONPath = 'aqua-guitar.json';
+      break;
+
+    case 'balloon':
+      backingMIDIPath = 'balloon-backing.mid';
+      backingMP3Path = 'balloon-backing.mp3';
+      guitarJSONPath = 'balloon-guitar.json';
+      break;
+
+    case 'black':
+      backingMIDIPath = 'black-backing.mid';
+      backingMP3Path = 'black-backing.mp3';
+      guitarJSONPath = 'black-guitar.json';
+      break;
+
+    case 'crying':
+      backingMIDIPath = 'crying-backing.mid';
+      backingMP3Path = 'crying-backing.mp3';
+      guitarJSONPath = 'crying-guitar.json';
+      break;
+
+    case 'dark':
+      backingMIDIPath = 'dark-backing.mid';
+      backingMP3Path = 'dark-backing.mp3';
+      guitarJSONPath = 'dark-guitar.json';
+      break;
+
+    case 'deep':
+      backingMIDIPath = 'deep-backing.mid';
+      backingMP3Path = 'deep-backing.mp3';
+      guitarJSONPath = 'deep-guitar.json';
+      break;
+
+    case 'fear':
+      backingMIDIPath = 'fear-backing.mid';
+      backingMP3Path = 'fear-backing.mp3';
+      guitarJSONPath = 'fear-guitar.json';
+      break;
+
+    case 'feeling':
+      backingMIDIPath = 'feeling-backing.mid';
+      backingMP3Path = 'feeling-backing.mp3';
+      guitarJSONPath = 'feeling-guitar.json';
+      break;
+
+    case 'flow':
+      backingMIDIPath = 'flow-backing.mid';
+      backingMP3Path = 'flow-backing.mp3';
+      guitarJSONPath = 'flow-guitar.json';
+      break;
+
+    case 'jungle':
+      backingMIDIPath = 'jungle-backing.mid';
+      backingMP3Path = 'jungle-backing.mp3';
+      guitarJSONPath = 'jungle-guitar.json';
+      break;
+
+    case 'name':
+      backingMIDIPath = 'name-backing.mid';
+      backingMP3Path = 'name-backing.mp3';
+      guitarJSONPath = 'name-guitar.json';
+      break;
+
+    case 'name2':
+      backingMIDIPath = 'name-backing.mid';
+      backingMP3Path = 'name-backing.mp3';
+      guitarJSONPath = 'name-guitar2.json';
+      break;
+
+    case 'sandman':
+      backingMIDIPath = 'sandman-backing.mid';
+      backingMP3Path = 'sandman-backing.mp3';
+      guitarJSONPath = 'sandman-guitar.json';
+      break;
+
+    case 'seven':
+      backingMIDIPath = 'seven-backing.mid';
+      backingMP3Path = 'seven-backing.mp3';
+      guitarJSONPath = 'seven-guitar.json';
+      break;
+
+    case 'still':
+      backingMIDIPath = 'still-backing.mid';
+      backingMP3Path = 'still-backing.mp3';
+      guitarJSONPath = 'still-guitar.json';
+      break;
+
+    case 'sweet':
+      backingMIDIPath = 'sweet-backing.mid';
+      backingMP3Path = 'sweet-backing.mp3';
+      guitarJSONPath = 'sweet-guitar.json';
+      break;
+
+    case 'tripper':
+      backingMIDIPath = 'tripper-backing.mid';
+      backingMP3Path = 'tripper-backing.mp3';
+      guitarJSONPath = 'tripper-guitar.json';
+      break;
+
+    case 'wuthering-piano':
+      backingMIDIPath = 'wuthering-pianobacking.mid';
+      backingMP3Path = 'wuthering-pianobacking.mp3';
+      guitarJSONPath = 'wuthering-piano.json';
+      break;
+
+    case 'wuthering-voice':
+      backingMIDIPath = 'wuthering-voicebacking.mid';
+      backingMP3Path = 'wuthering-voicebacking.mp3';
+      guitarJSONPath = 'wuthering-voice.json';
       break;
 
     case 'crazy':
@@ -46456,100 +46571,10 @@ module.exports = parser
 
 },{}],33:[function(require,module,exports){
 'use strict';
-/* eslint-disable no-unused-vars */
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-var propIsEnumerable = Object.prototype.propertyIsEnumerable;
-
-function toObject(val) {
-	if (val === null || val === undefined) {
-		throw new TypeError('Object.assign cannot be called with null or undefined');
-	}
-
-	return Object(val);
-}
-
-function shouldUseNative() {
-	try {
-		if (!Object.assign) {
-			return false;
-		}
-
-		// Detect buggy property enumeration order in older V8 versions.
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=4118
-		var test1 = new String('abc');  // eslint-disable-line
-		test1[5] = 'de';
-		if (Object.getOwnPropertyNames(test1)[0] === '5') {
-			return false;
-		}
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
-		var test2 = {};
-		for (var i = 0; i < 10; i++) {
-			test2['_' + String.fromCharCode(i)] = i;
-		}
-		var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
-			return test2[n];
-		});
-		if (order2.join('') !== '0123456789') {
-			return false;
-		}
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
-		var test3 = {};
-		'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
-			test3[letter] = letter;
-		});
-		if (Object.keys(Object.assign({}, test3)).join('') !==
-				'abcdefghijklmnopqrst') {
-			return false;
-		}
-
-		return true;
-	} catch (e) {
-		// We don't expect any of the above to throw, but better to be safe.
-		return false;
-	}
-}
-
-module.exports = shouldUseNative() ? Object.assign : function (target, source) {
-	var from;
-	var to = toObject(target);
-	var symbols;
-
-	for (var s = 1; s < arguments.length; s++) {
-		from = Object(arguments[s]);
-
-		for (var key in from) {
-			if (hasOwnProperty.call(from, key)) {
-				to[key] = from[key];
-			}
-		}
-
-		if (Object.getOwnPropertySymbols) {
-			symbols = Object.getOwnPropertySymbols(from);
-			for (var i = 0; i < symbols.length; i++) {
-				if (propIsEnumerable.call(from, symbols[i])) {
-					to[symbols[i]] = from[symbols[i]];
-				}
-			}
-		}
-	}
-
-	return to;
-};
-
-},{}],34:[function(require,module,exports){
-'use strict';
 var strictUriEncode = require('strict-uri-encode');
-var objectAssign = require('object-assign');
 
-function encode(value, opts) {
-	if (opts.encode) {
-		return opts.strict ? strictUriEncode(value) : encodeURIComponent(value);
-	}
-
-	return value;
+function encode(value, strict) {
+	return strict ? strictUriEncode(value) : encodeURIComponent(value);
 }
 
 exports.extract = function (str) {
@@ -46597,12 +46622,9 @@ exports.parse = function (str) {
 };
 
 exports.stringify = function (obj, opts) {
-	var defaults = {
-		encode: true,
-		strict: true
-	};
+	opts = opts || {};
 
-	opts = objectAssign(defaults, opts);
+	var strict = opts.strict !== false;
 
 	return obj ? Object.keys(obj).sort().map(function (key) {
 		var val = obj[key];
@@ -46612,34 +46634,34 @@ exports.stringify = function (obj, opts) {
 		}
 
 		if (val === null) {
-			return encode(key, opts);
+			return key;
 		}
 
 		if (Array.isArray(val)) {
 			var result = [];
 
-			val.slice().forEach(function (val2) {
+			val.slice().sort().forEach(function (val2) {
 				if (val2 === undefined) {
 					return;
 				}
 
 				if (val2 === null) {
-					result.push(encode(key, opts));
+					result.push(encode(key, strict));
 				} else {
-					result.push(encode(key, opts) + '=' + encode(val2, opts));
+					result.push(encode(key, strict) + '=' + encode(val2, strict));
 				}
 			});
 
 			return result.join('&');
 		}
 
-		return encode(key, opts) + '=' + encode(val, opts);
+		return encode(key, strict) + '=' + encode(val, strict);
 	}).filter(function (x) {
 		return x.length > 0;
 	}).join('&') : '';
 };
 
-},{"object-assign":33,"strict-uri-encode":35}],35:[function(require,module,exports){
+},{"strict-uri-encode":34}],34:[function(require,module,exports){
 'use strict';
 module.exports = function (str) {
 	return encodeURIComponent(str).replace(/[!'()*]/g, function (c) {
@@ -46647,7 +46669,7 @@ module.exports = function (str) {
 	});
 };
 
-},{}],36:[function(require,module,exports){
+},{}],35:[function(require,module,exports){
 'use strict';
 
 var tonalPitch = require('tonal-pitch');
@@ -46965,7 +46987,7 @@ exports.rotate = rotate;
 exports.rotateAsc = rotateAsc;
 exports.select = select;
 exports.listFn = listFn;
-},{"tonal-distance":37,"tonal-notation":43,"tonal-pitch":45,"tonal-transpose":47}],37:[function(require,module,exports){
+},{"tonal-distance":36,"tonal-notation":42,"tonal-pitch":44,"tonal-transpose":46}],36:[function(require,module,exports){
 'use strict';
 
 var tonalPitch = require('tonal-pitch');
@@ -47030,7 +47052,7 @@ var interval = distance
 exports.distance = distance;
 exports.distInSemitones = distInSemitones;
 exports.interval = interval;
-},{"tonal-pitch":45}],38:[function(require,module,exports){
+},{"tonal-pitch":44}],37:[function(require,module,exports){
 'use strict';
 
 // Encoding pitches into fifhts/octave notation
@@ -47074,7 +47096,7 @@ function decode (f, o) {
 
 exports.encode = encode;
 exports.decode = decode;
-},{}],39:[function(require,module,exports){
+},{}],38:[function(require,module,exports){
 'use strict';
 
 var tonalNote = require('tonal-note');
@@ -47116,7 +47138,7 @@ function scaleFilter (notes, m) {
 }
 
 exports.scaleFilter = scaleFilter;
-},{"tonal-array":36,"tonal-midi":42,"tonal-note":44}],40:[function(require,module,exports){
+},{"tonal-array":35,"tonal-midi":41,"tonal-note":43}],39:[function(require,module,exports){
 'use strict';
 
 var tonalMidi = require('tonal-midi');
@@ -47208,7 +47230,7 @@ exports.fromEqualTemp = fromEqualTemp;
 exports.midiFromFreq = midiFromFreq;
 exports.fromFreq = fromFreq;
 exports.cents = cents;
-},{"tonal-midi":42}],41:[function(require,module,exports){
+},{"tonal-midi":41}],40:[function(require,module,exports){
 'use strict';
 
 var tonalPitch = require('tonal-pitch');
@@ -47367,7 +47389,7 @@ exports.ic = ic;
 exports.itype = itype;
 exports.invert = invert;
 exports.simplify = simplify;
-},{"tonal-pitch":45}],42:[function(require,module,exports){
+},{"tonal-pitch":44}],41:[function(require,module,exports){
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('tonal-pitch')) :
   typeof define === 'function' && define.amd ? define(['exports', 'tonal-pitch'], factory) :
@@ -47442,7 +47464,7 @@ exports.simplify = simplify;
   exports.fromMidiS = fromMidiS;
 
 }));
-},{"tonal-pitch":45}],43:[function(require,module,exports){
+},{"tonal-pitch":44}],42:[function(require,module,exports){
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
@@ -47507,7 +47529,7 @@ exports.simplify = simplify;
   exports.toAcc = toAcc;
 
 }));
-},{}],44:[function(require,module,exports){
+},{}],43:[function(require,module,exports){
 'use strict';
 
 var tonalPitch = require('tonal-pitch');
@@ -47617,7 +47639,7 @@ exports.pc = pc;
 exports.enharmonics = enharmonics;
 exports.enh = enh;
 exports.simpleEnh = simpleEnh;
-},{"tonal-pitch":45,"tonal-transpose":47}],45:[function(require,module,exports){
+},{"tonal-pitch":44,"tonal-transpose":46}],44:[function(require,module,exports){
 'use strict';
 
 var noteParser = require('note-parser');
@@ -47891,7 +47913,7 @@ exports.strPitch = strPitch;
 exports.noteFn = noteFn;
 exports.ivlFn = ivlFn;
 exports.pitchFn = pitchFn;
-},{"interval-notation":31,"note-parser":32,"tonal-encoding":38,"tonal-notation":43}],46:[function(require,module,exports){
+},{"interval-notation":31,"note-parser":32,"tonal-encoding":37,"tonal-notation":42}],45:[function(require,module,exports){
 'use strict';
 
 var tonalArray = require('tonal-array');
@@ -47993,7 +48015,7 @@ exports.range = range;
 exports.chromatic = chromatic;
 exports.cycleOfFifths = cycleOfFifths;
 exports.scaleRange = scaleRange;
-},{"tonal-array":36,"tonal-filter":39,"tonal-midi":42,"tonal-transpose":47}],47:[function(require,module,exports){
+},{"tonal-array":35,"tonal-filter":38,"tonal-midi":41,"tonal-transpose":46}],46:[function(require,module,exports){
 'use strict';
 
 var tonalPitch = require('tonal-pitch');
@@ -48055,7 +48077,7 @@ function trFifths (t, n) {
 exports.transpose = transpose;
 exports.tr = tr;
 exports.trFifths = trFifths;
-},{"tonal-pitch":45}],48:[function(require,module,exports){
+},{"tonal-pitch":44}],47:[function(require,module,exports){
 'use strict';
 
 var tonalNote = require('tonal-note');
@@ -48116,7 +48138,7 @@ exports.range = tonalRange.range;
 exports.chromatic = tonalRange.chromatic;
 exports.cycleOfFifths = tonalRange.cycleOfFifths;
 exports.scaleRange = tonalRange.scaleRange;
-},{"tonal-array":36,"tonal-distance":37,"tonal-filter":39,"tonal-freq":40,"tonal-interval":41,"tonal-midi":42,"tonal-note":44,"tonal-range":46,"tonal-transpose":47}],49:[function(require,module,exports){
+},{"tonal-array":35,"tonal-distance":36,"tonal-filter":38,"tonal-freq":39,"tonal-interval":40,"tonal-midi":41,"tonal-note":43,"tonal-range":45,"tonal-transpose":46}],48:[function(require,module,exports){
 module.exports={
     "path": "media/big-piano-long-converted-3/",
     "videos": [{

@@ -73,6 +73,120 @@ module.exports = function songMap (songName) {
       backingOffset = 10;
       break;
 
+    case 'aqua':
+      backingMIDIPath = 'aqua-backing.mid';
+      backingMP3Path = 'aqua-backing.mp3';
+      guitarJSONPath = 'aqua-guitar.json';
+      break;
+
+    case 'balloon':
+      backingMIDIPath = 'balloon-backing.mid';
+      backingMP3Path = 'balloon-backing.mp3';
+      guitarJSONPath = 'balloon-guitar.json';
+      break;
+
+    case 'black':
+      backingMIDIPath = 'black-backing.mid';
+      backingMP3Path = 'black-backing.mp3';
+      guitarJSONPath = 'black-guitar.json';
+      break;
+
+    case 'crying':
+      backingMIDIPath = 'crying-backing.mid';
+      backingMP3Path = 'crying-backing.mp3';
+      guitarJSONPath = 'crying-guitar.json';
+      break;
+
+    case 'dark':
+      backingMIDIPath = 'dark-backing.mid';
+      backingMP3Path = 'dark-backing.mp3';
+      guitarJSONPath = 'dark-guitar.json';
+      break;
+
+    case 'deep':
+      backingMIDIPath = 'deep-backing.mid';
+      backingMP3Path = 'deep-backing.mp3';
+      guitarJSONPath = 'deep-guitar.json';
+      break;
+
+    case 'fear':
+      backingMIDIPath = 'fear-backing.mid';
+      backingMP3Path = 'fear-backing.mp3';
+      guitarJSONPath = 'fear-guitar.json';
+      break;
+
+    case 'feeling':
+      backingMIDIPath = 'feeling-backing.mid';
+      backingMP3Path = 'feeling-backing.mp3';
+      guitarJSONPath = 'feeling-guitar.json';
+      break;
+
+    case 'flow':
+      backingMIDIPath = 'flow-backing.mid';
+      backingMP3Path = 'flow-backing.mp3';
+      guitarJSONPath = 'flow-guitar.json';
+      break;
+
+    case 'jungle':
+      backingMIDIPath = 'jungle-backing.mid';
+      backingMP3Path = 'jungle-backing.mp3';
+      guitarJSONPath = 'jungle-guitar.json';
+      break;
+
+    case 'name':
+      backingMIDIPath = 'name-backing.mid';
+      backingMP3Path = 'name-backing.mp3';
+      guitarJSONPath = 'name-guitar.json';
+      break;
+
+    case 'name2':
+      backingMIDIPath = 'name-backing.mid';
+      backingMP3Path = 'name-backing.mp3';
+      guitarJSONPath = 'name-guitar2.json';
+      break;
+
+    case 'sandman':
+      backingMIDIPath = 'sandman-backing.mid';
+      backingMP3Path = 'sandman-backing.mp3';
+      guitarJSONPath = 'sandman-guitar.json';
+      break;
+
+    case 'seven':
+      backingMIDIPath = 'seven-backing.mid';
+      backingMP3Path = 'seven-backing.mp3';
+      guitarJSONPath = 'seven-guitar.json';
+      break;
+
+    case 'still':
+      backingMIDIPath = 'still-backing.mid';
+      backingMP3Path = 'still-backing.mp3';
+      guitarJSONPath = 'still-guitar.json';
+      break;
+
+    case 'sweet':
+      backingMIDIPath = 'sweet-backing.mid';
+      backingMP3Path = 'sweet-backing.mp3';
+      guitarJSONPath = 'sweet-guitar.json';
+      break;
+
+    case 'tripper':
+      backingMIDIPath = 'tripper-backing.mid';
+      backingMP3Path = 'tripper-backing.mp3';
+      guitarJSONPath = 'tripper-guitar.json';
+      break;
+
+    case 'wuthering-piano':
+      backingMIDIPath = 'wuthering-pianobacking.mid';
+      backingMP3Path = 'wuthering-pianobacking.mp3';
+      guitarJSONPath = 'wuthering-piano.json';
+      break;
+
+    case 'wuthering-voice':
+      backingMIDIPath = 'wuthering-voicebacking.mid';
+      backingMP3Path = 'wuthering-voicebacking.mp3';
+      guitarJSONPath = 'wuthering-voice.json';
+      break;
+
     case 'crazy':
     default:
       backingMIDIPath = 'crazy_backing.mid';

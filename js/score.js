@@ -133,6 +133,7 @@ function start () {
     setTimeout(function() {
       audio.play();
     }, initialDelay + songInfo.backingOffset);
+  } else {
     setTimeout(function() {
       console.log('midi player starting');
       midiPlayer.start();

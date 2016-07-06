@@ -28,7 +28,7 @@ document.body.appendChild(splashBackground);
 
 var loadingDiv = document.createElement('div');
 loadingDiv.className = 'loading-message';
-loadingDiv.textContent = 'Loading fuckin music...';
+loadingDiv.textContent = 'Loading fuckin music and media... rock.... and roll...........';
 splashBackground.appendChild(loadingDiv);
 
 var parsedQueryString = queryString.parse(location.search || '?song=crazy');
@@ -40,8 +40,7 @@ var song;
 getJSON(songInfo.guitarJSON, function(err, json) {
   song = json;
 
-  stopLoading();
-  setup();
+  setup(stopLoading);
 });
 
 function stopLoading() {
@@ -52,7 +51,7 @@ function stopLoading() {
   }, 500);
 }
 
-function setup() {
+function setup(cb) {
   if (is3D) {
     renderer = new WebRenderer3D({
       mediaConfig: mediaConfig,
@@ -67,7 +66,9 @@ function setup() {
       locker.requestPointerlock();
     }, false);
 
-    setupEnvironment();
+    window.scene = renderer.scene;
+
+    setupEnvironment(postEnvironment);
   }
   else {
     renderer = new frampton.WebRenderer({
@@ -76,31 +77,36 @@ function setup() {
     });
 
     setupGuitarBorder();
+    postEnvironment();
   }
 
-  if (isMidiBacking) {
-    MIDI.loadPlugin({
-			soundfontUrl: "../soundfont/",
-			onprogress: function(state, progress) {
-				console.log('midi loading progress: ' + progress);
-			},
-			onsuccess: function() {
-        console.log("Sound being generated with " + MIDI.api + " " + JSON.stringify(MIDI.supports));
+  function postEnvironment() {
+    if (isMidiBacking) {
+      MIDI.loadPlugin({
+        soundfontUrl: "../soundfont/",
+        onprogress: function(state, progress) {
+          console.log('midi loading progress: ' + progress);
+        },
+        onsuccess: function() {
+          console.log("Sound being generated with " + MIDI.api + " " + JSON.stringify(MIDI.supports));
 
-				midiPlayer = MIDI.Player;
-				midiPlayer.loadFile(songInfo.backingMIDI, function onsuccess () {
-        }, null, function onerror (e) {
-          console.log('midi loading error', e);
-        });
+          midiPlayer = MIDI.Player;
+          midiPlayer.loadFile(songInfo.backingMIDI, function onsuccess () {
+          }, null, function onerror (e) {
+            console.log('midi loading error', e);
+          });
 
-        doClickToStart();
-			}
-		});
-  } else {
-    doClickToStart();
+          doClickToStart();
+        }
+      });
+    } else {
+      doClickToStart();
+    }
   }
 
   function doClickToStart() {
+    if (cb) cb();
+
     setupClickToStart(function () {
       if (is3D) {
         locker.requestPointerlock();
@@ -316,7 +322,7 @@ function setupClickToStart(callback) {
   };
 }
 
-function setupEnvironment() {
+function setupEnvironment(cb) {
   renderer.renderer.shadowMap.enabled = true;
   renderer.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
   renderer.renderer.gammaInput = true;
@@ -336,15 +342,26 @@ function setupEnvironment() {
   backgroundBox.position.set(0, 1000 / 2 - 40, 0);
   renderer.scene.add(backgroundBox);
 
+  var callbackCount = 0;
+  var neededCallbacks = 2;
+  function noteCallback () {
+    callbackCount += 1;
+    if (callbackCount >= neededCallbacks) {
+      if (cb) cb();
+    }
+  }
+
   var guitars = [];
   addGuitarMeshes(function(g) {
     guitars = g;
+    noteCallback();
   });
 
   var guitarPlayers = [];
-  // addGuitarPlayers(function(g) {
-  //   guitarPlayers = g;
-  // });
+  addGuitarPlayers(function(g) {
+    guitarPlayers = g;
+    noteCallback();
+  });
 
   addFloaters();
 
@@ -362,6 +379,7 @@ function setupEnvironment() {
     }
 
     var trackPercent = getTrackPercent();
+    var animationSpeed = 0.001 + trackPercent * 0.004;
     if (trackPercent > 0.05) {
       for (var i = 0; i < guitars.length; i++) {
         var guitar = guitars[i];
@@ -373,8 +391,8 @@ function setupEnvironment() {
 
         var s = trackPercent * 5 + 0.5;
         guitar.scale.x += s * (Math.random() - 0.5);
-        guitar.scale.x += s * (Math.random() - 0.5);
-        guitar.scale.x += s * (Math.random() - 0.5);
+        guitar.scale.y += s * (Math.random() - 0.5);
+        guitar.scale.z += s * (Math.random() - 0.5);
 
         var r = trackPercent * 3 + 0.1;
         guitar.rotation.x += r * (Math.random() - 0.5);
@@ -382,19 +400,26 @@ function setupEnvironment() {
         guitar.rotation.z += r * (Math.random() - 0.5);
       }
     }
-    if (trackPercent > 0.1) {
-      for (var i = 0; i < guitarPlayers.length; i++) {
-        var gp = guitarPlayers[i];
+    for (var i = 0; i < guitarPlayers.length; i++) {
+      var gp = guitarPlayers[i];
 
+      if (trackPercent > 0.1) {
         var p = trackPercent * 14 + 1;
-        guitar.position.x += p * (Math.random() - 0.5);
-        guitar.position.y += p * (Math.random() - 0.5);
-        guitar.position.z += p * (Math.random() - 0.5);
+        gp.position.x += p * (Math.random() - 0.5);
+        gp.position.y += p * (Math.random() - 0.5);
+        gp.position.z += p * (Math.random() - 0.5);
 
-        var s = trackPercent * 5 + 0.5;
-        guitar.scale.x += s * (Math.random() - 0.5);
-        guitar.scale.x += s * (Math.random() - 0.5);
-        guitar.scale.x += s * (Math.random() - 0.5);
+        var s = trackPercent * 10 + 0.5;
+        gp.scale.x += s * (Math.random() - 0.5);
+        gp.scale.y += s * (Math.random() - 0.5);
+        gp.scale.z += s * (Math.random() - 0.5);
+
+        var r = trackPercent * 1 + 0.1;
+        gp.rotation.y += r * (Math.random() - 0.5);
+      }
+
+      if (trackPercent > 0) {
+        gp._mixer.update(delta * animationSpeed);
       }
     }
   });
@@ -551,6 +576,7 @@ function setupEnvironment() {
         var scale = 5 + Math.random() * 20;
         guitar.scale.set(scale, scale, scale);
 
+        guitar.castShadow = true;
         guitar.position.set(-500 + Math.random() * 1000, Math.random() * 180, -500 + Math.random() * 1000);
 
         renderer.scene.add(guitar);
@@ -562,28 +588,43 @@ function setupEnvironment() {
 
   function addGuitarPlayers (cb) {
     var guitarPlayerMeshes = [
-      '../models/guitar_player_1.fbx',
-      '../models/guitar_player_2.fbx',
-      '../models/guitar_player_3.fbx',
-      '../models/guitar_player_4.fbx',
-      '../models/piano_player_1.fbx',
-      '../models/piano_player_2.fbx'
+      '../models/guitar_player_1.json',
+      '../models/guitar_player_2.json',
+      '../models/guitar_player_3.json',
+      '../models/guitar_player_4.json',
+      '../models/piano_player_1.json',
+      '../models/piano_player_2.json'
     ];
-    var numGuitarPlayers = Math.ceil(Math.random() * 2) + 1;
+    var numGuitarPlayers = Math.ceil(Math.random() * 3) + 2;
     var loadCount = 0;
-    var loader = new THREE.FBXLoader();
+    var loader = new THREE.JSONLoader();
 
     var guitarPlayers = [];
     for (var i = 0; i < numGuitarPlayers; i++) {
       var meshName = guitarPlayerMeshes[Math.floor(guitarPlayerMeshes.length * Math.random())];
       loader.load(meshName, function (geometry, materials) {
-        console.log(geometry);
+        materials.forEach(function(m) {
+          m.transparent = false;
+          m.skinning = true;
+        });
         var material = new THREE.MultiMaterial(materials);
-        var guitarPlayer = new THREE.Mesh(geometry, material);
+        var guitarPlayer = new THREE.SkinnedMesh(geometry, material);
 
-        guitarPlayer.position.set(-500 + Math.random() * 1000, Math.random() * 50, -500 + Math.random() * 1000);
+        guitarPlayer.position.set(-500 + Math.random() * 1000, 1, -500 + Math.random() * 1000);
+        guitarPlayer.scale.set(50, 50, 50);
+        guitarPlayer.rotation.set(0, Math.random() * 7, 0);
+        guitarPlayer.castShadow = true;
 
         renderer.scene.add(guitarPlayer);
+
+        // based on http://threejs.org/examples/#webgl_animation_skinning_morph
+        // Blender export settings: join all geometries, all top boxes checked (bones, skinning), Uncheck apply modifiers,
+        // check Face materials, Pose Skeletal Animations, keyframe animations, embed animation
+        guitarPlayer._mixer = new THREE.AnimationMixer(guitarPlayer);
+        var action = guitarPlayer._mixer.clipAction(geometry.animations[0], null);
+        action.loop = THREE.LoopRepeat;
+        action.play();
+        guitarPlayer._action = action;
 
         loaded(guitarPlayer);
       });
@@ -624,6 +665,7 @@ function setupEnvironment() {
 
       var mesh = new THREE.Mesh(geometry, material);
       mesh.position.set(-500 + Math.random() * 1000, Math.random() * 400, -500 + Math.random() * 1000);
+      mesh.castShadow = true;
 
       renderer.scene.add(mesh);
 

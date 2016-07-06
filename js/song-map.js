@@ -196,12 +196,14 @@ module.exports = function songMap (songName) {
       backingMIDIPath = 'wuthering-pianobacking.mid';
       backingMP3Path = 'wuthering-pianobacking.mp3';
       guitarJSONPath = 'wuthering-piano.json';
+      backingOffset = 4150;
       break;
 
     case 'wuthering-voice':
       backingMIDIPath = 'wuthering-voicebacking.mid';
       backingMP3Path = 'wuthering-voicebacking.mp3';
       guitarJSONPath = 'wuthering-voice.json';
+      backingOffset = 3950;
       break;
 
     case 'crazy':

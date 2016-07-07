@@ -45516,7 +45516,6 @@ splashBackground.appendChild(loadingDiv);
 var parsedQueryString = queryString.parse(location.search || '?song=crazy');
 var songInfo = songMap(parsedQueryString.song);
 var is3D = !!parsedQueryString['3d'];
-var isMidiBacking = songInfo.backingMIDI && !!parsedQueryString.midiBacking;
 
 var song;
 getJSON(songInfo.guitarJSON, function(err, json) {
@@ -45563,27 +45562,7 @@ function setup(cb) {
   }
 
   function postEnvironment() {
-    if (isMidiBacking) {
-      MIDI.loadPlugin({
-        soundfontUrl: "../soundfont/",
-        onprogress: function(state, progress) {
-          console.log('midi loading progress: ' + progress);
-        },
-        onsuccess: function() {
-          console.log("Sound being generated with " + MIDI.api + " " + JSON.stringify(MIDI.supports));
-
-          midiPlayer = MIDI.Player;
-          midiPlayer.loadFile(songInfo.backingMIDI, function onsuccess () {
-          }, null, function onerror (e) {
-            console.log('midi loading error', e);
-          });
-
-          doClickToStart();
-        }
-      });
-    } else {
-      doClickToStart();
-    }
+    doClickToStart();
   }
 
   function doClickToStart() {
@@ -45615,22 +45594,15 @@ function start () {
   velocityRange = makeVelocityRange();
 
   // schedule backing track
-  if (!isMidiBacking) {
-    var audio = new Audio();
-    audio.preload = true;
-    audio.src = songInfo.backingMP3;
-    audio.preferHTMLAudio = true;
-    setTimeout(function() {
-      audio.play();
-    }, initialDelay + songInfo.backingOffset);
+  var audio = new Audio();
+  audio.preload = true;
+  audio.src = songInfo.backingMP3;
+  audio.preferHTMLAudio = true;
+  setTimeout(function() {
+    audio.play();
+  }, initialDelay + songInfo.backingOffset);
 
-    backingAudioEl = audio;
-  } else {
-    setTimeout(function() {
-      console.log('midi player starting');
-      midiPlayer.start();
-    }, initialDelay - 5);
-  }
+  backingAudioEl = audio;
 
   // schedule midi
   iterateTracks(function(trackIndex, el) {

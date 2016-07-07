@@ -8,6 +8,7 @@ prod:
 	browserify js/score.js -o js/build.js
 	minify js/build.js > js/build.min.js
 	minify css/main.css > css/main.min.css
+	minify css/home.css > css/home.min.css
 
 serve:
 	serve -p 3002 ./

@@ -37,15 +37,35 @@ body {
 }
 
 .fire {
-  animation: fire-text-shadow 1s ease-in-out infinite alternate;
+  -webkit-animation: fire-text-shadow 1s ease-in-out infinite alternate;
+          animation: fire-text-shadow 1s ease-in-out infinite alternate;
 }
 
 .burn {
-  animation: fire-text-shadow .65s ease-in-out infinite alternate;
+  -webkit-animation: fire-text-shadow .65s ease-in-out infinite alternate;
+          animation: fire-text-shadow .65s ease-in-out infinite alternate;
 }
 
 .fire-box {
-  animation: fire-box-shadow 1s ease-in-out infinite alternate;
+  -webkit-animation: fire-box-shadow 1s ease-in-out infinite alternate;
+          animation: fire-box-shadow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes fire-text-shadow {
+0% {text-shadow: 0 0 20px #fefcc9,
+  10px -10px 30px #feec85,
+  -20px -20px 40px #ffae34,
+  20px -40px 50px #ec760c,
+  -20px -60px 60px #cd4606,
+  0 -80px 70px #973716,
+  10px -90px 80px #451b0e;}
+100% {text-shadow: 0 0 20px #fefcc9,
+  10px -10px 30px #fefcc9,
+  -20px -20px 40px #feec85,
+  22px -42px 60px #ffae34,
+  -22px -58px 50px #ec760c,
+  0 -82px 80px #cd4606,
+  10px -90px 80px  #973716;}
 }
 
 @keyframes fire-text-shadow {
@@ -63,6 +83,11 @@ body {
   -22px -58px 50px #ec760c,
   0 -82px 80px #cd4606,
   10px -90px 80px  #973716;}
+}
+
+@-webkit-keyframes fire-box-shadow {
+0% {box-shadow: 7px 7px 20px #fefcc9, 7px 7px 60px #cd4606;}
+100% {box-shadow: 7px 7px 40px #fefcc9, 7px 7px 100px #cd4606;}
 }
 
 @keyframes fire-box-shadow {
@@ -109,7 +134,8 @@ body {
     cursor: pointer;
   }
     .dimension-button:hover, .dimension-button:focus {
-      animation: fire-text-shadow .65s ease-in-out infinite alternate;
+      -webkit-animation: fire-text-shadow .65s ease-in-out infinite alternate;
+              animation: fire-text-shadow .65s ease-in-out infinite alternate;
       color: black;
     }
 
@@ -157,8 +183,12 @@ body {
   position: relative;
   color: yellow;
   text-shadow: 6px 6px 3px rgba(0,0,0,0.3), 4px 4px 2px rgba(0,0,0,0.5), 2px 2px 1px rgba(0,0,0, 0.75);
-  column-count: 2;
-  column-gap: 40px;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
 }
   .list-of-songs::after {
     content: "";
@@ -175,11 +205,13 @@ body {
   }
     .list-of-songs li a {
       color: inherit;
+      -webkit-transition: all 0.4s;
       transition: all 0.4s;
       text-decoration: none;
     }
       .list-of-songs li a:hover, .list-of-songs li a:focus {
-        animation: fire-text-shadow .65s ease-in-out infinite alternate;
+        -webkit-animation: fire-text-shadow .65s ease-in-out infinite alternate;
+                animation: fire-text-shadow .65s ease-in-out infinite alternate;
         color: red;
       }
 
@@ -189,7 +221,8 @@ body {
   min-width: 100%; min-height: 100%;
   width: auto; height: auto;
   z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 
 @media (max-width: 540px) {
